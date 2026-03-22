@@ -1,3 +1,4 @@
+using FancyCrab.DialogueSystem;
 using NaughtyAttributes;
 using System;
 using UnityEngine;
@@ -14,10 +15,29 @@ namespace FancyCrab.CustomPackages.FirstPersonController
         private void OnEnable()
         {
             //PauseHandler.OnPausedGame += OnPausedGameCallback;
+            if (DialogueManager.Instance == null)
+                return;
+
+            DialogueManager.Instance.OnDialogueStarted += HandleDialogueStarted;
+            DialogueManager.Instance.OnDialogueEnded += HandleDialogueEnded;
         }
+
+        private void HandleDialogueEnded(DialogueContainer container)
+        {
+            SetPlayerState(PlayerStates.Playing);
+        }
+
+        private void HandleDialogueStarted(DialogueContainer container)
+        {
+            SetPlayerState(PlayerStates.Paused);
+        }
+
         private void OnDisable()
         {
             //PauseHandler.OnPausedGame -= OnPausedGameCallback;
+
+            DialogueManager.Instance.OnDialogueStarted -= HandleDialogueStarted;
+            DialogueManager.Instance.OnDialogueEnded -= HandleDialogueEnded;
         }
         private void OnPausedGameCallback(bool isPaused)
         {
