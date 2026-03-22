@@ -2,7 +2,7 @@
 - Project name: RotaDaIndia
 - Unity version: Unity 6000.3.10f1
 - Active game object:
-  - Name: WD
-  - Tag: Untagged
+  - Name: FirstPersonController
+  - Tag: Player
   - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->

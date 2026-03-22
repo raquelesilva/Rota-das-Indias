@@ -1,3 +1,4 @@
+using FancyCrab.CoreSystems.InteractionSystem;
 using FancyCrab.CustomPackages.FirstPersonController;
 using KendirStudios.CustomPackages.Utilities.Tools;
 using System;
@@ -13,26 +14,31 @@ public class InteractionCrosshair : MonoBehaviour
     private void Awake()
     {
         canvasGroupUtility = transform.GetOrAddComponent<CanvasGroupUtility>();
+        canvasGroupUtility.Show();
     }
     private void OnEnable()
     {
         PlayerStateHandler.OnPlayerStateChanged += HandlePlayerStateChanged;
-        //InteractionSystem.OnUpdatePickup += HandleCrosshairCallback;
+        PlayerInteraction.OnDetectInterface += HandleCrosshairCallback;
+        PlayerInteraction.OnClearDetection += ClearCrosshairCallback;
     }
 
-    private void HandlePlayerStateChanged(PlayerStates newState)
+    private void HandleCrosshairCallback(RaycastState state)
     {
-        canvasGroupUtility.SetVisibility(newState == PlayerStates.Playing);
+        crosshairAnimation.SetBool(AnimThrow, true);
     }
-
+    private void ClearCrosshairCallback()
+    {
+        crosshairAnimation.SetBool(AnimThrow, false);
+    }
+    private void HandlePlayerStateChanged(PlayerStates state)
+    {
+        canvasGroupUtility.SetVisibility(state == PlayerStates.Playing);
+    }
     private void OnDisable()
     {
         PlayerStateHandler.OnPlayerStateChanged -= HandlePlayerStateChanged;
-        //InteractionSystem.OnUpdatePickup -= HandleCrosshairCallback;
+        PlayerInteraction.OnDetectInterface -= HandleCrosshairCallback;
+        PlayerInteraction.OnClearDetection -= ClearCrosshairCallback;
     }
-
-    //private void HandleCrosshairCallback(InteractionSystem.ObjectState state)
-    //{
-    //    crosshairAnimation.SetBool(AnimThrow, state != InteractionSystem.ObjectState.None);
-    //}
 }

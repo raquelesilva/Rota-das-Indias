@@ -37,7 +37,6 @@ namespace FancyCrab.CustomPackages.FirstPersonController
         [BoxGroup("Movement/Sprint/Bar"), ShowIf(nameof(useSprintBar)), SerializeField] private float sprintBarHeightPercent = .015f;
 
         // Internal Variables
-        private CanvasGroup sprintBarCG;
         private bool isSprinting = false;
         private float sprintRemaining;
         private float sprintBarWidth;
@@ -197,8 +196,6 @@ namespace FancyCrab.CustomPackages.FirstPersonController
 
             #region Sprint Bar
 
-            sprintBarCG = GetComponentInChildren<CanvasGroup>();
-
             if (useSprintBar)
             {
                 sprintBar.gameObject.SetActive(true);
@@ -210,11 +207,6 @@ namespace FancyCrab.CustomPackages.FirstPersonController
                 sprintBarHeight = screenHeight * sprintBarHeightPercent;
 
                 sprintBar.rectTransform.sizeDelta = new Vector3(sprintBarWidth - 2, sprintBarHeight - 2, 0f);
-
-                if (hideBarWhenFull)
-                {
-                    sprintBarCG.alpha = 0;
-                }
             }
             else
             {
@@ -324,10 +316,6 @@ namespace FancyCrab.CustomPackages.FirstPersonController
                             Crouch();
                         }
 
-                        if (hideBarWhenFull && !unlimitedSprint)
-                        {
-                            sprintBarCG.alpha += 5 * Time.deltaTime;
-                        }
                     }
 
                     rb.AddForce(velocityChange, ForceMode.VelocityChange);
@@ -336,11 +324,6 @@ namespace FancyCrab.CustomPackages.FirstPersonController
                 else
                 {
                     isSprinting = false;
-
-                    if (hideBarWhenFull && sprintRemaining == sprintDuration)
-                    {
-                        sprintBarCG.alpha -= 3 * Time.deltaTime;
-                    }
 
                     targetVelocity = transform.TransformDirection(targetVelocity) * walkSpeed;
 
