@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4459864850019384739}
   - component: {fileID: 4459864850019384737}
   - component: {fileID: 4459864850019384741}
+  - component: {fileID: 6603460485679761389}
   - component: {fileID: 4459864850019384740}
   - component: {fileID: 4745183775206852275}
   m_Layer: 0
@@ -95,6 +96,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &6603460485679761389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4459864850019384750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbff978b5b371074a860c1119f909314, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.CustomPackages.FirstPersonController.PlayerStateHandler
+  currentPlayerState: 0
 --- !u!114 &4459864850019384740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -367,6 +381,8 @@ GameObject:
   - component: {fileID: 4459864851310106426}
   - component: {fileID: 4459864851310106427}
   - component: {fileID: 184942122365860856}
+  - component: {fileID: 1463765580600999438}
+  - component: {fileID: 9176943323034781573}
   m_Layer: 0
   m_Name: PlayerCamera
   m_TagString: MainCamera
@@ -494,6 +510,46 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &1463765580600999438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4459864851310106424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8760dc9caf9a89e4585e02baa3c23379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.CustomPackages.FirstPersonController.MouseLockHandler
+--- !u!114 &9176943323034781573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4459864851310106424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac28f9338b12d9f4fbded554e6a109a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.CustomPackages.FirstPersonController.CameraController
+  inputReader: {fileID: 11400000, guid: 458043d94161f1149b3be9040cbb9a3c, type: 2}
+  fpc: {fileID: 4459864850019384740}
+  playerCamera: {fileID: 4459864851310106426}
+  fov: 60
+  invertCamera: 0
+  mouseSensitivity: 2
+  maxLookAngle: 85
+  enableZoom: 1
+  holdToZoom: 0
+  zoomKey: 324
+  zoomFOV: 30
+  zoomStepTime: 5
+  enableHeadBob: 1
+  joint: {fileID: 4459864851508666808}
+  bobSpeed: 10
+  bobAmount: {x: 0.15, y: 0.05, z: 0}
 --- !u!1 &4459864851397454630
 GameObject:
   m_ObjectHideFlags: 0
