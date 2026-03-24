@@ -244,7 +244,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1513ce2ef053b44e832ce705ecaeb01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  inputActions: {fileID: -944628639613478452, guid: 1ab82323cf432374397a942660645995, type: 3}
   speed: 100
   inverted: 0
 --- !u!1 &317309535
@@ -372,9 +371,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 554e43dad74cc8e42ad45f2a07e8dc19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragAstrolabio
-  inputActions: {fileID: -944628639613478452, guid: 1ab82323cf432374397a942660645995, type: 3}
-  speed: 100
-  inverted: 0
 --- !u!1 &465557095
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,9 +623,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 554e43dad74cc8e42ad45f2a07e8dc19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragAstrolabio
-  inputActions: {fileID: -944628639613478452, guid: 1ab82323cf432374397a942660645995, type: 3}
-  speed: 100
-  inverted: 0
 --- !u!1 &690445678
 GameObject:
   m_ObjectHideFlags: 0
@@ -880,9 +873,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 554e43dad74cc8e42ad45f2a07e8dc19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragAstrolabio
-  inputActions: {fileID: -944628639613478452, guid: 1ab82323cf432374397a942660645995, type: 3}
-  speed: 100
-  inverted: 0
 --- !u!1 &1156869585
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,9 +998,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 554e43dad74cc8e42ad45f2a07e8dc19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragAstrolabio
-  inputActions: {fileID: -944628639613478452, guid: 1ab82323cf432374397a942660645995, type: 3}
-  speed: 100
-  inverted: 0
 --- !u!1 &1216768722
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,9 +1123,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 554e43dad74cc8e42ad45f2a07e8dc19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragAstrolabio
-  inputActions: {fileID: -944628639613478452, guid: 1ab82323cf432374397a942660645995, type: 3}
-  speed: 100
-  inverted: 0
 --- !u!1 &1344678516
 GameObject:
   m_ObjectHideFlags: 0
@@ -1301,9 +1285,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 554e43dad74cc8e42ad45f2a07e8dc19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragAstrolabio
-  inputActions: {fileID: -944628639613478452, guid: 1ab82323cf432374397a942660645995, type: 3}
-  speed: 100
-  inverted: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

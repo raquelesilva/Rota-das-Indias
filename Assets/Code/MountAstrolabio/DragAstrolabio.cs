@@ -1,9 +1,40 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class DragAstrolabio : MonoBehaviour
 {
-    #region Input Actions
+    #region Variables
+    private Vector3 offset;
+    private Camera camera;
+    #endregion
+
+    private void Start()
+    {
+        camera = Camera.main;
+    }
+
+    private void OnMouseDown()
+    {
+        Debug.Log("MouseDown");
+        offset = transform.position - MouseWorldPosition();
+        Debug.Log("transform.position: " + transform.position);
+    }
+
+    private void OnMouseDrag()
+    {
+        transform.position = MouseWorldPosition() + offset;
+        Debug.Log("transform.position: " + transform.position);
+    }
+
+    protected virtual Vector3 MouseWorldPosition()
+    {
+        var mouseScreenPos = Input.mousePosition;
+        mouseScreenPos.x = camera.WorldToScreenPoint(transform.position).x;
+        return camera.ScreenToWorldPoint(mouseScreenPos);
+    }
+
+   /* #region Input Actions
     [SerializeField]
     private InputActionAsset inputActions;
 
@@ -22,12 +53,18 @@ public class DragAstrolabio : MonoBehaviour
     #region Variables
 
     private bool moveAllowed;
+    private Vector3 curScreenPos;
 
     private Camera camera;
 
-    [SerializeField] private float speed;
-
-    [SerializeField] private bool inverted;
+    private Vector3 WorldPos
+    {
+        get
+        {
+            float z = camera.WorldToScreenPoint(transform.position).z;
+            return camera.ScreenToWorldPoint(curScreenPos + new Vector3(0, 0, z));
+        }
+    }
 
     #endregion
 
@@ -58,37 +95,49 @@ public class DragAstrolabio : MonoBehaviour
 
     protected virtual void OnLeftClickPressed(InputAction.CallbackContext context)
     {
+        Debug.Log("MouseDown");
         if (context.started || context.performed)
         {
             moveAllowed = true;
-            Cursor.lockState = CursorLockMode.Locked;
+            offset = transform.position - GetMouseLookInput();
+            Debug.Log("offset: " + offset);
+            //Cursor.lockState = CursorLockMode.Locked;
         }
         else if (context.canceled)
         {
             moveAllowed = false;
-            Cursor.lockState = CursorLockMode.None;
+            //Cursor.lockState = CursorLockMode.None;
         }
     }
 
-    protected virtual Vector2 GetMouseLookInput()
+    protected virtual Vector3 GetMouseLookInput()
     {
-        if (mouseLookInputAction != null)
-        {
-            return mouseLookInputAction.ReadValue<Vector2>();
-        }
-
-        return Vector2.zero;
+        var mouseScreenPos = Input.mousePosition;
+        Debug.Log("mouseScreenPos: " + mouseScreenPos);
+        mouseScreenPos.z = camera.WorldToScreenPoint(transform.position).z;
+        return camera.ScreenToWorldPoint(mouseScreenPos);
     }
 
     private void Update()
     {
-        //if (!moveAllowed) return;
+        if (!moveAllowed) return;
 
-        //Vector2 MouseDelta = GetMouseLookInput();
-
-        //MouseDelta *= speed * Time.deltaTime;
-        
-        //transform.Translate(Vector3.right * (inverted ? 1 : -1), Space.Self);
-        //transform.Translate(Vector3.up * (inverted ? 1 : -1), Space.Self);
+        transform.position = WorldPos + offset;
     }
+
+    private IEnumerator Drag()
+    {
+        moveAllowed = true;
+        Vector3 offset = transform.position - WorldPos;
+        // grab
+        GetComponent<Rigidbody>().useGravity = false;
+        while (moveAllowed)
+        {
+            // dragging
+            transform.position = WorldPos + offset;
+            yield return null;
+        }
+        // drop
+        GetComponent<Rigidbody>().useGravity = true;
+    }*/
 }
