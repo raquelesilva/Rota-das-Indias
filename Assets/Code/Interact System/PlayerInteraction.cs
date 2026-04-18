@@ -48,6 +48,8 @@ namespace FancyCrab.CoreSystems.InteractionSystem
         private float heldOriginalDrag;
         private float heldOriginalAngularDrag;
 
+        private bool mouseIsDown;
+
         private RaycastState lastRaycastState = RaycastState.None;
         private InteractionState lastInteractionState = InteractionState.None;
 
@@ -65,6 +67,7 @@ namespace FancyCrab.CoreSystems.InteractionSystem
             inputReader.Grab += OnGrabPressed;
             inputReader.Throw += OnThrowPressed;
             inputReader.Inspect += OnInspectPressed;
+            inputReader.MouseIsDown += OnMouseIsDownCallback;
         }
 
         private void OnDisable()
@@ -75,11 +78,12 @@ namespace FancyCrab.CoreSystems.InteractionSystem
             inputReader.Grab -= OnGrabPressed;
             inputReader.Throw -= OnThrowPressed;
             inputReader.Inspect -= OnInspectPressed;
+            inputReader.MouseIsDown -= OnMouseIsDownCallback;
         }
 
         private void Update()
         {
-            if (inspectHandler != null && inspectHandler.IsInspecting)
+            if (inspectHandler != null && inspectHandler.IsInspecting && mouseIsDown)
             {
                 Vector2 lookDelta = inputReader != null ? inputReader.LookDelta : Vector2.zero;
                 inspectHandler.UpdateInspect(lookDelta);
@@ -93,6 +97,11 @@ namespace FancyCrab.CoreSystems.InteractionSystem
         {
             UpdateHeldPhysics();
             inspectHandler?.FixedUpdateInspect();
+        }
+
+        private void OnMouseIsDownCallback(bool decision)
+        {
+            mouseIsDown = decision;
         }
 
         private void OnInteractPressed()

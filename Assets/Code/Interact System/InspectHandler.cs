@@ -146,7 +146,7 @@ namespace FancyCrab.CoreSystems.InteractionSystem
 
             if (_hasManualInput)
             {
-                float rotX = -lookDelta.y * manualRotateSensitivity * Time.deltaTime;
+                float rotX = lookDelta.y * manualRotateSensitivity * Time.deltaTime;
                 float rotY = -lookDelta.x * manualRotateSensitivity * Time.deltaTime;
 
                 Quaternion deltaRot = Quaternion.Euler(rotX, rotY, 0f);
@@ -158,11 +158,7 @@ namespace FancyCrab.CoreSystems.InteractionSystem
                 _accumulatedRotation = autoRot * _accumulatedRotation;
             }
 
-            _pendingRotation = Quaternion.Slerp(
-                _inspectedTransform.rotation,
-                _accumulatedRotation * _baseRotation,
-                Time.deltaTime * rotationLerpSpeed
-            );
+            _pendingRotation = Quaternion.Slerp(_inspectedTransform.rotation,_accumulatedRotation * _baseRotation,Time.deltaTime * rotationLerpSpeed);
             _hasPendingRotation = true;
 
             if (_inspectedRigidbody == null)

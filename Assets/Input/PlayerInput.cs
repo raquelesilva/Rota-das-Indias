@@ -190,6 +190,15 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""MouseDown"",
+                    ""type"": ""Button"",
+                    ""id"": ""e5330ba4-80e6-47d7-aea8-a0f77fdec6c0"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -467,6 +476,17 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""action"": ""InspectLook"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""24873874-f98d-4fe2-a7f5-a459539d953e"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MouseDown"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -595,6 +615,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         m_Movement_SecondInteract = m_Movement.FindAction("SecondInteract", throwIfNotFound: true);
         m_Movement_Movement = m_Movement.FindAction("Movement", throwIfNotFound: true);
         m_Movement_InspectLook = m_Movement.FindAction("InspectLook", throwIfNotFound: true);
+        m_Movement_MouseDown = m_Movement.FindAction("MouseDown", throwIfNotFound: true);
         // Menus
         m_Menus = asset.FindActionMap("Menus", throwIfNotFound: true);
         m_Menus_Pause = m_Menus.FindAction("Pause", throwIfNotFound: true);
@@ -695,6 +716,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_Movement_SecondInteract;
     private readonly InputAction m_Movement_Movement;
     private readonly InputAction m_Movement_InspectLook;
+    private readonly InputAction m_Movement_MouseDown;
     /// <summary>
     /// Provides access to input actions defined in input action map "Movement".
     /// </summary>
@@ -750,6 +772,10 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Movement/InspectLook".
         /// </summary>
         public InputAction @InspectLook => m_Wrapper.m_Movement_InspectLook;
+        /// <summary>
+        /// Provides access to the underlying input action "Movement/MouseDown".
+        /// </summary>
+        public InputAction @MouseDown => m_Wrapper.m_Movement_MouseDown;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -809,6 +835,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @InspectLook.started += instance.OnInspectLook;
             @InspectLook.performed += instance.OnInspectLook;
             @InspectLook.canceled += instance.OnInspectLook;
+            @MouseDown.started += instance.OnMouseDown;
+            @MouseDown.performed += instance.OnMouseDown;
+            @MouseDown.canceled += instance.OnMouseDown;
         }
 
         /// <summary>
@@ -853,6 +882,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @InspectLook.started -= instance.OnInspectLook;
             @InspectLook.performed -= instance.OnInspectLook;
             @InspectLook.canceled -= instance.OnInspectLook;
+            @MouseDown.started -= instance.OnMouseDown;
+            @MouseDown.performed -= instance.OnMouseDown;
+            @MouseDown.canceled -= instance.OnMouseDown;
         }
 
         /// <summary>
@@ -1173,6 +1205,13 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnInspectLook(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "MouseDown" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnMouseDown(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Menus" which allows adding and removing callbacks.

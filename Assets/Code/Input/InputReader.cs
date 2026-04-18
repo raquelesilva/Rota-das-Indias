@@ -28,6 +28,7 @@ public class InputReader : ScriptableObject, IMovementActions, IMenusActions
     public event Action Grab;
     public event Action Inspect;
     public event Action SecondInteract;
+    public event Action<bool> MouseIsDown;
 
     public event Action PauseClick;
 
@@ -120,6 +121,11 @@ public class InputReader : ScriptableObject, IMovementActions, IMenusActions
         if (context.performed) PauseClick?.Invoke();
     }
 
+    public void OnMouseDown(InputAction.CallbackContext context)
+    {
+        MouseIsDown?.Invoke(context.performed);
+    }
+
     private string GamepadSchemeName => controls.asset.controlSchemes
         .FirstOrDefault(s => s.name.Contains("Gamepad")).name ?? string.Empty;
 
@@ -144,6 +150,8 @@ public class InputReader : ScriptableObject, IMovementActions, IMenusActions
 
         return action.GetBindingDisplayString(InputBinding.MaskByGroup(scheme));
     }
+
+   
 
     public string InteractKey => GetBindingDisplayString(controls?.Movement.Interact);
     public string GrabKey => GetBindingDisplayString(controls?.Movement.Grab);
