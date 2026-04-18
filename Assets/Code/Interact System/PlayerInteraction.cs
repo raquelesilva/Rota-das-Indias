@@ -23,6 +23,9 @@ namespace FancyCrab.CoreSystems.InteractionSystem
         [SerializeField] private float holdTorque = 80f;
         [SerializeField] private float holdAngularDamping = 10f;
 
+        [Header("Inspect")]
+        [SerializeField] private InspectHandler inspectHandler;
+
         public static event Action<RaycastState> OnDetectInterface;
         public static event Action<InteractionState> OnInteractionUpdate;
         public static event Action OnClearDetection;
@@ -31,6 +34,8 @@ namespace FancyCrab.CoreSystems.InteractionSystem
         private GrabbableObject currentPickupObject;
         private IInteractable currentInteractable;
         private InteractableObject currentInteractableObject;
+        private IInspectable currentInspectable;
+        private InspectableObject currentInspectableObject;
         private Rigidbody currentRigidbody;
         private Transform currentTransform;
 
@@ -49,6 +54,7 @@ namespace FancyCrab.CoreSystems.InteractionSystem
         private void Awake()
         {
             if (playerCamera == null) playerCamera = Camera.main;
+            if (inspectHandler != null) inspectHandler.SetCamera(playerCamera);
         }
 
         private void OnEnable()
@@ -58,6 +64,7 @@ namespace FancyCrab.CoreSystems.InteractionSystem
             inputReader.Interact += OnInteractPressed;
             inputReader.Grab += OnGrabPressed;
             inputReader.Throw += OnThrowPressed;
+            inputReader.Inspect += OnInspectPressed;
         }
 
         private void OnDisable()
@@ -67,21 +74,31 @@ namespace FancyCrab.CoreSystems.InteractionSystem
             inputReader.Interact -= OnInteractPressed;
             inputReader.Grab -= OnGrabPressed;
             inputReader.Throw -= OnThrowPressed;
+            inputReader.Inspect -= OnInspectPressed;
         }
 
         private void Update()
         {
+            if (inspectHandler != null && inspectHandler.IsInspecting)
+            {
+                Vector2 lookDelta = inputReader != null ? inputReader.LookDelta : Vector2.zero;
+                inspectHandler.UpdateInspect(lookDelta);
+                return;
+            }
+
             DetectTarget();
         }
 
         private void FixedUpdate()
         {
             UpdateHeldPhysics();
+            inspectHandler?.FixedUpdateInspect();
         }
 
         private void OnInteractPressed()
         {
             if (heldGrabbable != null) return;
+            if (inspectHandler != null && inspectHandler.IsInspecting) return;
             if (currentInteractable == null) return;
 
             bool canInteract = currentInteractableObject == null || currentInteractableObject.CanInteract();
@@ -90,6 +107,8 @@ namespace FancyCrab.CoreSystems.InteractionSystem
 
         private void OnGrabPressed()
         {
+            if (inspectHandler != null && inspectHandler.IsInspecting) return;
+
             if (heldGrabbable != null)
             {
                 DropHeld();
@@ -105,8 +124,42 @@ namespace FancyCrab.CoreSystems.InteractionSystem
         private void OnThrowPressed()
         {
             if (heldGrabbable == null) return;
+            if (inspectHandler != null && inspectHandler.IsInspecting) return;
 
             ThrowHeld();
+        }
+
+        private void OnInspectPressed()
+        {
+            if (inspectHandler == null) return;
+
+            if (inspectHandler.IsInspecting)
+            {
+                ExitInspect();
+                return;
+            }
+
+            if (heldGrabbable != null) return;
+            if (currentInspectable == null) return;
+
+            bool canInspect = currentInspectableObject == null || currentInspectableObject.CanInspect();
+            if (!canInspect) return;
+
+            bool started = inspectHandler.TryBeginInspect(currentTransform, currentRigidbody, currentInspectableObject);
+            if (!started) return;
+
+            currentInspectable.OnInspect();
+            NotifyInteractionState(InteractionState.Inspecting);
+            NotifyRaycastState(RaycastState.None);
+        }
+
+        private void ExitInspect()
+        {
+            if (inspectHandler == null) return;
+
+            inspectHandler.EndInspect();
+            currentInspectable?.OnInspectEnd();
+            NotifyInteractionState(InteractionState.None);
         }
 
         private void DetectTarget()
@@ -123,6 +176,8 @@ namespace FancyCrab.CoreSystems.InteractionSystem
             currentPickupObject = null;
             currentInteractable = null;
             currentInteractableObject = null;
+            currentInspectable = null;
+            currentInspectableObject = null;
             currentRigidbody = null;
             currentTransform = null;
 
@@ -141,6 +196,7 @@ namespace FancyCrab.CoreSystems.InteractionSystem
 
                 bool hasGrabbable = hit.collider.TryGetComponent(out IGrabbable grabbable);
                 bool hasInteractable = hit.collider.TryGetComponent(out IInteractable interactable);
+                bool hasInspectable = hit.collider.TryGetComponent(out IInspectable inspectable);
 
                 if (hasGrabbable)
                 {
@@ -154,11 +210,18 @@ namespace FancyCrab.CoreSystems.InteractionSystem
                     currentInteractableObject = hit.collider.GetComponent<InteractableObject>();
                 }
 
-                RaycastState newState = (hasGrabbable, hasInteractable) switch
+                if (hasInspectable)
                 {
-                    (true, true) => RaycastState.Both,
-                    (true, false) => RaycastState.Grabbable,
-                    (false, true) => RaycastState.Interactable,
+                    currentInspectable = inspectable;
+                    currentInspectableObject = hit.collider.GetComponent<InspectableObject>();
+                }
+
+                RaycastState newState = (hasGrabbable, hasInteractable, hasInspectable) switch
+                {
+                    (true, true, _) => RaycastState.Both,
+                    (true, false, _) => RaycastState.Grabbable,
+                    (false, true, _) => RaycastState.Interactable,
+                    (false, false, true) => RaycastState.Inspectable,
                     _ => RaycastState.None
                 };
 

@@ -219,8 +219,6 @@ namespace FancyCrab.CustomPackages.FirstPersonController
 
         private void Update()
         {
-            // Camera movement and zoom moved to CameraController
-
             #region Sprint
 
             if (enableSprint)
@@ -270,8 +268,6 @@ namespace FancyCrab.CustomPackages.FirstPersonController
             #endregion
 
             CheckGround();
-
-            // Head bob handled by CameraController
         }
 
         void FixedUpdate()

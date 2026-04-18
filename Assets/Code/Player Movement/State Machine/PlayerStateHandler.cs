@@ -1,3 +1,4 @@
+using FancyCrab.CoreSystems.InteractionSystem;
 using FancyCrab.DialogueSystem;
 using NaughtyAttributes;
 using System;
@@ -15,10 +16,18 @@ namespace FancyCrab.CustomPackages.FirstPersonController
         private void OnEnable()
         {
             DialogueManager.OnDialogueState += OnDialogueState;
+            InspectHandler.OnInspectStateChanged += OnInspectStateChangedCallback;
         }
+
+        private void OnInspectStateChangedCallback(bool state)
+        {
+            OnPausedGameCallback(state);
+        }
+
         private void OnDisable()
         {
             DialogueManager.OnDialogueState -= OnDialogueState;
+            InspectHandler.OnInspectStateChanged -= OnInspectStateChangedCallback;
         }
         private void Awake()
         {
