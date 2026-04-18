@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,138 +5,94 @@ public class DragAstrolabio : MonoBehaviour
 {
     #region Variables
     private Vector3 offset;
-    private Camera camera;
+    private Camera cam;
+    private bool isDragging = false;
+    private GameObject draggedObject;
+    private Vector3 originalPosition;
+    private Transform originalParent;
+    private Collider dragCollider;
     #endregion
 
     private void Start()
     {
-        camera = Camera.main;
-    }
-
-    private void OnMouseDown()
-    {
-        Debug.Log("MouseDown");
-        offset = transform.position - MouseWorldPosition();
-        Debug.Log("transform.position: " + transform.position);
-    }
-
-    private void OnMouseDrag()
-    {
-        transform.position = MouseWorldPosition() + offset;
-        Debug.Log("transform.position: " + transform.position);
-    }
-
-    protected virtual Vector3 MouseWorldPosition()
-    {
-        var mouseScreenPos = Input.mousePosition;
-        mouseScreenPos.x = camera.WorldToScreenPoint(transform.position).x;
-        return camera.ScreenToWorldPoint(mouseScreenPos);
-    }
-
-   /* #region Input Actions
-    [SerializeField]
-    private InputActionAsset inputActions;
-
-    public InputActionAsset actions
-    {
-        get => inputActions;
-        set => inputActions = value;
-    }
-
-    protected InputAction leftClickInputAction { get; set; }
-
-    protected InputAction mouseLookInputAction { get; set; }
-
-    #endregion
-
-    #region Variables
-
-    private bool moveAllowed;
-    private Vector3 curScreenPos;
-
-    private Camera camera;
-
-    private Vector3 WorldPos
-    {
-        get
-        {
-            float z = camera.WorldToScreenPoint(transform.position).z;
-            return camera.ScreenToWorldPoint(curScreenPos + new Vector3(0, 0, z));
-        }
-    }
-
-    #endregion
-
-    private void Awake()
-    {
-        InitializeInputSystem();
-    }
-
-    private void Start()
-    {
-        camera = Camera.main;
-    }
-
-    private void InitializeInputSystem()
-    {
-        leftClickInputAction = actions.FindAction("Left Click");
-        if (leftClickInputAction != null)
-        {
-            leftClickInputAction.started += OnLeftClickPressed;
-            leftClickInputAction.performed += OnLeftClickPressed;
-            leftClickInputAction.canceled += OnLeftClickPressed;
-        }
-
-        mouseLookInputAction = actions.FindAction("Mouse Look");
-
-        actions.Enable();
-    }
-
-    protected virtual void OnLeftClickPressed(InputAction.CallbackContext context)
-    {
-        Debug.Log("MouseDown");
-        if (context.started || context.performed)
-        {
-            moveAllowed = true;
-            offset = transform.position - GetMouseLookInput();
-            Debug.Log("offset: " + offset);
-            //Cursor.lockState = CursorLockMode.Locked;
-        }
-        else if (context.canceled)
-        {
-            moveAllowed = false;
-            //Cursor.lockState = CursorLockMode.None;
-        }
-    }
-
-    protected virtual Vector3 GetMouseLookInput()
-    {
-        var mouseScreenPos = Input.mousePosition;
-        Debug.Log("mouseScreenPos: " + mouseScreenPos);
-        mouseScreenPos.z = camera.WorldToScreenPoint(transform.position).z;
-        return camera.ScreenToWorldPoint(mouseScreenPos);
+        cam = Camera.main;
+        dragCollider = GetComponent<Collider>();
     }
 
     private void Update()
     {
-        if (!moveAllowed) return;
+        Vector2 mousePos = Mouse.current.position.ReadValue();
+        Ray ray = cam.ScreenPointToRay(mousePos);
 
-        transform.position = WorldPos + offset;
+        if (Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            if (Physics.Raycast(ray, out RaycastHit hit))
+            {
+                if (hit.collider.gameObject.CompareTag("Draggable"))
+                {
+                    draggedObject = hit.collider.gameObject;
+                    originalPosition = draggedObject.transform.position;
+                    originalParent = draggedObject.transform.parent;
+                    isDragging = true;
+                    offset = draggedObject.transform.position - MouseWorldPosition(mousePos, draggedObject);
+                }
+            }
+        }
+
+        if (Mouse.current.leftButton.wasReleasedThisFrame && isDragging && draggedObject != null)
+        {
+            Ray releaseRay = cam.ScreenPointToRay(mousePos);
+            bool snapped = false;
+
+            if (Physics.Raycast(releaseRay, out RaycastHit releaseHit))
+            {
+                if (releaseHit.collider.gameObject.CompareTag("SnapZone"))
+                {
+                    SnapZone snapZone = releaseHit.collider.gameObject.GetComponent<SnapZone>();
+                    DraggableID draggableID = draggedObject.GetComponent<DraggableID>();
+
+                    if (snapZone != null && draggableID != null && snapZone.acceptedID == draggableID.id)
+                    {
+                        // Correct snap zone
+                        draggedObject.transform.SetParent(releaseHit.collider.gameObject.transform);
+                        draggedObject.transform.position = releaseHit.collider.gameObject.transform.position;
+                        Debug.Log(draggedObject.name + " snapped correctly to " + releaseHit.collider.gameObject.name);
+                        snapped = true;
+
+                        dragCollider.enabled = false;
+                    }
+                }
+            }
+
+            if (!snapped)
+            {
+                ReturnToOriginal();
+            }
+
+            isDragging = false;
+            draggedObject = null;
+        }
+
+        if (isDragging && draggedObject != null)
+        {
+            draggedObject.transform.position = MouseWorldPosition(mousePos, draggedObject) + offset;
+        }
     }
 
-    private IEnumerator Drag()
+    private void ReturnToOriginal()
     {
-        moveAllowed = true;
-        Vector3 offset = transform.position - WorldPos;
-        // grab
-        GetComponent<Rigidbody>().useGravity = false;
-        while (moveAllowed)
-        {
-            // dragging
-            transform.position = WorldPos + offset;
-            yield return null;
-        }
-        // drop
-        GetComponent<Rigidbody>().useGravity = true;
-    }*/
+        Debug.Log(draggedObject.name + " returned to original position");
+        draggedObject.transform.position = originalPosition;
+        draggedObject.transform.SetParent(originalParent);
+    }
+
+    private Vector3 MouseWorldPosition(Vector2 mouseScreenPos, GameObject target)
+    {
+        Vector3 screenPos = new(
+            mouseScreenPos.x,
+            mouseScreenPos.y,
+            cam.WorldToScreenPoint(target.transform.position).z
+        );
+        return cam.ScreenToWorldPoint(screenPos);
+    }
 }
