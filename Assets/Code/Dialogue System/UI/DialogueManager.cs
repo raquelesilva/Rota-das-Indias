@@ -22,6 +22,7 @@ namespace FancyCrab.DialogueSystem
         private Coroutine autoAdvanceCoroutine;
 
         // Eventos públicos — a UI subscreve estes
+        public static event Action<bool> OnDialogueState;
         public event Action<DialogueContainer> OnDialogueStarted;
         public event Action<DialogueContainer> OnDialogueEnded;
         public event Action<DialogueNode> OnNodeChanged;
@@ -72,6 +73,7 @@ namespace FancyCrab.DialogueSystem
             }
 
             OnDialogueStarted?.Invoke(dialogue);
+            OnDialogueState?.Invoke(true);
             DisplayNode(startNode);
         }
 
@@ -206,6 +208,7 @@ namespace FancyCrab.DialogueSystem
             isAdvancing = false;
 
             OnDialogueEnded?.Invoke(endedDialogue);
+            OnDialogueState?.Invoke(false);
         }
 
         private void InvokeLegacyTrigger(string triggerEvent)

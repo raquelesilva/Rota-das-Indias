@@ -14,56 +14,40 @@ namespace FancyCrab.CustomPackages.FirstPersonController
 
         private void OnEnable()
         {
-            //PauseHandler.OnPausedGame += OnPausedGameCallback;
-            if (DialogueManager.Instance == null)
-                return;
-
-            DialogueManager.Instance.OnDialogueStarted += HandleDialogueStarted;
-            DialogueManager.Instance.OnDialogueEnded += HandleDialogueEnded;
+            DialogueManager.OnDialogueState += OnDialogueState;
         }
-
-        private void HandleDialogueEnded(DialogueContainer container)
-        {
-            SetPlayerState(PlayerStates.Playing);
-        }
-
-        private void HandleDialogueStarted(DialogueContainer container)
-        {
-            SetPlayerState(PlayerStates.Paused);
-        }
-
         private void OnDisable()
         {
-            //PauseHandler.OnPausedGame -= OnPausedGameCallback;
-
-            DialogueManager.Instance.OnDialogueStarted -= HandleDialogueStarted;
-            DialogueManager.Instance.OnDialogueEnded -= HandleDialogueEnded;
-        }
-        private void OnPausedGameCallback(bool isPaused)
-        {
-            SetPlayerState(isPaused ? PlayerStates.Paused : PlayerStates.Playing);
+            DialogueManager.OnDialogueState -= OnDialogueState;
         }
         private void Awake()
         {
-            if(Instance != null)
+            if (Instance != null)
             {
                 Destroy(this);
                 return;
             }
             Instance = this;
         }
-
         private void Start()
         {
             RaisePlayerStateChanged();
         }
 
+        private void OnDialogueState(bool state)
+        {
+            OnPausedGameCallback(state);
+        }
+
+        private void OnPausedGameCallback(bool isPaused)
+        {
+            SetPlayerState(isPaused ? PlayerStates.Paused : PlayerStates.Playing);
+        }
         public void SetPlayerState(PlayerStates newState)
         {
             currentPlayerState = newState;
             RaisePlayerStateChanged();
         }
-
         private void RaisePlayerStateChanged()
         {
             OnPlayerStateChanged?.Invoke(currentPlayerState);
