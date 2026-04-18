@@ -90,8 +90,7 @@ namespace FancyCrab.DialogueSystem
             actorNameText.text = actorName;
             pendingFullText = text;
 
-            if (typingCoroutine != null)
-                StopCoroutine(typingCoroutine);
+            if (typingCoroutine != null) StopCoroutine(typingCoroutine);
 
             SetContinueIndicator(false);
             typingCoroutine = StartCoroutine(TypeTextRoutine(text));
@@ -179,7 +178,9 @@ namespace FancyCrab.DialogueSystem
         private void ClearChoices()
         {
             foreach (Transform child in choicesContainer)
+            {
                 Destroy(child.gameObject);
+            }
         }
 
         private IEnumerator TypeTextRoutine(string text)
@@ -191,7 +192,9 @@ namespace FancyCrab.DialogueSystem
                 dialogueText.text += letter;
 
                 if (typingSound != null && typingAudioSource != null)
+                {
                     typingAudioSource.PlayOneShot(typingSound);
+                }
 
                 yield return new WaitForSeconds(typingSpeed);
             }

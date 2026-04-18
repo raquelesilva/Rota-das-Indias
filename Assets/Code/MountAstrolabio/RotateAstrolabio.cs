@@ -1,72 +1,78 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class RotateAstrolabio : MonoBehaviour
+namespace AstrolabeSystem
 {
-    #region Variables
-    [SerializeField] private float speed;
-    [SerializeField] private bool inverted;
-    [SerializeField] private float snapAngle = 45f;
-
-    private bool isDragging = false;
-    private float currentAngle = 0f;
-    #endregion
-
-    private void Start()
+    public class RotateAstrolabio : MonoBehaviour
     {
-        // Initialize currentAngle from the object's existing Y rotation
-        currentAngle = transform.eulerAngles.y;
-    }
+        #region Variables
+        [SerializeField] private float speed = 100f;
+        [SerializeField] private bool inverted;
+        [SerializeField] private float snapAngle = 45f;
 
-    private void Update()
-    {
-        Vector2 mousePos = Mouse.current.position.ReadValue();
-        Ray ray = Camera.main.ScreenPointToRay(mousePos);
+        private Camera _cam;
+        private bool _isDragging;
+        private float _currentAngle;
+        #endregion
 
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+        private void Start()
         {
-            if (Physics.Raycast(ray, out RaycastHit hit))
-            {
-                if (hit.collider.gameObject == gameObject)
-                {
-                    isDragging = true;
-                    Cursor.lockState = CursorLockMode.Locked;
-                }
-            }
+            _cam = Camera.main;
+            _currentAngle = transform.eulerAngles.y;
         }
 
-        if (Mouse.current.leftButton.wasReleasedThisFrame)
+        private void Update()
         {
-            if (isDragging)
-            {
-                // Snap to nearest 45 degree increment on release
-                currentAngle = Mathf.Round(currentAngle / snapAngle) * snapAngle;
+            Vector2 mousePos = Mouse.current.position.ReadValue();
 
-                // Preserve X and Z rotation, only change Y
-                transform.rotation = Quaternion.Euler(
-                    transform.eulerAngles.x,
-                    currentAngle,
-                    transform.eulerAngles.z
-                );
-            }
+            if (Mouse.current.leftButton.wasPressedThisFrame)
+                TryBeginRotate(mousePos);
 
-            isDragging = false;
+            if (Mouse.current.leftButton.wasReleasedThisFrame && _isDragging)
+                EndRotate();
+
+            if (_isDragging)
+                ApplyRotation();
+        }
+
+        private void TryBeginRotate(Vector2 mousePos)
+        {
+            Ray ray = _cam.ScreenPointToRay(mousePos);
+
+            if (!Physics.Raycast(ray, out RaycastHit hit))
+                return;
+
+            if (hit.collider.gameObject != gameObject)
+                return;
+
+            _isDragging = true;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
+        private void EndRotate()
+        {
+            _currentAngle = Mathf.Round(_currentAngle / snapAngle) * snapAngle;
+
+            transform.rotation = Quaternion.Euler(
+                transform.eulerAngles.x,
+                _currentAngle,
+                transform.eulerAngles.z
+            );
+
+            _isDragging = false;
             Cursor.lockState = CursorLockMode.None;
         }
 
-        if (isDragging)
+        private void ApplyRotation()
         {
             float mouseX = Mouse.current.delta.x.ReadValue();
             float rotation = mouseX * speed * Time.deltaTime;
-            currentAngle += inverted ? -rotation : rotation;
+            _currentAngle += inverted ? -rotation : rotation;
+            _currentAngle = (_currentAngle % 360f + 360f) % 360f;
 
-            // Keep angle between 0 and 360
-            currentAngle = (currentAngle % 360f + 360f) % 360f;
-
-            // Preserve X and Z rotation, only change Y
             transform.rotation = Quaternion.Euler(
                 transform.eulerAngles.x,
-                currentAngle,
+                _currentAngle,
                 transform.eulerAngles.z
             );
         }
