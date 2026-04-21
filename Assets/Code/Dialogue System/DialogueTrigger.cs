@@ -80,6 +80,17 @@ namespace FancyCrab.DialogueSystem
             Debug.LogWarning($"[FancyCrabStudios] No custom trigger found with ID: {triggerID}");
         }
 
+        public void SetDialogue(DialogueContainer container)
+        {
+            dialogue = container;
+        }
+
+        public void SetDialogueAndTrigger(DialogueContainer container)
+        {
+            SetDialogue(container);
+            TriggerDialogue();
+        }
+
         private void OnDialogueComplete()
         {
             onDialogueEnd?.Invoke();

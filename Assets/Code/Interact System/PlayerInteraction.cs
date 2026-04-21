@@ -1,5 +1,8 @@
+using FancyCrab.CustomPackages.FirstPersonController;
 using System;
+using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.InputSystem.LowLevel;
 
 namespace FancyCrab.CoreSystems.InteractionSystem
 {
@@ -49,6 +52,7 @@ namespace FancyCrab.CoreSystems.InteractionSystem
         private float heldOriginalAngularDrag;
 
         private bool mouseIsDown;
+        private bool canDetect = true;
 
         private RaycastState lastRaycastState = RaycastState.None;
         private InteractionState lastInteractionState = InteractionState.None;
@@ -61,6 +65,8 @@ namespace FancyCrab.CoreSystems.InteractionSystem
 
         private void OnEnable()
         {
+            PlayerStateHandler.OnPlayerStateChanged += OnPlayerChangedCallback;
+
             if (inputReader == null) return;
 
             inputReader.Interact += OnInteractPressed;
@@ -70,8 +76,20 @@ namespace FancyCrab.CoreSystems.InteractionSystem
             inputReader.MouseIsDown += OnMouseIsDownCallback;
         }
 
+        private void OnPlayerChangedCallback(PlayerStates states)
+        {
+            canDetect = states.Equals(PlayerStates.Playing);
+
+            if (!canDetect)
+            {
+                OnDetectInterface?.Invoke(RaycastState.None);
+            }
+        }
+
         private void OnDisable()
         {
+            PlayerStateHandler.OnPlayerStateChanged -= OnPlayerChangedCallback;
+
             if (inputReader == null) return;
 
             inputReader.Interact -= OnInteractPressed;
@@ -83,6 +101,8 @@ namespace FancyCrab.CoreSystems.InteractionSystem
 
         private void Update()
         {
+            if (!canDetect) return;
+
             if (inspectHandler != null && inspectHandler.IsInspecting && mouseIsDown)
             {
                 Vector2 lookDelta = inputReader != null ? inputReader.LookDelta : Vector2.zero;
