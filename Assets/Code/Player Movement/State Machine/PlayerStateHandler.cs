@@ -35,7 +35,9 @@ namespace FancyCrab.CustomPackages.FirstPersonController
         private void OnDisable()
         {
             //PauseHandler.OnPausedGame -= OnPausedGameCallback;
-
+            //No caso de não ser dialogo adicionei esta condição
+            if (DialogueManager.Instance == null)
+                return;
             DialogueManager.Instance.OnDialogueStarted -= HandleDialogueStarted;
             DialogueManager.Instance.OnDialogueEnded -= HandleDialogueEnded;
         }
@@ -45,7 +47,7 @@ namespace FancyCrab.CustomPackages.FirstPersonController
         }
         private void Awake()
         {
-            if(Instance != null)
+            if (Instance != null)
             {
                 Destroy(this);
                 return;
@@ -67,6 +69,16 @@ namespace FancyCrab.CustomPackages.FirstPersonController
         private void RaisePlayerStateChanged()
         {
             OnPlayerStateChanged?.Invoke(currentPlayerState);
+        }
+        //Adicionei esta parte porque não estava a conseguir funcionar com o codigo, depois explicam-me se há maneira melhor de fazer isto
+        public void SetStateToPaused()
+        {
+            SetPlayerState(PlayerStates.Paused);
+        }
+
+        public void SetStateToPlaying()
+        {
+            SetPlayerState(PlayerStates.Playing);
         }
     }
 }
