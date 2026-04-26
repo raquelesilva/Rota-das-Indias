@@ -1,3 +1,4 @@
+using FancyCrab.CoreSystems.InteractionSystem;
 using FancyCrab.DialogueSystem;
 using NaughtyAttributes;
 using System;
@@ -14,22 +15,13 @@ namespace FancyCrab.CustomPackages.FirstPersonController
 
         private void OnEnable()
         {
-            //PauseHandler.OnPausedGame += OnPausedGameCallback;
-            if (DialogueManager.Instance == null)
-                return;
-
-            DialogueManager.Instance.OnDialogueStarted += HandleDialogueStarted;
-            DialogueManager.Instance.OnDialogueEnded += HandleDialogueEnded;
+            DialogueManager.OnDialogueState += OnDialogueState;
+            InspectHandler.OnInspectStateChanged += OnInspectStateChangedCallback;
         }
 
-        private void HandleDialogueEnded(DialogueContainer container)
+        private void OnInspectStateChangedCallback(bool state)
         {
-            SetPlayerState(PlayerStates.Playing);
-        }
-
-        private void HandleDialogueStarted(DialogueContainer container)
-        {
-            SetPlayerState(PlayerStates.Paused);
+            OnPausedGameCallback(state);
         }
 
         private void OnDisable()
@@ -54,18 +46,25 @@ namespace FancyCrab.CustomPackages.FirstPersonController
             }
             Instance = this;
         }
-
         private void Start()
         {
             RaisePlayerStateChanged();
         }
 
+        private void OnDialogueState(bool state)
+        {
+            OnPausedGameCallback(state);
+        }
+
+        private void OnPausedGameCallback(bool isPaused)
+        {
+            SetPlayerState(isPaused ? PlayerStates.Paused : PlayerStates.Playing);
+        }
         public void SetPlayerState(PlayerStates newState)
         {
             currentPlayerState = newState;
             RaisePlayerStateChanged();
         }
-
         private void RaisePlayerStateChanged()
         {
             OnPlayerStateChanged?.Invoke(currentPlayerState);

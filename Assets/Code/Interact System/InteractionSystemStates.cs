@@ -5,12 +5,15 @@ namespace FancyCrab.CoreSystems.InteractionSystem
         None,
         Grabbable,
         Interactable,
+        Inspectable,
         Both
     }
+
     public enum InteractionState
     {
         None,
         Holding,
-        Interacting
+        Interacting,
+        Inspecting
     }
 }

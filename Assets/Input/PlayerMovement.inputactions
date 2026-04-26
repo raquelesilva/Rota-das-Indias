@@ -52,6 +52,15 @@
                     "initialStateCheck": false
                 },
                 {
+                    "name": "Inspect",
+                    "type": "Button",
+                    "id": "8e10b511-666d-425a-a716-eaafe4c8fa2f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "Grab",
                     "type": "Button",
                     "id": "c210ec9d-1077-4b52-9add-ca30e23eb783",
@@ -79,15 +88,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "TESTE",
-                    "type": "Button",
-                    "id": "b883fafb-3026-4f16-b882-cd16a184fec6",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Movement",
                     "type": "Value",
                     "id": "d9e81650-5199-4930-8811-333895f505a2",
@@ -95,6 +95,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "InspectLook",
+                    "type": "Value",
+                    "id": "9b2b5838-bd0d-445b-95ec-9d64c723fd3b",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "MouseDown",
+                    "type": "Button",
+                    "id": "e5330ba4-80e6-47d7-aea8-a0f77fdec6c0",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -161,6 +179,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4f191901-5e08-4f54-bd37-e6de9a513cab",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Inspect",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b8918566-c2a6-4299-9fbb-337a32ffa4f3",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Inspect",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -265,17 +305,6 @@
                 },
                 {
                     "name": "",
-                    "id": "60aebb5d-2d0c-407d-b4ec-240784f0a919",
-                    "path": "<Keyboard>/t",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "TESTE",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "0cf824d6-d060-461c-a414-f6ddcda35991",
                     "path": "<Gamepad>/leftStick",
                     "interactions": "",
@@ -339,6 +368,39 @@
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "51fac498-fe6d-47f3-82d7-76f1b41dca20",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "InspectLook",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "77c8d298-f292-4a26-8d95-3ad2be3b72ae",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "InspectLook",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "24873874-f98d-4fe2-a7f5-a459539d953e",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MouseDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },

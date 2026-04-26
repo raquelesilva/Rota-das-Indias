@@ -4,6 +4,15 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using static PlayerInput;
 
+// SETUP NECESSÁRIO NO INPUT ACTIONS ASSET:
+// 1. No Action Map "Movement", adiciona:
+//    - Action "Inspect" (Action Type: Button)
+//      Keyboard binding: ex. F  |  Gamepad binding: ex. North Button (Y/Triangle)
+//    - Action "InspectLook" (Action Type: Value, Control Type: Vector2)
+//      Keyboard+Mouse binding: Delta [Mouse]  |  Gamepad binding: Right Stick [Gamepad]
+// 2. Garante que ambas as actions estão no Control Scheme correto (Keyboard&Mouse e Gamepad)
+// 3. No generated C# (IMovementActions), os métodos OnInspect e OnInspectLook serão gerados automaticamente
+
 [CreateAssetMenu(fileName = "InputReader", menuName = "Inputs/InputReader")]
 public class InputReader : ScriptableObject, IMovementActions, IMenusActions
 {
@@ -17,9 +26,14 @@ public class InputReader : ScriptableObject, IMovementActions, IMenusActions
     public event Action Throw;
     public event Action Interact;
     public event Action Grab;
+    public event Action Inspect;
     public event Action SecondInteract;
+    public event Action<bool> MouseIsDown;
 
     public event Action PauseClick;
+
+    private Vector2 _inspectLookDelta;
+    public Vector2 LookDelta => _inspectLookDelta;
 
     private PlayerInput controls;
 
@@ -92,6 +106,26 @@ public class InputReader : ScriptableObject, IMovementActions, IMenusActions
         CameraZoom?.Invoke(context.ReadValueAsButton());
     }
 
+    void IMovementActions.OnInspect(InputAction.CallbackContext context)
+    {
+        if (context.performed) Inspect?.Invoke();
+    }
+
+    void IMovementActions.OnInspectLook(InputAction.CallbackContext context)
+    {
+        _inspectLookDelta = context.ReadValue<Vector2>();
+    }
+
+    public void OnPause(InputAction.CallbackContext context)
+    {
+        if (context.performed) PauseClick?.Invoke();
+    }
+
+    public void OnMouseDown(InputAction.CallbackContext context)
+    {
+        MouseIsDown?.Invoke(context.performed);
+    }
+
     private string GamepadSchemeName => controls.asset.controlSchemes
         .FirstOrDefault(s => s.name.Contains("Gamepad")).name ?? string.Empty;
 
@@ -117,12 +151,10 @@ public class InputReader : ScriptableObject, IMovementActions, IMenusActions
         return action.GetBindingDisplayString(InputBinding.MaskByGroup(scheme));
     }
 
-    public void OnPause(InputAction.CallbackContext context)
-    {
-        if (context.performed) PauseClick?.Invoke();
-    }
+   
 
     public string InteractKey => GetBindingDisplayString(controls?.Movement.Interact);
     public string GrabKey => GetBindingDisplayString(controls?.Movement.Grab);
     public string ThrowKey => GetBindingDisplayString(controls?.Movement.Throw);
+    public string InspectKey => GetBindingDisplayString(controls?.Movement.Inspect);
 }
