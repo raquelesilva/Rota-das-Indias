@@ -26,16 +26,8 @@ namespace FancyCrab.CustomPackages.FirstPersonController
 
         private void OnDisable()
         {
-            //PauseHandler.OnPausedGame -= OnPausedGameCallback;
-            //No caso de não ser dialogo adicionei esta condição
-            if (DialogueManager.Instance == null)
-                return;
-            DialogueManager.Instance.OnDialogueStarted -= HandleDialogueStarted;
-            DialogueManager.Instance.OnDialogueEnded -= HandleDialogueEnded;
-        }
-        private void OnPausedGameCallback(bool isPaused)
-        {
-            SetPlayerState(isPaused ? PlayerStates.Paused : PlayerStates.Playing);
+            DialogueManager.OnDialogueState -= OnDialogueState;
+            InspectHandler.OnInspectStateChanged -= OnInspectStateChangedCallback;
         }
         private void Awake()
         {
