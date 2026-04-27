@@ -36,6 +36,21 @@ namespace CoreSystems.Managers
             window.transform.localScale = new Vector3(0, 0, 0);
         }
 
+		public void SetCorrectMessage(string message)
+		{
+			SetMessage(message, colorRight, "win");
+		}
+
+        public void SetWrongMessage(string message)
+        {
+            SetMessage(message, colorWrong, "lose");
+        }
+
+        public void SetInfoMessage(string message)
+        {
+            SetMessage(message, Color.white, "info");
+        }
+
         /// <summary>
         /// Define a mensagem, a cor da mensagem e abre a janela da notificação
         /// </summary>

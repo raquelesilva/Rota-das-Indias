@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8102273840530893784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: 02a3f035-d4e8-4e93-8e56-dd050160c69c
+  position: {x: 624, y: 296}
+  actor: {fileID: 11400000, guid: bc41ee0d904b9a74e9665101285eb970, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: "Com a conquista de Ceuta, Portugal deu o seu primeiro passo para
+    uma nova era. O que antes era uma guerra por territ\xF3rio transformou-se no
+    in\xEDcio de um tempo de explora\xE7\xE3o e descoberta."
+  nextNode: {fileID: 0}
+--- !u!114 &-5555954525835652336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: e824567c-e69e-4605-82f0-b5cb29219da1
+  position: {x: 962, y: 296}
+  actor: {fileID: 11400000, guid: bc41ee0d904b9a74e9665101285eb970, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: "A entrada do Mediterr\xE2neo erguia-se agora sob as bandeiras portuguesas,
+    e o olhar do reino voltava-se para o vasto oceano em dire\xE7\xE3o \xE0 promessa
+    do desconhecido."
+  nextNode: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf1e22609fc0d1e41839aa88ab1d1cb7, type: 3}
+  m_Name: "Di\xE1logo Inicial"
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.DialogueContainer
+  dialogueID: 
+  dialogueTitle: 
+  description: 
+  nodes:
+  - {fileID: 6018006266405178142}
+  - {fileID: -8102273840530893784}
+  - {fileID: 6071282341498124976}
+  - {fileID: -5555954525835652336}
+  startNode: {fileID: 0}
+  backgroundMusic: {fileID: 0}
+  backgroundMusicVolume: 1
+  onDialogueStartEvent: 
+  onDialogueEndEvent: 
+--- !u!114 &6018006266405178142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3bad5b5386f17a42868ca511db94946, type: 3}
+  m_Name: 'Index [0]'
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
+  nodeGUID: 28b80197-57f0-4971-bd34-8c7aab283d89
+  position: {x: 283, y: 296}
+  actor: {fileID: 0}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  indexValue: 0
+  nextNode: {fileID: 0}
+--- !u!114 &6071282341498124976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: 04695622-3b79-487c-a8bc-2287642a5c7f
+  position: {x: 1306, y: 296}
+  actor: {fileID: 11400000, guid: bc41ee0d904b9a74e9665101285eb970, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: enableAzuleijo
+  onNodeExitEvent: 
+  dialogueText: '*Sons de azuleijo a partir no fundo*'
+  nextNode: {fileID: 0}
