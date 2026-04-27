@@ -30,23 +30,24 @@ public class PicturePuzzle : MonoBehaviour
 
     private void Update()
     {
-        // 1. Get Mouse Position using New Input System
+
         Vector2 screenPosition = Mouse.current.position.ReadValue();
 
-        // 2. Convert to World Position
-        // Note: For 2D, we provide a Z distance (e.g., 10) so it's in front of the camera
+
         Vector3 worldPos = mainCamera.ScreenToWorldPoint(new Vector3(screenPosition.x, screenPosition.y, this.transform.position.z - mainCamera.transform.position.z));
         Vector2 mousePosition = new Vector2(worldPos.x, worldPos.y);
 
-        // 3. Handle Mouse Click (Down)
+
         if (Mouse.current.leftButton.wasPressedThisFrame && currentPiece == null)
         {
+
             HandleSelection(mousePosition);
         }
 
-        // 4. Handle Mouse Release (Up)
+
         if ((Mouse.current.leftButton.wasReleasedThisFrame && currentPiece != null) || goingback == true)
         {
+
             if (currentPiece.minihandler == Piece.Minigame.map)
             {
                 goingback = true;
@@ -55,7 +56,7 @@ public class PicturePuzzle : MonoBehaviour
 
                 if (distance < 0.5f)
                 {
-                    Debug.Log("working");
+
                     currentPiece = null;
                     goingback = false;
                 }
@@ -63,7 +64,9 @@ public class PicturePuzzle : MonoBehaviour
             }
             else
             {
+                Debug.Log("working");
                 currentPiece = null;
+
             }
 
         }
@@ -90,7 +93,7 @@ public class PicturePuzzle : MonoBehaviour
 
     private void HandleSelection(Vector2 mousePosition)
     {
-        float smallestDistance = 16f; // Adjusted from 15f for world units
+        float smallestDistance = 2f; // Adjusted from 15f for world units
         Piece closestPiece = null;
 
         foreach (var piece in pieces)

@@ -27,7 +27,7 @@ public class Piece : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (spriteRenderer == null) Debug.LogWarning("Sprite Render not working!");
-        spriteRenderer.sortingOrder = 2;
+        spriteRenderer.sortingOrder = 3;
         pieceObject = this.gameObject;
         correctPosition = pieceObject.transform.position;
         correctRotation = pieceObject.transform.rotation;
@@ -39,10 +39,10 @@ public class Piece : MonoBehaviour
     public void RandomizePosition()
     {
         if (minihandler == Minigame.puzzle)
-            pieceObject.transform.position = correctPosition + new Vector3(Random.Range(-5f, 5f), Random.Range(-5f, 5f), 0);
+            pieceObject.transform.position = parentpos + new Vector3(Random.Range(-6f, 6f), Random.Range(-6f, 6f), 0);
         if (minihandler == Minigame.map)
         {
-            pieceObject.transform.position = parentpos + new Vector3(Random.Range(-3f, 3f), Random.Range(-8f, 8f), 0);
+            pieceObject.transform.position = parentpos + new Vector3(Random.Range(-3f, 1f), Random.Range(-8f, 8f), 0);
             startpos = pieceObject.transform.position;
         }
 
@@ -62,7 +62,7 @@ public class Piece : MonoBehaviour
     public void SetCorrectPositions()
     {
 
-        if (spriteRenderer != null) spriteRenderer.sortingOrder = 1;
+        if (spriteRenderer != null) spriteRenderer.sortingOrder = 2;
         transform.position = correctPosition;
         transform.rotation = correctRotation;
         isLockedInPlace = true; // Lock it so it stops checking distance
