@@ -13,6 +13,7 @@ public class PicturePuzzle : MonoBehaviour
     private Piece currentPiece;
     private Camera mainCamera;
     private bool goingback = false;
+    private Canvas children;
 
     private void Awake()
     {
@@ -26,6 +27,7 @@ public class PicturePuzzle : MonoBehaviour
             piece.gameObject.SetActive(true);
         }
         completedPicture.SetActive(false);
+
     }
 
     private void Update()
@@ -42,6 +44,16 @@ public class PicturePuzzle : MonoBehaviour
         {
 
             HandleSelection(mousePosition);
+            if (currentPiece != null)
+            {
+                if (currentPiece.minihandler == Piece.Minigame.diferences)
+                {
+                    Debug.Log(currentPiece);
+                    children = currentPiece.GetComponentInChildren<Canvas>();
+                    children.sortingOrder = 4;
+                }
+
+            }
         }
 
 
@@ -62,21 +74,38 @@ public class PicturePuzzle : MonoBehaviour
                 }
 
             }
+            else if (currentPiece.minihandler == Piece.Minigame.diferences)
+            {
+                float distance = currentPiece.transform.position.x - currentPiece.correctPosition.x;
+                children.sortingOrder = 3;
+                if (Mathf.Abs(distance) < 5f)
+                {
+                    Debug.Log(distance);
+                    currentPiece.SetCorrectPositions();
+                    currentPiece = null;
+                    CheckForWin();
+                }
+                else
+                {
+                    currentPiece = null;
+                }
+
+            }
             else
             {
-                Debug.Log("working");
+
                 currentPiece = null;
 
             }
 
         }
 
-        // 5. Dragging Logic
+
         if (currentPiece != null && goingback == false)
         {
             currentPiece.transform.position = new Vector3(mousePosition.x, mousePosition.y, 1);
 
-            if (currentPiece.IsInCorrectPosition())
+            if (currentPiece.IsInCorrectPosition() && currentPiece.minihandler != Piece.Minigame.diferences)
             {
                 currentPiece.SetCorrectPositions();
                 currentPiece = null;
@@ -84,7 +113,7 @@ public class PicturePuzzle : MonoBehaviour
             }
         }
 
-        // 6. Rotation (Optional: Map this to a specific key like 'R')
+
         if (Keyboard.current.rKey.wasPressedThisFrame)
         {
             RotatePiece();
@@ -93,7 +122,7 @@ public class PicturePuzzle : MonoBehaviour
 
     private void HandleSelection(Vector2 mousePosition)
     {
-        float smallestDistance = 2f; // Adjusted from 15f for world units
+        float smallestDistance = 2f;
         Piece closestPiece = null;
 
         foreach (var piece in pieces)
@@ -129,10 +158,6 @@ public class PicturePuzzle : MonoBehaviour
         if (allPiecesCorrect)
         {
             completedPicture.SetActive(true);
-            foreach (var piece in pieces)
-            {
-                piece.gameObject.SetActive(false);
-            }
             checkForWin?.Invoke();
         }
     }

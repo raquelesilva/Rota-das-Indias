@@ -6,12 +6,12 @@ public class Piece : MonoBehaviour
     {
         puzzle,
         map,
-        anagram
+        diferences
     };
     public Minigame minihandler;
     GameObject pieceObject;
 
-    private Vector3 correctPosition;
+    [HideInInspector] public Vector3 correctPosition;
     private Quaternion correctRotation;
 
     private bool isLockedInPlace = false;
@@ -38,7 +38,7 @@ public class Piece : MonoBehaviour
 
     public void RandomizePosition()
     {
-        if (minihandler == Minigame.puzzle)
+        if (minihandler == Minigame.puzzle || minihandler == Minigame.diferences)
             pieceObject.transform.position = parentpos + new Vector3(Random.Range(-6f, 6f), Random.Range(-6f, 6f), 0);
         if (minihandler == Minigame.map)
         {

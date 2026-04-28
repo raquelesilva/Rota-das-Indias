@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class NewMonoBehaviourScript1 : MonoBehaviour
 {
@@ -17,6 +18,12 @@ public class NewMonoBehaviourScript1 : MonoBehaviour
     }
     public void stoppuzzle()
     {
+        StartCoroutine(stopping(3f));
+
+    }
+    IEnumerator stopping(float delay)
+    {
+        yield return new WaitForSeconds(delay);
         player.SetActive(true);
         puzzle.SetActive(false);
     }
