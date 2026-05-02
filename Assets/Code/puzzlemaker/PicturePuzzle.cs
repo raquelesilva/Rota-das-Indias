@@ -103,7 +103,7 @@ public class PicturePuzzle : MonoBehaviour
 
         if (currentPiece != null && goingback == false)
         {
-            currentPiece.transform.position = new Vector3(mousePosition.x, mousePosition.y, 1);
+            currentPiece.transform.position = new Vector3(mousePosition.x, mousePosition.y, 0);
 
             if (currentPiece.IsInCorrectPosition() && currentPiece.minihandler != Piece.Minigame.diferences)
             {
@@ -122,7 +122,7 @@ public class PicturePuzzle : MonoBehaviour
 
     private void HandleSelection(Vector2 mousePosition)
     {
-        float smallestDistance = 2f;
+        float smallestDistance = 3f;
         Piece closestPiece = null;
 
         foreach (var piece in pieces)
