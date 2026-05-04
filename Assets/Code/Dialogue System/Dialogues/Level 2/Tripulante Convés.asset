@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8818920912560665476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: f1fa7431-d60c-4d5c-b47f-9de456855c5d
+  position: {x: 773, y: 164}
+  actor: {fileID: 0}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: 
+  nextNode: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf1e22609fc0d1e41839aa88ab1d1cb7, type: 3}
+  m_Name: "Tripulante Conv\xE9s"
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.DialogueContainer
+  dialogueID: 
+  dialogueTitle: 
+  description: 
+  nodes:
+  - {fileID: 1758526182027981039}
+  - {fileID: -8818920912560665476}
+  startNode: {fileID: 0}
+  backgroundMusic: {fileID: 0}
+  backgroundMusicVolume: 1
+  onDialogueStartEvent: 
+  onDialogueEndEvent: 
+--- !u!114 &1758526182027981039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3bad5b5386f17a42868ca511db94946, type: 3}
+  m_Name: 'Index [0]'
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
+  nodeGUID: 2b4d65b2-34c6-49a4-bd1b-f895899b4355
+  position: {x: 429, y: 164}
+  actor: {fileID: 0}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  indexValue: 0
+  nextNode: {fileID: -8818920912560665476}

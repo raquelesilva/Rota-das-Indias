@@ -21,6 +21,7 @@ public class InputReader : ScriptableObject, IMovementActions, IMenusActions
     public event Action Jump;
     public event Action<bool> Sprint;
     public event Action Crouch;
+    public event Action<bool> CrouchPerformed;
     public event Action<bool> CameraZoom;
 
     public event Action Throw;
@@ -98,6 +99,7 @@ public class InputReader : ScriptableObject, IMovementActions, IMenusActions
 
     public void OnCrouch(InputAction.CallbackContext context)
     {
+        CrouchPerformed?.Invoke(context.ReadValueAsButton());
         if (context.performed) Crouch?.Invoke();
     }
 

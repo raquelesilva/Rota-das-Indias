@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Events;
 using CoreSystems.Managers;
+using System;
 
 
 public class PicturePuzzle : MonoBehaviour
@@ -16,9 +17,40 @@ public class PicturePuzzle : MonoBehaviour
     private bool goingback = false;
     private Canvas children;
 
+    [SerializeField] InputReader inputReader;
+    private bool crouchClicked;
+
+
     private void Awake()
     {
         mainCamera = Camera.main;
+    }
+
+    private void OnEnable()
+    {
+        inputReader.Interact += OnInteractCallback;
+        inputReader.CrouchPerformed += OnControllClick;
+    }
+
+    private void OnDisable()
+    {
+        inputReader.Interact -= OnInteractCallback;
+        inputReader.CrouchPerformed -= OnControllClick;
+    }
+
+    private void OnInteractCallback()
+    {
+        if (!crouchClicked) return;
+ 
+        completedPicture.SetActive(true);
+        checkForWin?.Invoke();
+
+        NotificationManager.instance.SetCorrectMessage("Azuleijo Montado!");
+    }
+
+    private void OnControllClick(bool isClicked)
+    {
+        crouchClicked = isClicked;
     }
 
     private void Start()
@@ -104,16 +136,6 @@ public class PicturePuzzle : MonoBehaviour
         {
             RotatePiece();
         }
-
-#if UNITY_EDITOR
-        if (Input.GetKeyDown(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.E))
-        {
-            completedPicture.SetActive(true);
-            checkForWin?.Invoke();
-
-            NotificationManager.instance.SetCorrectMessage("Azuleijo Montado!");
-        }
-#endif
     }
 
     private void HandleSelection(Vector2 mousePosition)

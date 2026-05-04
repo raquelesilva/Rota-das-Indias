@@ -1,0 +1,307 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8963404517498815439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: 29771fa6-bb76-4c57-9833-62f30b528aff
+  position: {x: 520, y: 556}
+  actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: "Ent\xE3o\u2026 n\xE3o era bicho nenhum?! N\xE3o era o fim do mundo?!"
+  nextNode: {fileID: 3847377128870231103}
+--- !u!114 &-5659602886405760201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: 808aa8b6-4cd9-4c62-b986-bad7ae9e7d3c
+  position: {x: 1210, y: 197}
+  actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: StartDrag 1
+  dialogueText: "Ai, diz-me que n\xE3o estamos prestes a cair do mundo!"
+  nextNode: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf1e22609fc0d1e41839aa88ab1d1cb7, type: 3}
+  m_Name: Tripulante Leme
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.DialogueContainer
+  dialogueID: 
+  dialogueTitle: 
+  description: 
+  nodes:
+  - {fileID: 2924203281965798928}
+  - {fileID: 1077675438156492132}
+  - {fileID: 1540449851104852104}
+  - {fileID: -5659602886405760201}
+  - {fileID: 5119713022860140617}
+  - {fileID: -8963404517498815439}
+  - {fileID: 3847377128870231103}
+  - {fileID: 2921708833862081594}
+  - {fileID: 6890608390106595124}
+  - {fileID: 7677865014003322800}
+  startNode: {fileID: 0}
+  backgroundMusic: {fileID: 0}
+  backgroundMusicVolume: 1
+  onDialogueStartEvent: 
+  onDialogueEndEvent: 
+--- !u!114 &1077675438156492132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: a86d4208-ff0b-4ad8-bc5d-8b3fcef1ffe1
+  position: {x: 520, y: 197}
+  actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: "\xD3 meu santo camar\xE3o das mar\xE9s\u2026 diz-me que viste o
+    mesmo que eu! Eu juro que aquilo ali \xE0 frente se mexeu\u2026"
+  nextNode: {fileID: 1540449851104852104}
+--- !u!114 &1540449851104852104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: 7f94729a-38d9-4be2-ab53-e47cd229a713
+  position: {x: 866, y: 197}
+  actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: "Parecia um bicho enorme! Isto aqui abaixo do Bojador sempre foi
+    coisa para meter ju\xEDzo at\xE9 ao mais tolo."
+  nextNode: {fileID: -5659602886405760201}
+--- !u!114 &2921708833862081594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: 1671b769-82af-4961-9c2d-1e2b1965de2e
+  position: {x: 1210, y: 556}
+  actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: changeDialogue 2
+  dialogueText: "Um deles est\xE1 no conv\xE9s, o outro n\xE3o sei."
+  nextNode: {fileID: 0}
+--- !u!114 &2924203281965798928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3bad5b5386f17a42868ca511db94946, type: 3}
+  m_Name: 'Index [0]'
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
+  nodeGUID: 7381334a-cba8-423e-afa6-1e47544442c5
+  position: {x: 158, y: 197}
+  actor: {fileID: 0}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  indexValue: 0
+  nextNode: {fileID: 1077675438156492132}
+--- !u!114 &3847377128870231103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: 72e70b7c-856e-4577-b2ce-e9db41acdb78
+  position: {x: 866, y: 556}
+  actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: "Com isto fico mais descansado, temos outros dois colegas que estavam
+    aterrorizados, como eu podes ir ajud\xE1-los?"
+  nextNode: {fileID: 2921708833862081594}
+--- !u!114 &5119713022860140617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3bad5b5386f17a42868ca511db94946, type: 3}
+  m_Name: 'Index [1]'
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
+  nodeGUID: 4212a494-a1c8-41d3-8651-a9ca2b474d2a
+  position: {x: 158, y: 556}
+  actor: {fileID: 0}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  indexValue: 1
+  nextNode: {fileID: -8963404517498815439}
+--- !u!114 &6890608390106595124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3bad5b5386f17a42868ca511db94946, type: 3}
+  m_Name: 'Index [2]'
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
+  nodeGUID: 4104e819-061a-40ea-b77e-65eca0251ca3
+  position: {x: 158, y: 918}
+  actor: {fileID: 0}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  indexValue: 2
+  nextNode: {fileID: 7677865014003322800}
+--- !u!114 &7677865014003322800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: 71e9514d-0491-4f7a-86e8-c59c3c598df0
+  position: {x: 520, y: 918}
+  actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: "O conv\xE9s \xE9 l\xE1 embaixo onde est\xE3o as nossas camas e a
+    mercadoria."
+  nextNode: {fileID: 0}
