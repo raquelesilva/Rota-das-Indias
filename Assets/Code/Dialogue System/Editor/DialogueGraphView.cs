@@ -56,7 +56,7 @@ namespace FancyCrab.DialogueSystem.Editor
             SaveAllChanges();
         }
 
-        private void SaveAllChanges()
+        public void SaveAllChanges()
         {
             if (editor == null || editor.CurrentDialogue == null)
                 return;

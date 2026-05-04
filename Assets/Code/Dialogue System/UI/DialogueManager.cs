@@ -50,6 +50,13 @@ namespace FancyCrab.DialogueSystem
 
         public void StartDialogue(DialogueContainer dialogue, Action onComplete = null, DialogueTrigger trigger = null, DialogueNode specificStartNode = null)
         {
+            // CORRECÇÃO: ignora se já há um diálogo activo para não apagar o estado actual
+            if (IsDialogueActive)
+            {
+                Debug.LogWarning("[FancyCrabStudios] Attempted to start a dialogue while one is already active. Ignoring.");
+                return;
+            }
+
             if (dialogue == null)
             {
                 Debug.LogError("[FancyCrabStudios] Attempted to start null dialogue!");
@@ -59,6 +66,7 @@ namespace FancyCrab.DialogueSystem
             currentDialogue = dialogue;
             currentTrigger = trigger;
 
+            // CORRECÇÃO: usa WrapOnComplete para garantir que o wrapper é removido após ser invocado
             if (onComplete != null)
             {
                 OnDialogueEnded += WrapOnComplete(onComplete);

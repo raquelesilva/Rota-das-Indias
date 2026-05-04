@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9040993177415181600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: d7d0e27d-10a6-48e1-a863-43cb0af0de4e
+  position: {x: 1768, y: 1122}
+  actor: {fileID: 0}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: THIS IS A TEST
+  nextNode: {fileID: 0}
 --- !u!114 &-6603127694895219900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,6 +166,7 @@ MonoBehaviour:
   - {fileID: 7889816584373889643}
   - {fileID: -1263160367890942543}
   - {fileID: 1953231214650766445}
+  - {fileID: -9040993177415181600}
   startNode: {fileID: -1019953661676630418}
   backgroundMusic: {fileID: 0}
   backgroundMusicVolume: 1
@@ -199,7 +227,7 @@ MonoBehaviour:
   dialogueText: "A entrada do Mediterr\xE2neo erguia-se agora sob as bandeiras portuguesas,
     e o olhar do reino voltava-se para o vasto oceano em dire\xE7\xE3o \xE0 promessa
     do desconhecido."
-  nextNode: {fileID: 0}
+  nextNode: {fileID: -9040993177415181600}
 --- !u!114 &2035893659548821609
 MonoBehaviour:
   m_ObjectHideFlags: 0

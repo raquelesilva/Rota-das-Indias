@@ -36,6 +36,14 @@ namespace FancyCrab.DialogueSystem.Editor
         private void OnEnable()
         {
             ConstructGraphView();
+
+            // Garante save antes de domain reload (recompilação de scripts)
+            AssemblyReloadEvents.beforeAssemblyReload += OnBeforeAssemblyReload;
+        }
+
+        private void OnBeforeAssemblyReload()
+        {
+            graphView?.SaveAllChanges();
         }
 
         private void ConstructGraphView()
@@ -65,6 +73,11 @@ namespace FancyCrab.DialogueSystem.Editor
 
         private void OnDisable()
         {
+            AssemblyReloadEvents.beforeAssemblyReload -= OnBeforeAssemblyReload;
+
+            // Garante save ao fechar a janela
+            graphView?.SaveAllChanges();
+
             if (graphView != null)
             {
                 rootVisualElement.Remove(graphView);
