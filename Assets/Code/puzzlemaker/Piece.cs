@@ -8,6 +8,7 @@ public class Piece : MonoBehaviour
         map,
         diferences
     };
+
     public Minigame minihandler;
     GameObject pieceObject;
 
@@ -21,8 +22,6 @@ public class Piece : MonoBehaviour
     private Vector3 parentpos;
     [HideInInspector] public Vector3 startpos;
 
-
-
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -33,7 +32,6 @@ public class Piece : MonoBehaviour
         correctRotation = pieceObject.transform.rotation;
         parentpos = transform.parent.position;
         if (rightplace == false) RandomizePosition();
-
     }
 
     public void RandomizePosition()
@@ -45,13 +43,10 @@ public class Piece : MonoBehaviour
             pieceObject.transform.position = parentpos + new Vector3(Random.Range(-3f, 1f), Random.Range(-8f, 8f), 0);
             startpos = pieceObject.transform.position;
         }
-
-
     }
 
     public bool IsInCorrectPosition()
     {
-
         if (isLockedInPlace) return true;
 
         float distance = Vector2.Distance(transform.position, correctPosition);
@@ -61,20 +56,19 @@ public class Piece : MonoBehaviour
 
     public void SetCorrectPositions()
     {
-
         if (spriteRenderer != null) spriteRenderer.sortingOrder = 2;
         transform.position = correctPosition;
         transform.rotation = correctRotation;
         isLockedInPlace = true; // Lock it so it stops checking distance
     }
-    public void movestartpos()
+
+    public void MoveStartPos()
     {
         float distance = Vector2.Distance(transform.position, startpos);
         if (distance > 0.3f)
         {
             if (pieceObject.transform.position.x > startpos.x + 0.3f)
             {
-
                 pieceObject.transform.position -= new Vector3(0.1f, 0, 0);
             }
             else if (pieceObject.transform.position.x < startpos.x - 0.3f)
@@ -83,7 +77,6 @@ public class Piece : MonoBehaviour
             }
             if (pieceObject.transform.position.y > startpos.y + 0.3f)
             {
-
                 pieceObject.transform.position -= new Vector3(0, 0.2f / distance, 0);
             }
             else if (pieceObject.transform.position.y < startpos.y - 0.3f)
@@ -91,8 +84,5 @@ public class Piece : MonoBehaviour
                 pieceObject.transform.position += new Vector3(0, 0.2f / distance, 0);
             }
         }
-
-
     }
-
 }

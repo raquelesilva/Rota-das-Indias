@@ -54,12 +54,9 @@ namespace FancyCrab.DialogueSystem
         {
             if (DialogueManager.Instance == null || dialogue == null) return;
 
-            var startNode = dialogue.GetNodeByIndex(index);
-            if (startNode == null)
-            {
-                Debug.LogError($"[FancyCrabStudios] Node with index {index} not found!");
-                return;
-            }
+            Debug.Log("Set Dialogue Index");
+
+            startIndex = index;
         }
 
         public void TriggerDialogueFromIndex(int index)

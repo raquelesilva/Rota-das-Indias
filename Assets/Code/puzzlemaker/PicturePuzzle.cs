@@ -2,11 +2,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Events;
+using CoreSystems.Managers;
 
 
 public class PicturePuzzle : MonoBehaviour
 {
-    [SerializeField] private List<Piece> pieces = new List<Piece>();
+    [SerializeField] private List<Piece> pieces = new();
     [SerializeField] private GameObject completedPicture;
     [SerializeField] private UnityEvent checkForWin;
 
@@ -27,18 +28,14 @@ public class PicturePuzzle : MonoBehaviour
             piece.gameObject.SetActive(true);
         }
         completedPicture.SetActive(false);
-
     }
 
     private void Update()
     {
-
         Vector2 screenPosition = Mouse.current.position.ReadValue();
-
 
         Vector3 worldPos = mainCamera.ScreenToWorldPoint(new Vector3(screenPosition.x, screenPosition.y, this.transform.position.z - mainCamera.transform.position.z));
         Vector2 mousePosition = new Vector2(worldPos.x, worldPos.y);
-
 
         if (Mouse.current.leftButton.wasPressedThisFrame && currentPiece == null)
         {
@@ -52,27 +49,22 @@ public class PicturePuzzle : MonoBehaviour
                     children = currentPiece.GetComponentInChildren<Canvas>();
                     children.sortingOrder = 4;
                 }
-
             }
         }
 
-
         if ((Mouse.current.leftButton.wasReleasedThisFrame && currentPiece != null) || goingback == true)
         {
-
             if (currentPiece.minihandler == Piece.Minigame.map)
             {
                 goingback = true;
                 float distance = Vector2.Distance(currentPiece.transform.position, currentPiece.startpos);
-                currentPiece.movestartpos();
+                currentPiece.MoveStartPos();
 
                 if (distance < 0.5f)
                 {
-
                     currentPiece = null;
                     goingback = false;
                 }
-
             }
             else if (currentPiece.minihandler == Piece.Minigame.diferences)
             {
@@ -89,17 +81,12 @@ public class PicturePuzzle : MonoBehaviour
                 {
                     currentPiece = null;
                 }
-
             }
             else
             {
-
                 currentPiece = null;
-
             }
-
         }
-
 
         if (currentPiece != null && goingback == false)
         {
@@ -113,11 +100,20 @@ public class PicturePuzzle : MonoBehaviour
             }
         }
 
-
         if (Keyboard.current.rKey.wasPressedThisFrame)
         {
             RotatePiece();
         }
+
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.E))
+        {
+            completedPicture.SetActive(true);
+            checkForWin?.Invoke();
+
+            NotificationManager.instance.SetCorrectMessage("Azuleijo Montado!");
+        }
+#endif
     }
 
     private void HandleSelection(Vector2 mousePosition)
@@ -159,6 +155,8 @@ public class PicturePuzzle : MonoBehaviour
         {
             completedPicture.SetActive(true);
             checkForWin?.Invoke();
+
+            NotificationManager.instance.SetCorrectMessage("Azuleijo Montado!");
         }
     }
 
