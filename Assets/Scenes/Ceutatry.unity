@@ -351,6 +351,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript1
   puzzle: {fileID: 139585752}
   player: {fileID: 481542227}
+  Hinting:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 287435876}
+        m_TargetAssemblyTypeName: CoreSystems.Managers.NotificationManager, Assembly-CSharp
+        m_MethodName: SetInfoMessage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "Come\xE7a pelas pe\xE7as dos cantos, tenta fazer a borda
+            do puzzle "
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &52299756
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -835,6 +851,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 461740, guid: 564e49f56923de148b581d811733f251, type: 3}
   m_PrefabInstance: {fileID: 279056067}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &287435876 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8414386387733684364, guid: da18d24d7c2d6a94a866dccc4f098083, type: 3}
+  m_PrefabInstance: {fileID: 505434703}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da035e38063e03e48b2348d6718a40cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &353177430
 GameObject:
   m_ObjectHideFlags: 0
@@ -1620,6 +1647,10 @@ PrefabInstance:
     - target: {fileID: 4745183775206852275, guid: da18d24d7c2d6a94a866dccc4f098083, type: 3}
       propertyPath: detectLayer.m_Bits
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5439931850993184780, guid: da18d24d7c2d6a94a866dccc4f098083, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

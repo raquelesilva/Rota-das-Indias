@@ -5242,6 +5242,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript1
   puzzle: {fileID: 1103714322}
   player: {fileID: 1931433164}
+  Hinting:
+  - m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1800890309
 MonoBehaviour:
   m_ObjectHideFlags: 0

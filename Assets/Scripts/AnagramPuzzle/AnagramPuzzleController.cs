@@ -3,11 +3,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Events;
-
+using System.Collections;
 public class AnagramPuzzleController : MonoBehaviour
 {
     [Header("Puzzle Settings")]
-    public string target_word = "PUZZLE";
+    public string[] target_words;
+    private int count = 0;
+    private string target_word;
     public int starting_correct_index = -1;
 
     [Header("UI References")]
@@ -28,7 +30,7 @@ public class AnagramPuzzleController : MonoBehaviour
     {
         if (CheckForMissingReferences())
         {
-            puzzle_panel.SetActive(false); 
+            puzzle_panel.SetActive(false);
             complete_button.onClick.AddListener(CheckIfPuzzleIsCorrect);
             ActivatePuzzle();
         }
@@ -53,6 +55,7 @@ public class AnagramPuzzleController : MonoBehaviour
 
     private void GeneratePuzzle()
     {
+        target_word = target_words[count];
         foreach (Transform child in slots_container) Destroy(child.gameObject);
         foreach (Transform child in letters_container) Destroy(child.gameObject);
         all_slots.Clear();
@@ -62,7 +65,7 @@ public class AnagramPuzzleController : MonoBehaviour
         char[] word_characters = target_word.ToCharArray();
 
         RectTransform slots_rect = slots_container.GetComponent<RectTransform>();
-        float slot_dimension = Mathf.Min((slots_rect.rect.width / word_characters.Length) - 5f, slots_rect.rect.height, 150f); 
+        float slot_dimension = Mathf.Min((slots_rect.rect.width / word_characters.Length) - 5f, slots_rect.rect.height, 150f);
 
         for (int i = 0; i < word_characters.Length; i++)
         {
@@ -76,7 +79,7 @@ public class AnagramPuzzleController : MonoBehaviour
             all_slots.Add(slot_script);
         }
 
-        Canvas.ForceUpdateCanvases(); 
+        Canvas.ForceUpdateCanvases();
 
         RectTransform container_rect = letters_container.GetComponent<RectTransform>();
         float spawn_limit_x = (container_rect.rect.width / 2f) - (slot_dimension / 2f);
@@ -92,7 +95,8 @@ public class AnagramPuzzleController : MonoBehaviour
             letter_script.puzzle_controller = this;
 
             TMP_Text text_component = new_letter_object.GetComponentInChildren<TMP_Text>();
-            if (text_component != null) {
+            if (text_component != null)
+            {
                 text_component.text = word_characters[i].ToString();
                 text_component.enableAutoSizing = true;
             }
@@ -104,9 +108,13 @@ public class AnagramPuzzleController : MonoBehaviour
             all_letters.Add(letter_script);
         }
 
+        StartCoroutine(Hint(0.05f));
+    }
+    IEnumerator Hint(float delay)
+    {
+        yield return new WaitForSeconds(delay);
         LockStartingLetter();
     }
-
     private void LockStartingLetter()
     {
         if (target_word.Length == 0) return;
@@ -118,7 +126,7 @@ public class AnagramPuzzleController : MonoBehaviour
             if (letter.letter_character == slot_to_lock.expected_character && letter.GetComponent<CanvasGroup>().blocksRaycasts)
             {
                 slot_to_lock.LockAsCorrect(letter);
-                letter.transform.SetAsLastSibling(); 
+                letter.transform.SetAsLastSibling();
                 break;
             }
         }
@@ -136,7 +144,16 @@ public class AnagramPuzzleController : MonoBehaviour
             }
         }
 
-        if (is_puzzle_correct)
+        if (is_puzzle_correct && count < target_words.Length - 1)
+        {
+            count++;
+            ActivatePuzzle();
+            Debug.Log("puzzling");
+            Debug.Log(all_letters.Count);
+            Debug.Log(all_slots.Count);
+
+        }
+        else if (is_puzzle_correct)
         {
             Debug.Log("PUZZLE COMPLETE!");
             OnPuzzleComplete?.Invoke();
