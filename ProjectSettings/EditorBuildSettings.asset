@@ -9,8 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 534d3ccaef261c048832dbdd5199a707
   - enabled: 1
+    path: Assets/Scenes/Ceutatry.unity
+    guid: 3e71408af2fe26344908a3a4bfce5704
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Feitoria.unity
+    guid: 072920c5bf844d04d801a1203787f62a
+  - enabled: 1
+    path: Assets/Scenes/Goa.unity
+    guid: a6ba7caf74f9ff54280d378587f57334
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 1ab82323cf432374397a942660645995, type: 3}
   m_UseUCBPForAssetBundles: 0

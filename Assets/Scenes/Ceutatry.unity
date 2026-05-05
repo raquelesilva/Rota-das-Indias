@@ -364,7 +364,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript1
   puzzle: {fileID: 139585752}
   player: {fileID: 481542227}
-  hinting: []
+  hinting:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 490782601}
+        m_TargetAssemblyTypeName: CoreSystems.Managers.NotificationManager, Assembly-CSharp
+        m_MethodName: SetInfoMessage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "Tenta come\xE7ar pelas bordas"
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &44683278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1455,6 +1469,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 216677571}
   m_CullTransparentMesh: 1
+--- !u!114 &223484486 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1032802739482946866, guid: 70c65f273a6a4e240b13ed96c975ed09, type: 3}
+  m_PrefabInstance: {fileID: 5865143350670901956}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ab98b5e9c2c0b342861cd2b67e819e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerNarration
 --- !u!1 &248266350
 GameObject:
   m_ObjectHideFlags: 0
@@ -2985,7 +3010,7 @@ MonoBehaviour:
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 3
+            m_IntArgument: 2
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 1
@@ -3358,6 +3383,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4459864851310106424, guid: da18d24d7c2d6a94a866dccc4f098083, type: 3}
   m_PrefabInstance: {fileID: 505434703}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &490782601 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8414386387733684364, guid: da18d24d7c2d6a94a866dccc4f098083, type: 3}
+  m_PrefabInstance: {fileID: 505434703}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da035e38063e03e48b2348d6718a40cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &494441408
 GameObject:
   m_ObjectHideFlags: 0
@@ -3544,7 +3580,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4459864850019384738, guid: da18d24d7c2d6a94a866dccc4f098083, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 166.85582
+      value: 167.4
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: da18d24d7c2d6a94a866dccc4f098083, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3552,7 +3588,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: da18d24d7c2d6a94a866dccc4f098083, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -24.4
       objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: da18d24d7c2d6a94a866dccc4f098083, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4932,6 +4968,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 479512, guid: 32ec60437affc154daf6bbf3557b1fe3, type: 3}
   m_PrefabInstance: {fileID: 790024088}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &796165133 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1059173318311263372, guid: 70c65f273a6a4e240b13ed96c975ed09, type: 3}
+  m_PrefabInstance: {fileID: 5865143350670901956}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ab98b5e9c2c0b342861cd2b67e819e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerNarration
 --- !u!1 &813671102
 GameObject:
   m_ObjectHideFlags: 0
@@ -9219,7 +9266,7 @@ PrefabInstance:
       objectReference: {fileID: 1672289929}
     - target: {fileID: 2871526152218736800, guid: 1d530b0a650b0d749b3a86458583fbd9, type: 3}
       propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2871526152218736800, guid: 1d530b0a650b0d749b3a86458583fbd9, type: 3}
       propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -9231,7 +9278,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2871526152218736800, guid: 1d530b0a650b0d749b3a86458583fbd9, type: 3}
       propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
-      value: 3
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871526152218736800, guid: 1d530b0a650b0d749b3a86458583fbd9, type: 3}
+      propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871526152218736800, guid: 1d530b0a650b0d749b3a86458583fbd9, type: 3}
+      propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[5].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2871526152218736800, guid: 1d530b0a650b0d749b3a86458583fbd9, type: 3}
       propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -9248,9 +9303,25 @@ PrefabInstance:
     - target: {fileID: 2871526152218736800, guid: 1d530b0a650b0d749b3a86458583fbd9, type: 3}
       propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
-      objectReference: {fileID: 455234719}
+      objectReference: {fileID: 455234720}
+    - target: {fileID: 2871526152218736800, guid: 1d530b0a650b0d749b3a86458583fbd9, type: 3}
+      propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 796165133}
+    - target: {fileID: 2871526152218736800, guid: 1d530b0a650b0d749b3a86458583fbd9, type: 3}
+      propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[5].m_Target
+      value: 
+      objectReference: {fileID: 223484486}
     - target: {fileID: 2871526152218736800, guid: 1d530b0a650b0d749b3a86458583fbd9, type: 3}
       propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871526152218736800, guid: 1d530b0a650b0d749b3a86458583fbd9, type: 3}
+      propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871526152218736800, guid: 1d530b0a650b0d749b3a86458583fbd9, type: 3}
+      propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[5].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2871526152218736800, guid: 1d530b0a650b0d749b3a86458583fbd9, type: 3}
@@ -9267,7 +9338,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2871526152218736800, guid: 1d530b0a650b0d749b3a86458583fbd9, type: 3}
       propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
-      value: TriggerDialogueFromIndex
+      value: SetCanInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871526152218736800, guid: 1d530b0a650b0d749b3a86458583fbd9, type: 3}
+      propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: setactive
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871526152218736800, guid: 1d530b0a650b0d749b3a86458583fbd9, type: 3}
+      propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[5].m_MethodName
+      value: setactive
       objectReference: {fileID: 0}
     - target: {fileID: 2871526152218736800, guid: 1d530b0a650b0d749b3a86458583fbd9, type: 3}
       propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -9283,11 +9362,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2871526152218736800, guid: 1d530b0a650b0d749b3a86458583fbd9, type: 3}
       propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
-      value: FancyCrab.DialogueSystem.DialogueTrigger, Assembly-CSharp
+      value: FancyCrab.CoreSystems.InteractionSystem.InteractableObject, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871526152218736800, guid: 1d530b0a650b0d749b3a86458583fbd9, type: 3}
+      propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: TriggerNarration, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871526152218736800, guid: 1d530b0a650b0d749b3a86458583fbd9, type: 3}
+      propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[5].m_TargetAssemblyTypeName
+      value: TriggerNarration, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2871526152218736800, guid: 1d530b0a650b0d749b3a86458583fbd9, type: 3}
       propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_IntArgument
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2871526152218736800, guid: 1d530b0a650b0d749b3a86458583fbd9, type: 3}
       propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_IntArgument
@@ -9295,6 +9382,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2871526152218736800, guid: 1d530b0a650b0d749b3a86458583fbd9, type: 3}
       propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871526152218736800, guid: 1d530b0a650b0d749b3a86458583fbd9, type: 3}
+      propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2871526152218736800, guid: 1d530b0a650b0d749b3a86458583fbd9, type: 3}
+      propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3711124376278780815, guid: 1d530b0a650b0d749b3a86458583fbd9, type: 3}
@@ -14023,6 +14118,74 @@ PrefabInstance:
     - target: {fileID: 1017152331975440461, guid: 70c65f273a6a4e240b13ed96c975ed09, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1032802739482946866, guid: 70c65f273a6a4e240b13ed96c975ed09, type: 3}
+      propertyPath: ExpectedScene
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1032802739482946866, guid: 70c65f273a6a4e240b13ed96c975ed09, type: 3}
+      propertyPath: TriggerEndScene.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1032802739482946866, guid: 70c65f273a6a4e240b13ed96c975ed09, type: 3}
+      propertyPath: TriggerEndScene.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1032802739482946866, guid: 70c65f273a6a4e240b13ed96c975ed09, type: 3}
+      propertyPath: TriggerEndScene.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 223484486}
+    - target: {fileID: 1032802739482946866, guid: 70c65f273a6a4e240b13ed96c975ed09, type: 3}
+      propertyPath: TriggerEndScene.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1032802739482946866, guid: 70c65f273a6a4e240b13ed96c975ed09, type: 3}
+      propertyPath: TriggerEndScene.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: nextscene
+      objectReference: {fileID: 0}
+    - target: {fileID: 1032802739482946866, guid: 70c65f273a6a4e240b13ed96c975ed09, type: 3}
+      propertyPath: TriggerEndScene.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: TriggerNarration, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1032802739482946866, guid: 70c65f273a6a4e240b13ed96c975ed09, type: 3}
+      propertyPath: TriggerEndScene.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059173318311263372, guid: 70c65f273a6a4e240b13ed96c975ed09, type: 3}
+      propertyPath: isactive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059173318311263372, guid: 70c65f273a6a4e240b13ed96c975ed09, type: 3}
+      propertyPath: TriggerEndScene.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059173318311263372, guid: 70c65f273a6a4e240b13ed96c975ed09, type: 3}
+      propertyPath: TriggerEndScene.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059173318311263372, guid: 70c65f273a6a4e240b13ed96c975ed09, type: 3}
+      propertyPath: TriggerEndScene.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 455234719}
+    - target: {fileID: 1059173318311263372, guid: 70c65f273a6a4e240b13ed96c975ed09, type: 3}
+      propertyPath: TriggerEndScene.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059173318311263372, guid: 70c65f273a6a4e240b13ed96c975ed09, type: 3}
+      propertyPath: TriggerEndScene.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TriggerDialogueFromIndex
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059173318311263372, guid: 70c65f273a6a4e240b13ed96c975ed09, type: 3}
+      propertyPath: TriggerEndScene.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FancyCrab.DialogueSystem.DialogueTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059173318311263372, guid: 70c65f273a6a4e240b13ed96c975ed09, type: 3}
+      propertyPath: TriggerEndScene.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059173318311263372, guid: 70c65f273a6a4e240b13ed96c975ed09, type: 3}
+      propertyPath: TriggerEndScene.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1331196099419247125, guid: 70c65f273a6a4e240b13ed96c975ed09, type: 3}
       propertyPath: m_Materials.Array.size

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: d7d0e27d-10a6-48e1-a863-43cb0af0de4e
-  position: {x: 1768, y: 1122}
+  position: {x: 1765.6, y: 870.39996}
   actor: {fileID: 0}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -40,7 +40,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 743f0d8e-a169-4e59-9306-278e3b500a28
-  position: {x: 427, y: 188}
+  position: {x: 427.2, y: 188}
   actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -64,10 +64,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3bad5b5386f17a42868ca511db94946, type: 3}
-  m_Name: 'Index [3]'
+  m_Name: 'Index [2]'
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
   nodeGUID: 76887e89-477c-49d8-91ab-d2a7b48b9342
-  position: {x: 88, y: 1122}
+  position: {x: 88, y: 870.39996}
   actor: {fileID: 0}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -79,8 +79,8 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  indexValue: 3
-  nextNode: {fileID: 2255238666496592648}
+  indexValue: 2
+  nextNode: {fileID: 7889816584373889643}
 --- !u!114 &-1263160367890942543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: cfbe3ad1-eff1-4a2e-ba30-659a7c16ea57
-  position: {x: 1086, y: 1122}
+  position: {x: 804, y: 870.39996}
   actor: {fileID: 11400000, guid: bc41ee0d904b9a74e9665101285eb970, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -156,9 +156,6 @@ MonoBehaviour:
   - {fileID: -6603127694895219900}
   - {fileID: 8438428279389440089}
   - {fileID: 5647293520448082675}
-  - {fileID: 940633065265737742}
-  - {fileID: 5230154646125605206}
-  - {fileID: 2380514201032516109}
   - {fileID: 7908719584692961138}
   - {fileID: 2035893659548821609}
   - {fileID: 2255238666496592648}
@@ -172,33 +169,6 @@ MonoBehaviour:
   backgroundMusicVolume: 1
   onDialogueStartEvent: 
   onDialogueEndEvent: 
---- !u!114 &940633065265737742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3bad5b5386f17a42868ca511db94946, type: 3}
-  m_Name: 'Index [1]'
-  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
-  nodeGUID: 110bdc5c-3a51-4c48-bc77-ac3e1bfef01f
-  position: {x: 88, y: 493}
-  actor: {fileID: 0}
-  nodeAudio: {fileID: 0}
-  nodeIndex: -1
-  onNodeEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  onNodeExit:
-    m_PersistentCalls:
-      m_Calls: []
-  onNodeEnterEvent: 
-  onNodeExitEvent: 
-  indexValue: 1
-  nextNode: {fileID: 5230154646125605206}
 --- !u!114 &1953231214650766445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,7 +182,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 8ed0fe8c-0eec-4de6-9471-13a38eae90bf
-  position: {x: 1417, y: 1122}
+  position: {x: 1143.2, y: 870.39996}
   actor: {fileID: 11400000, guid: bc41ee0d904b9a74e9665101285eb970, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -241,7 +211,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: b7ff8127-7841-415d-bc05-a36e25b81ac0
-  position: {x: 427, y: 789}
+  position: {x: 427.2, y: 532.8}
   actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -254,7 +224,7 @@ MonoBehaviour:
   onNodeEnterEvent: startNextPuzzle
   onNodeExitEvent: 
   dialogueText: Bom trabalho!
-  nextNode: {fileID: 0}
+  nextNode: {fileID: 2255238666496592648}
 --- !u!114 &2255238666496592648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,7 +238,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 8c723844-b2c6-40e1-8d5b-d91c2bd63bd7
-  position: {x: 427, y: 1122}
+  position: {x: 804, y: 532.8}
   actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -281,61 +251,7 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   dialogueText: Hora de voltar ao barco!
-  nextNode: {fileID: 7889816584373889643}
---- !u!114 &2380514201032516109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
-  m_Name: Text Node
-  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
-  nodeGUID: 51f3c397-d87d-4196-9ead-05a2651fdac8
-  position: {x: 758, y: 493}
-  actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
-  nodeAudio: {fileID: 0}
-  nodeIndex: -1
-  onNodeEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  onNodeExit:
-    m_PersistentCalls:
-      m_Calls: []
-  onNodeEnterEvent: 
-  onNodeExitEvent: 
-  dialogueText: Olha aqui esta imagem de referencia.
   nextNode: {fileID: 0}
---- !u!114 &5230154646125605206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
-  m_Name: Text Node
-  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
-  nodeGUID: 6363481e-7587-47fa-baaa-29700ef03702
-  position: {x: 427, y: 493}
-  actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
-  nodeAudio: {fileID: 0}
-  nodeIndex: -1
-  onNodeEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  onNodeExit:
-    m_PersistentCalls:
-      m_Calls: []
-  onNodeEnterEvent: 
-  onNodeExitEvent: 
-  dialogueText: "Come\xE7a pelas pe\xE7as dos cantos, tenta fazer a borda do puzzle."
-  nextNode: {fileID: 2380514201032516109}
 --- !u!114 &5647293520448082675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -349,7 +265,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: de50a102-9d7f-48b8-a1eb-0f6bc5a951dd
-  position: {x: 1093, y: 188}
+  position: {x: 1092.8, y: 188}
   actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -377,7 +293,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 19bc69f1-a6cc-4a73-8b66-be8830f73422
-  position: {x: 758, y: 1122}
+  position: {x: 427.2, y: 870.39996}
   actor: {fileID: 11400000, guid: bc41ee0d904b9a74e9665101285eb970, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -402,10 +318,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d3bad5b5386f17a42868ca511db94946, type: 3}
-  m_Name: 'Index [2]'
+  m_Name: 'Index [1]'
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
   nodeGUID: 18f80489-a53d-4eea-ab1b-d3f927b48695
-  position: {x: 88, y: 789}
+  position: {x: 88, y: 532.8}
   actor: {fileID: 0}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -417,7 +333,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  indexValue: 2
+  indexValue: 1
   nextNode: {fileID: 2035893659548821609}
 --- !u!114 &8438428279389440089
 MonoBehaviour:
@@ -432,7 +348,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 84505d22-9721-4fe5-9183-e139c78c9f25
-  position: {x: 758, y: 188}
+  position: {x: 758.4, y: 188}
   actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1

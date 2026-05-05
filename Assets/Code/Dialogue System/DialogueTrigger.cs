@@ -52,7 +52,11 @@ namespace FancyCrab.DialogueSystem
 
         public void SetDialogueIndex(int index)
         {
-            if (DialogueManager.Instance == null || dialogue == null) return;
+            if (DialogueManager.Instance == null || dialogue == null)
+            {
+                Debug.Log("erro");
+                return;
+            }
 
             Debug.Log("Set Dialogue Index");
 
