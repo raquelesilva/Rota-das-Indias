@@ -82,7 +82,7 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   dialogueText: "Oh meu rico c\xE9u\u2026 Conseguimos passar?! E ainda estamos intactos! "
-  nextNode: {fileID: 0}
+  nextNode: {fileID: -1879184494466662797}
 --- !u!114 &-2659876846129021619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,7 +109,7 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   indexValue: 1
-  nextNode: {fileID: 0}
+  nextNode: {fileID: -3351626471051114819}
 --- !u!114 &-1879184494466662797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,7 +137,7 @@ MonoBehaviour:
   onNodeExitEvent: 
   dialogueText: "O nosso \xFAltimo colega est\xE1 na sala do mapa; tens de abrir
     uma porta l\xE1 em sima."
-  nextNode: {fileID: 0}
+  nextNode: {fileID: 4415261240573720364}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,7 +193,7 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   indexValue: 0
-  nextNode: {fileID: 0}
+  nextNode: {fileID: -8818920912560665476}
 --- !u!114 &3528317019539164210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,7 +220,7 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   indexValue: 2
-  nextNode: {fileID: 0}
+  nextNode: {fileID: -3671227649522066265}
 --- !u!114 &4415261240573720364
 MonoBehaviour:
   m_ObjectHideFlags: 0
