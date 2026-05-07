@@ -40,7 +40,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 808aa8b6-4cd9-4c62-b986-bad7ae9e7d3c
-  position: {x: 1210, y: 197}
+  position: {x: 1210.4, y: 196.8}
   actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: a86d4208-ff0b-4ad8-bc5d-8b3fcef1ffe1
-  position: {x: 520, y: 197}
+  position: {x: 520, y: 196.8}
   actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -108,7 +108,7 @@ MonoBehaviour:
   onNodeExit:
     m_PersistentCalls:
       m_Calls: []
-  onNodeEnterEvent: 
+  onNodeEnterEvent: Start
   onNodeExitEvent: 
   dialogueText: "\xD3 meu santo camar\xE3o das mar\xE9s\u2026 diz-me que viste o
     mesmo que eu! Eu juro que aquilo ali \xE0 frente se mexeu\u2026"
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 7f94729a-38d9-4be2-ab53-e47cd229a713
-  position: {x: 866, y: 197}
+  position: {x: 866.4, y: 196.8}
   actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 1671b769-82af-4961-9c2d-1e2b1965de2e
-  position: {x: 1210, y: 556}
+  position: {x: 1210.4, y: 556}
   actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_Name: 'Index [0]'
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
   nodeGUID: 7381334a-cba8-423e-afa6-1e47544442c5
-  position: {x: 158, y: 197}
+  position: {x: 158.4, y: 196.8}
   actor: {fileID: 0}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 72e70b7c-856e-4577-b2ce-e9db41acdb78
-  position: {x: 866, y: 556}
+  position: {x: 866.4, y: 556}
   actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -236,7 +236,7 @@ MonoBehaviour:
   m_Name: 'Index [1]'
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
   nodeGUID: 4212a494-a1c8-41d3-8651-a9ca2b474d2a
-  position: {x: 158, y: 556}
+  position: {x: 158.4, y: 556}
   actor: {fileID: 0}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -263,7 +263,7 @@ MonoBehaviour:
   m_Name: 'Index [2]'
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
   nodeGUID: 4104e819-061a-40ea-b77e-65eca0251ca3
-  position: {x: 158, y: 918}
+  position: {x: 158.4, y: 917.6}
   actor: {fileID: 0}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -290,7 +290,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 71e9514d-0491-4f7a-86e8-c59c3c598df0
-  position: {x: 520, y: 918}
+  position: {x: 520, y: 917.6}
   actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1

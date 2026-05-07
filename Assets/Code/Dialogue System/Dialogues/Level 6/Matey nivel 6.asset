@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8818920912560665476
+--- !u!114 &-8102273840530893784
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12,38 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
-  nodeGUID: f1fa7431-d60c-4d5c-b47f-9de456855c5d
-  position: {x: 772.8, y: 164}
-  actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
-  nodeAudio: {fileID: 0}
-  nodeIndex: -1
-  onNodeEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  onNodeExit:
-    m_PersistentCalls:
-      m_Calls: []
-  onNodeEnterEvent: 
-  onNodeExitEvent: StartDrag 2
-  dialogueText: "Estes mares s\xE3o malucos, mas se \xE9 como dizes porque \xE9 que
-    temos tantos problemas a navegares estes mares, os perigos n\xE3o s\xE3o dos
-    monstros?!"
-  nextNode: {fileID: 0}
---- !u!114 &-3671227649522066265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
-  m_Name: Text Node
-  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
-  nodeGUID: 8ecedc8b-f57d-42fe-a46d-2b524d5b1a61
-  position: {x: 772.8, y: 862.39996}
-  actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
+  nodeGUID: 02a3f035-d4e8-4e93-8e56-dd050160c69c
+  position: {x: 624, y: 296}
+  actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
   onNodeEnter:
@@ -54,9 +25,9 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: "A sala \xE9 mesmo antes das primeiras escadas, tens de abrir a porta"
-  nextNode: {fileID: 0}
---- !u!114 &-3351626471051114819
+  dialogueText: "Chegamos finalmente ao nosso destino: a \xCDndia!"
+  nextNode: {fileID: -5555954525835652336}
+--- !u!114 &-5555954525835652336
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -68,9 +39,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
-  nodeGUID: 80b54824-34b5-48fb-8534-613d7de05eeb
-  position: {x: 772.8, y: 512}
-  actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
+  nodeGUID: e824567c-e69e-4605-82f0-b5cb29219da1
+  position: {x: 962.4, y: 296}
+  actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
   onNodeEnter:
@@ -81,9 +52,38 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: "Oh meu rico c\xE9u\u2026 Conseguimos passar?! E ainda estamos intactos! "
-  nextNode: {fileID: -1879184494466662797}
---- !u!114 &-2659876846129021619
+  dialogueText: "Se bem me lembro, temos uma mensagem para entregar na catedral.
+    Podes ir l\xE1 tu, se fores atento, consegues v\xEA-la ao longe."
+  nextNode: {fileID: 6071282341498124976}
+--- !u!114 &-3047841352468563082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: 296f72a5-8a02-44e7-a05b-d614da98c3e9
+  position: {x: 624, y: 640}
+  actor: {fileID: 11400000, guid: bc41ee0d904b9a74e9665101285eb970, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: "E assim se fez uma das muitas viagens \xE0 \xCDndia. Esta n\xE3o
+    ser\xE1 a \xFAltima, pois muitas outras vir\xE3o depois."
+  nextNode: {fileID: 8800009517699662503}
+--- !u!114 &-2617204748928812898
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -95,8 +95,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3bad5b5386f17a42868ca511db94946, type: 3}
   m_Name: 'Index [1]'
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
-  nodeGUID: e4867004-f6b9-486c-8330-d4fe833e10fd
-  position: {x: 428.8, y: 512}
+  nodeGUID: 3722d5c0-890b-41d0-a167-7c551ff4c81d
+  position: {x: 283.2, y: 640}
   actor: {fileID: 0}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -109,35 +109,7 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   indexValue: 1
-  nextNode: {fileID: -3351626471051114819}
---- !u!114 &-1879184494466662797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
-  m_Name: Text Node
-  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
-  nodeGUID: d9caeefb-91df-43c4-a35d-3401afed6258
-  position: {x: 1122.4, y: 512}
-  actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
-  nodeAudio: {fileID: 0}
-  nodeIndex: -1
-  onNodeEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  onNodeExit:
-    m_PersistentCalls:
-      m_Calls: []
-  onNodeEnterEvent: 
-  onNodeExitEvent: 
-  dialogueText: "O nosso \xFAltimo colega est\xE1 na sala do mapa; tens de abrir
-    uma porta l\xE1 em sima."
-  nextNode: {fileID: 4415261240573720364}
+  nextNode: {fileID: -3047841352468563082}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,26 +120,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf1e22609fc0d1e41839aa88ab1d1cb7, type: 3}
-  m_Name: "Tripulante Conv\xE9s"
+  m_Name: Matey nivel 6
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.DialogueContainer
   dialogueID: 
   dialogueTitle: 
   description: 
   nodes:
-  - {fileID: 1758526182027981039}
-  - {fileID: -8818920912560665476}
-  - {fileID: -2659876846129021619}
-  - {fileID: -3351626471051114819}
-  - {fileID: -1879184494466662797}
-  - {fileID: 4415261240573720364}
-  - {fileID: 3528317019539164210}
-  - {fileID: -3671227649522066265}
+  - {fileID: 6018006266405178142}
+  - {fileID: -8102273840530893784}
+  - {fileID: 6071282341498124976}
+  - {fileID: -5555954525835652336}
+  - {fileID: -2617204748928812898}
+  - {fileID: -3047841352468563082}
+  - {fileID: 8800009517699662503}
   startNode: {fileID: 0}
   backgroundMusic: {fileID: 0}
   backgroundMusicVolume: 1
   onDialogueStartEvent: 
   onDialogueEndEvent: 
---- !u!114 &1758526182027981039
+--- !u!114 &6018006266405178142
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -179,8 +150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3bad5b5386f17a42868ca511db94946, type: 3}
   m_Name: 'Index [0]'
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
-  nodeGUID: 2b4d65b2-34c6-49a4-bd1b-f895899b4355
-  position: {x: 428.8, y: 164}
+  nodeGUID: 28b80197-57f0-4971-bd34-8c7aab283d89
+  position: {x: 283.2, y: 296}
   actor: {fileID: 0}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -193,35 +164,8 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   indexValue: 0
-  nextNode: {fileID: -8818920912560665476}
---- !u!114 &3528317019539164210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3bad5b5386f17a42868ca511db94946, type: 3}
-  m_Name: 'Index [2]'
-  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
-  nodeGUID: bb433823-ebc8-4a77-928d-a07398ed3e11
-  position: {x: 428.8, y: 862.39996}
-  actor: {fileID: 0}
-  nodeAudio: {fileID: 0}
-  nodeIndex: -1
-  onNodeEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  onNodeExit:
-    m_PersistentCalls:
-      m_Calls: []
-  onNodeEnterEvent: 
-  onNodeExitEvent: 
-  indexValue: 2
-  nextNode: {fileID: -3671227649522066265}
---- !u!114 &4415261240573720364
+  nextNode: {fileID: -8102273840530893784}
+--- !u!114 &6071282341498124976
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -233,9 +177,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
-  nodeGUID: 421fef3a-3770-4e67-854d-8c2c1081ea26
-  position: {x: 1468.8, y: 512}
-  actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
+  nodeGUID: 04695622-3b79-487c-a8bc-2287642a5c7f
+  position: {x: 1306.4, y: 296}
+  actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
   onNodeEnter:
@@ -245,6 +189,36 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   onNodeEnterEvent: 
-  onNodeExitEvent: 
-  dialogueText: "Se fores l\xE1, ele j\xE1 deve estar mais descansado para falar."
+  onNodeExitEvent: StartLevel
+  dialogueText: "Vais ter \xE9 de passar por port\xF5es guardados para chegar l\xE1.
+    Eles v\xE3o confirmar se \xE9s mesmo um marinheiro portugu\xEAs."
+  nextNode: {fileID: 0}
+--- !u!114 &8800009517699662503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: 3cebd6c5-ef0e-4e9d-8fc0-6cf3bc8b4876
+  position: {x: 962.4, y: 640}
+  actor: {fileID: 11400000, guid: bc41ee0d904b9a74e9665101285eb970, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: Endgame
+  dialogueText: "No in\xEDcio partimos, em sinal de derrota e inferioridade; hoje
+    governaremos e faremos com que aqueles que se riram de n\xF3s fiquem debaixo
+    das nossas botas\u201D"
   nextNode: {fileID: 0}

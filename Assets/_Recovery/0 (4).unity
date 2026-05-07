@@ -1766,7 +1766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7237ce144eb10a3418a1e75fb7bef309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.DialogueTrigger
-  dialogue: {fileID: 11400000, guid: f9b9ee3feed391a4f98581a5452e0d37, type: 2}
+  dialogue: {fileID: 0}
   startIndex: 0
   onDialogueStart:
     m_PersistentCalls:
@@ -1774,73 +1774,7 @@ MonoBehaviour:
   onDialogueEnd:
     m_PersistentCalls:
       m_Calls: []
-  customTriggers:
-  - triggerID: GateOpen
-    onTrigger:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 550290059}
-          m_TargetAssemblyTypeName: gateopen, Assembly-CSharp
-          m_MethodName: opengate
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 242044872}
-          m_TargetAssemblyTypeName: FancyCrab.CoreSystems.InteractionSystem.InteractableObject,
-            Assembly-CSharp
-          m_MethodName: SetCanInteract
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 242044877}
-          m_TargetAssemblyTypeName: Outline, Assembly-CSharp
-          m_MethodName: set_enabled
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1622383881}
-          m_TargetAssemblyTypeName: FancyCrab.CoreSystems.InteractionSystem.InteractableObject,
-            Assembly-CSharp
-          m_MethodName: SetCanInteract
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1622383886}
-          m_TargetAssemblyTypeName: Outline, Assembly-CSharp
-          m_MethodName: set_enabled
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
+  customTriggers: []
 --- !u!114 &242044872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4022,7 +3956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7237ce144eb10a3418a1e75fb7bef309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.DialogueTrigger
-  dialogue: {fileID: 11400000, guid: 537240f588deeee488cfd761986a7fc3, type: 2}
+  dialogue: {fileID: 0}
   startIndex: 0
   onDialogueStart:
     m_PersistentCalls:
@@ -4030,73 +3964,7 @@ MonoBehaviour:
   onDialogueEnd:
     m_PersistentCalls:
       m_Calls: []
-  customTriggers:
-  - triggerID: GateOpen
-    onTrigger:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 242044877}
-          m_TargetAssemblyTypeName: Outline, Assembly-CSharp
-          m_MethodName: set_enabled
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 455491272}
-          m_TargetAssemblyTypeName: Outline, Assembly-CSharp
-          m_MethodName: set_enabled
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 455491267}
-          m_TargetAssemblyTypeName: FancyCrab.CoreSystems.InteractionSystem.InteractableObject,
-            Assembly-CSharp
-          m_MethodName: SetCanInteract
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1106132321}
-          m_TargetAssemblyTypeName: gateopen, Assembly-CSharp
-          m_MethodName: opengate
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 242044872}
-          m_TargetAssemblyTypeName: FancyCrab.CoreSystems.InteractionSystem.InteractableObject,
-            Assembly-CSharp
-          m_MethodName: SetCanInteract
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
+  customTriggers: []
 --- !u!114 &455491267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4109,7 +3977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 724ae10ec2907e2448185e19b43bf739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.CoreSystems.InteractionSystem.InteractableObject
-  canInteract: 0
+  canInteract: 1
   onInteract:
     m_PersistentCalls:
       m_Calls:
@@ -5443,11 +5311,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 432974, guid: fb0c0b748de48f948978dd8dc3b53aae, type: 3}
   m_PrefabInstance: {fileID: 526234940}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &531214939 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 199380, guid: 2e85e654d9d08b54294966420d8a2155, type: 3}
-  m_PrefabInstance: {fileID: 550290054}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &539436258 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 304620c2a96ce1043bc12531ed0125d2, type: 3}
@@ -5664,29 +5527,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 199380, guid: 2e85e654d9d08b54294966420d8a2155, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 550290059}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e85e654d9d08b54294966420d8a2155, type: 3}
 --- !u!4 &550290055 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 448174, guid: 2e85e654d9d08b54294966420d8a2155, type: 3}
   m_PrefabInstance: {fileID: 550290054}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &550290059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 531214939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95fc44a3bc45e444a8007950e2ed40d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::gateopen
-  test: -10
 --- !u!1001 &575137173
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6790,17 +6637,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 340629419560121753, guid: 8d99185e17570a34980db737d1eb4cfd, type: 3}
   m_PrefabInstance: {fileID: 659511476}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &665447848 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6603460485679761389, guid: da18d24d7c2d6a94a866dccc4f098083, type: 3}
-  m_PrefabInstance: {fileID: 2008202489}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbff978b5b371074a860c1119f909314, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.CustomPackages.FirstPersonController.PlayerStateHandler
 --- !u!1001 &670593937
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8530,11 +8366,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5178835560150294906, guid: 6d1db9fe1ee07954b88c6ba7bd79670e, type: 3}
   m_PrefabInstance: {fileID: 910209039}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &911639937 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 199380, guid: 2e85e654d9d08b54294966420d8a2155, type: 3}
-  m_PrefabInstance: {fileID: 1106132316}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &914893236
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10253,29 +10084,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 199380, guid: 2e85e654d9d08b54294966420d8a2155, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1106132321}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e85e654d9d08b54294966420d8a2155, type: 3}
 --- !u!4 &1106132317 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 448174, guid: 2e85e654d9d08b54294966420d8a2155, type: 3}
   m_PrefabInstance: {fileID: 1106132316}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1106132321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 911639937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95fc44a3bc45e444a8007950e2ed40d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::gateopen
-  test: -10
 --- !u!1001 &1109110541
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13926,7 +13741,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 58f4a86c76cc2454390282d20eb14a96, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 100.4
+      value: 100.2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 58f4a86c76cc2454390282d20eb14a96, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13934,7 +13749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 58f4a86c76cc2454390282d20eb14a96, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -32.5
+      value: -32.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 58f4a86c76cc2454390282d20eb14a96, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16304,7 +16119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7237ce144eb10a3418a1e75fb7bef309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.DialogueTrigger
-  dialogue: {fileID: 11400000, guid: a5570c99a4c048b4e8182ff7ec31a952, type: 2}
+  dialogue: {fileID: 0}
   startIndex: 0
   onDialogueStart:
     m_PersistentCalls:
@@ -16312,61 +16127,7 @@ MonoBehaviour:
   onDialogueEnd:
     m_PersistentCalls:
       m_Calls: []
-  customTriggers:
-  - triggerID: GateOpen
-    onTrigger:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1622383886}
-          m_TargetAssemblyTypeName: Outline, Assembly-CSharp
-          m_MethodName: set_enabled
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1622383881}
-          m_TargetAssemblyTypeName: FancyCrab.CoreSystems.InteractionSystem.InteractableObject,
-            Assembly-CSharp
-          m_MethodName: SetCanInteract
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 665447848}
-          m_TargetAssemblyTypeName: FancyCrab.CustomPackages.FirstPersonController.PlayerStateHandler,
-            Assembly-CSharp
-          m_MethodName: SetStateToPaused
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 2029638904}
-          m_TargetAssemblyTypeName: fade, Assembly-CSharp
-          m_MethodName: fading
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+  customTriggers: []
 --- !u!114 &1622383881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16484,7 +16245,7 @@ Transform:
   m_GameObject: {fileID: 1622383879}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 633.71, y: 35.94, z: 509.76}
+  m_LocalPosition: {x: 638.2, y: 35.94, z: 513}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17538,22 +17299,6 @@ MonoBehaviour:
           m_TargetAssemblyTypeName: Outline, Assembly-CSharp
           m_MethodName: set_enabled
           m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-  - triggerID: Endgame
-    onTrigger:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2029638905}
-          m_TargetAssemblyTypeName: TriggerNarration, Assembly-CSharp
-          m_MethodName: nextscene
-          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -19053,11 +18798,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4600156717641314772, guid: 589efb82e39695d4c8c9d3069a07fb5c, type: 3}
---- !u!224 &1872993345 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 40334533173919061, guid: da18d24d7c2d6a94a866dccc4f098083, type: 3}
-  m_PrefabInstance: {fileID: 2008202489}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1878181353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20135,16 +19875,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: FirstPersonController
       objectReference: {fileID: 0}
-    - target: {fileID: 8496145630410245162, guid: da18d24d7c2d6a94a866dccc4f098083, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 40334533173919061, guid: da18d24d7c2d6a94a866dccc4f098083, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2029638901}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da18d24d7c2d6a94a866dccc4f098083, type: 3}
 --- !u!1001 &2009073305
@@ -20505,127 +20238,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5335848827653393427, guid: 589efb82e39695d4c8c9d3069a07fb5c, type: 3}
---- !u!1 &2029638900
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2029638901}
-  - component: {fileID: 2029638903}
-  - component: {fileID: 2029638902}
-  - component: {fileID: 2029638904}
-  - component: {fileID: 2029638905}
-  m_Layer: 5
-  m_Name: Panel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2029638901
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2029638900}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1872993345}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2029638902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2029638900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &2029638903
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2029638900}
-  m_CullTransparentMesh: 1
---- !u!114 &2029638904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2029638900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: daaf186819bf5e14f8beb7a61b672e02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::fade
-  TriggerEndScene:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1710000986}
-        m_TargetAssemblyTypeName: FancyCrab.DialogueSystem.DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogueFromIndex
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &2029638905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2029638900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ab98b5e9c2c0b342861cd2b67e819e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerNarration
-  TriggerEndScene:
-    m_PersistentCalls:
-      m_Calls: []
-  ExpectedScene: 0
-  isactive: 0
 --- !u!1001 &2034124470
 PrefabInstance:
   m_ObjectHideFlags: 0

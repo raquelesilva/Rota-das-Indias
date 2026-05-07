@@ -4041,7 +4041,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7237ce144eb10a3418a1e75fb7bef309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.DialogueTrigger
-  dialogue: {fileID: 11400000, guid: 9d32d4e766270af47ae8f162b7f6bbc5, type: 2}
+  dialogue: {fileID: 11400000, guid: 5d12a7f7fbbe8a146ac8f4d9374e3197, type: 2}
   startIndex: 0
   onDialogueStart:
     m_PersistentCalls:
@@ -4082,6 +4082,65 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - triggerID: changeToIndex1
+    onTrigger:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 455234719}
+          m_TargetAssemblyTypeName: FancyCrab.DialogueSystem.DialogueTrigger, Assembly-CSharp
+          m_MethodName: SetDialogueIndex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1307434609}
+          m_TargetAssemblyTypeName: FancyCrab.CoreSystems.InteractionSystem.InteractableObject,
+            Assembly-CSharp
+          m_MethodName: SetCanInteract
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+  - triggerID: NextDialogue
+    onTrigger:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 455234719}
+          m_TargetAssemblyTypeName: FancyCrab.DialogueSystem.DialogueTrigger, Assembly-CSharp
+          m_MethodName: SetDialogue
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 9d32d4e766270af47ae8f162b7f6bbc5, type: 2}
+            m_ObjectArgumentAssemblyTypeName: FancyCrab.DialogueSystem.DialogueContainer,
+              Assembly-CSharp
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 455234720}
+          m_TargetAssemblyTypeName: FancyCrab.CoreSystems.InteractionSystem.InteractableObject,
+            Assembly-CSharp
+          m_MethodName: SetCanInteract
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &455234720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4094,14 +4153,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 724ae10ec2907e2448185e19b43bf739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.CoreSystems.InteractionSystem.InteractableObject
-  canInteract: 0
+  canInteract: 1
   onInteract:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 455234719}
         m_TargetAssemblyTypeName: FancyCrab.DialogueSystem.DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogueFromIndex
-        m_Mode: 3
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5298,6 +5357,93 @@ RectTransform:
   m_AnchoredPosition: {x: 215, y: 0.5429306}
   m_SizeDelta: {x: 227, y: 649}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &674643827
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2657143372529878273, guid: 886c6ff266cbed24287a1c653f8720b3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2657143372529878273, guid: 886c6ff266cbed24287a1c653f8720b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2657143372529878273, guid: 886c6ff266cbed24287a1c653f8720b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2657143372529878273, guid: 886c6ff266cbed24287a1c653f8720b3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 2657143372529878273, guid: 886c6ff266cbed24287a1c653f8720b3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.70710677
+      objectReference: {fileID: 0}
+    - target: {fileID: 2657143372529878273, guid: 886c6ff266cbed24287a1c653f8720b3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2657143372529878273, guid: 886c6ff266cbed24287a1c653f8720b3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2657143372529878273, guid: 886c6ff266cbed24287a1c653f8720b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2657143372529878273, guid: 886c6ff266cbed24287a1c653f8720b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2657143372529878273, guid: 886c6ff266cbed24287a1c653f8720b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3435051884193062843, guid: 886c6ff266cbed24287a1c653f8720b3, type: 3}
+      propertyPath: m_Name
+      value: 'WaterCutout '
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3435051884193062843, guid: 886c6ff266cbed24287a1c653f8720b3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 674643829}
+  m_SourcePrefab: {fileID: 100100000, guid: 886c6ff266cbed24287a1c653f8720b3, type: 3}
+--- !u!1 &674643828 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3435051884193062843, guid: 886c6ff266cbed24287a1c653f8720b3, type: 3}
+  m_PrefabInstance: {fileID: 674643827}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &674643829
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674643828}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6564086670116265437, guid: 292d47f6c5557024185040494dbfe6b2, type: 3}
 --- !u!1 &689929327
 GameObject:
   m_ObjectHideFlags: 0
@@ -8894,6 +9040,36 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+  - triggerID: Start
+    onTrigger:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 455234719}
+          m_TargetAssemblyTypeName: FancyCrab.DialogueSystem.DialogueTrigger, Assembly-CSharp
+          m_MethodName: SetDialogue
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 11400000, guid: 9d32d4e766270af47ae8f162b7f6bbc5, type: 2}
+            m_ObjectArgumentAssemblyTypeName: FancyCrab.DialogueSystem.DialogueContainer,
+              Assembly-CSharp
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 455234720}
+          m_TargetAssemblyTypeName: FancyCrab.CoreSystems.InteractionSystem.InteractableObject,
+            Assembly-CSharp
+          m_MethodName: SetCanInteract
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &1307434609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8906,7 +9082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 724ae10ec2907e2448185e19b43bf739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.CoreSystems.InteractionSystem.InteractableObject
-  canInteract: 1
+  canInteract: 0
   onInteract:
     m_PersistentCalls:
       m_Calls:
@@ -9583,7 +9759,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1401014117
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15602,3 +15778,4 @@ SceneRoots:
   - {fileID: 1307434613}
   - {fileID: 599542340}
   - {fileID: 311654278}
+  - {fileID: 674643827}

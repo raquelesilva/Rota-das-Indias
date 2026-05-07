@@ -103,6 +103,8 @@ MonoBehaviour:
   TriggerEndScene:
     m_PersistentCalls:
       m_Calls: []
+  ExpectedScene: 0
+  isactive: 0
 --- !u!1 &1468047706726008291
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,6 +466,8 @@ MonoBehaviour:
   TriggerEndScene:
     m_PersistentCalls:
       m_Calls: []
+  ExpectedScene: 0
+  isactive: 0
 --- !u!1 &7758702646820573422
 GameObject:
   m_ObjectHideFlags: 0

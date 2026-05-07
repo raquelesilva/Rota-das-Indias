@@ -190,7 +190,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   onNodeEnterEvent: 
-  onNodeExitEvent: changeToIndex 1
+  onNodeExitEvent: changeToIndex1
   dialogueText: "Vai falar com eles para acalmar a tripula\xE7\xE3o; um deles deve
     estar ao p\xE9 do leme."
   nextNode: {fileID: 0}
@@ -472,7 +472,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   onNodeEnterEvent: 
-  onNodeExitEvent: 
+  onNodeExitEvent: NextDialogue
   dialogueText: "O leme \xE9 l\xE1 para tr\xE1s!"
   nextNode: {fileID: 0}
 --- !u!114 &9062891972851562187

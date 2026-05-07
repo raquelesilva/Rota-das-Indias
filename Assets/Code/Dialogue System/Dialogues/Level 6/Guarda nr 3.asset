@@ -1,0 +1,464 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7838173383705082029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: f78c3a1b-3ff4-439c-8581-0a93f3432859
+  position: {x: 3910.4, y: -83.2}
+  actor: {fileID: 11400000, guid: dfca65ba9ffc94c4f860a4db2361ecd8, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: "Errado! Est\xE1s quase l\xE1!"
+  nextNode: {fileID: 0}
+--- !u!114 &-6558442360968629873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: 1e99292a-8493-42d4-8e1b-da8e4f8629a9
+  position: {x: 4349.6, y: 216.8}
+  actor: {fileID: 11400000, guid: dfca65ba9ffc94c4f860a4db2361ecd8, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: GateOpen
+  dialogueText: "Correto podes avan\xE7ar!"
+  nextNode: {fileID: 0}
+--- !u!114 &-5940313047099036187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: f982cab5-5de6-4c71-9ff3-0cc742838436
+  position: {x: 3489.6, y: 216.8}
+  actor: {fileID: 11400000, guid: dfca65ba9ffc94c4f860a4db2361ecd8, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: "Para a  navega\xE7\xE3o astron\xF3mica, os instrumentos utilizados
+    eram\u2026\r\n"
+  nextNode: {fileID: 5834679406612744865}
+--- !u!114 &-4821642596795922013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75b9f1e79f335614581ae76f8aa80f47, type: 3}
+  m_Name: Choice Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.ChoiceDialogueNode
+  nodeGUID: 095924d0-6431-4f11-acca-ea0339f170fb
+  position: {x: 1542.4, y: 215.20001}
+  actor: {fileID: 11400000, guid: dfca65ba9ffc94c4f860a4db2361ecd8, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  choices:
+  - choiceText: "As frotas que zarparam de Lisboa em dire\xE7\xE3o \xE0 \xCDndia.\r\n"
+    nextNode: {fileID: 6550230512689110444}
+    requiredFlag: 
+    hideIfFlagMissing: 0
+  - choiceText: Um alimento que os marinheiros consumiam durante as viagens.
+    nextNode: {fileID: 6550230512689110444}
+    requiredFlag: 
+    hideIfFlagMissing: 0
+  - choiceText: Portos comerciais fortificados.
+    nextNode: {fileID: 7755366880003288128}
+    requiredFlag: 
+    hideIfFlagMissing: 0
+  - choiceText: Portulanos e fio-de-prumo.
+    nextNode: {fileID: 6550230512689110444}
+    requiredFlag: 
+    hideIfFlagMissing: 0
+--- !u!114 &-4527745254178380597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: c26479da-6c0b-4084-afb6-d29f47fea56e
+  position: {x: 820, y: 214.40001}
+  actor: {fileID: 11400000, guid: dfca65ba9ffc94c4f860a4db2361ecd8, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: "Um marinheiro que viaja pelo vasto imp\xE9rio portugu\xEAs deve
+    ter estes conhecimentos.\r\n"
+  nextNode: {fileID: 3818672911990758968}
+--- !u!114 &-3566350910927146580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: 4953c5ff-baf9-4e9d-891a-134e770617a1
+  position: {x: 3093.6, y: 216.8}
+  actor: {fileID: 11400000, guid: dfca65ba9ffc94c4f860a4db2361ecd8, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: "Correto! J\xE1 percebi como passas-te os outros pontos!"
+  nextNode: {fileID: -5940313047099036187}
+--- !u!114 &-2902676587573443447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75b9f1e79f335614581ae76f8aa80f47, type: 3}
+  m_Name: Choice Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.ChoiceDialogueNode
+  nodeGUID: e0c561aa-72d2-4e1b-bf53-e5ac4e5de16a
+  position: {x: 2731.2, y: 215.20001}
+  actor: {fileID: 11400000, guid: dfca65ba9ffc94c4f860a4db2361ecd8, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  choices:
+  - choiceText: "Arguim e Mina, no Atl\xE2ntico; Mo\xE7ambique e Sofala no \xCDndico.\r\n"
+    nextNode: {fileID: -3566350910927146580}
+    requiredFlag: 
+    hideIfFlagMissing: 0
+  - choiceText: "Arguim e Sofala, no Atl\xE2ntico; Mo\xE7ambique e Mina no \xCDndico."
+    nextNode: {fileID: -344800926120088007}
+    requiredFlag: 
+    hideIfFlagMissing: 0
+  - choiceText: "Arguim e Sofala, no \xCDndico; Mo\xE7ambique no Atl\xE2ntico."
+    nextNode: {fileID: -344800926120088007}
+    requiredFlag: 
+    hideIfFlagMissing: 0
+  - choiceText: "Mina e Sofala, no Atl\xE2ntico; Arguim no \xCDndico."
+    nextNode: {fileID: -344800926120088007}
+    requiredFlag: 
+    hideIfFlagMissing: 0
+--- !u!114 &-809445413985995411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3bad5b5386f17a42868ca511db94946, type: 3}
+  m_Name: 'Index [0]'
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
+  nodeGUID: 71c915a3-8c00-4635-b8c8-cbace13f961d
+  position: {x: 406.4, y: 214.40001}
+  actor: {fileID: 0}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  indexValue: 0
+  nextNode: {fileID: -4527745254178380597}
+--- !u!114 &-344800926120088007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: b23bb5c9-2181-4d38-b9d3-3ed85fe4673c
+  position: {x: 2731.2, y: -102.4}
+  actor: {fileID: 11400000, guid: dfca65ba9ffc94c4f860a4db2361ecd8, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: Errado, nem sabes as nossas principais fortalezas
+  nextNode: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf1e22609fc0d1e41839aa88ab1d1cb7, type: 3}
+  m_Name: Guarda nr 3
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.DialogueContainer
+  dialogueID: 
+  dialogueTitle: 
+  description: 
+  nodes:
+  - {fileID: -809445413985995411}
+  - {fileID: -4527745254178380597}
+  - {fileID: 3818672911990758968}
+  - {fileID: -4821642596795922013}
+  - {fileID: 6550230512689110444}
+  - {fileID: 7755366880003288128}
+  - {fileID: -2902676587573443447}
+  - {fileID: 5452013813537268235}
+  - {fileID: -344800926120088007}
+  - {fileID: -3566350910927146580}
+  - {fileID: -5940313047099036187}
+  - {fileID: 5834679406612744865}
+  - {fileID: -6558442360968629873}
+  - {fileID: -7838173383705082029}
+  startNode: {fileID: 0}
+  backgroundMusic: {fileID: 0}
+  backgroundMusicVolume: 1
+  onDialogueStartEvent: 
+  onDialogueEndEvent: 
+--- !u!114 &3818672911990758968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: a1b615d0-237d-4251-bbf8-cb60c333d0f2
+  position: {x: 1190.4, y: 215.20001}
+  actor: {fileID: 11400000, guid: dfca65ba9ffc94c4f860a4db2361ecd8, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: As feitorias eram
+  nextNode: {fileID: -4821642596795922013}
+--- !u!114 &5452013813537268235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: f1aa392e-b92e-4b2a-a9fa-4e28582cf81b
+  position: {x: 2368, y: 216}
+  actor: {fileID: 11400000, guid: dfca65ba9ffc94c4f860a4db2361ecd8, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: 'Quais eram as feitorias mais famosas?
+
+'
+  nextNode: {fileID: -2902676587573443447}
+--- !u!114 &5834679406612744865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75b9f1e79f335614581ae76f8aa80f47, type: 3}
+  m_Name: Choice Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.ChoiceDialogueNode
+  nodeGUID: 791b90f2-b28d-44e7-8256-a5861a4030f4
+  position: {x: 3910.4, y: 215.20001}
+  actor: {fileID: 11400000, guid: dfca65ba9ffc94c4f860a4db2361ecd8, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  choices:
+  - choiceText: "Astrol\xE1bio, balestilha e quadrante."
+    nextNode: {fileID: -6558442360968629873}
+    requiredFlag: 
+    hideIfFlagMissing: 0
+  - choiceText: Portulanos e fio-de-prumo.
+    nextNode: {fileID: -7838173383705082029}
+    requiredFlag: 
+    hideIfFlagMissing: 0
+  - choiceText: "Mapa e b\xFAssola."
+    nextNode: {fileID: -7838173383705082029}
+    requiredFlag: 
+    hideIfFlagMissing: 0
+  - choiceText: Todos os restantes.
+    nextNode: {fileID: -7838173383705082029}
+    requiredFlag: 
+    hideIfFlagMissing: 0
+--- !u!114 &6550230512689110444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: 14820d61-b6de-4296-8cb3-b835e78b6a78
+  position: {x: 1564.8, y: -109.6}
+  actor: {fileID: 11400000, guid: dfca65ba9ffc94c4f860a4db2361ecd8, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: Errado! Tenta Outra vez
+  nextNode: {fileID: 0}
+--- !u!114 &7755366880003288128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: 15821625-074a-48de-b51d-a0e96a78aae6
+  position: {x: 1962.4, y: 215.20001}
+  actor: {fileID: 11400000, guid: dfca65ba9ffc94c4f860a4db2361ecd8, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: Correto!
+  nextNode: {fileID: 5452013813537268235}

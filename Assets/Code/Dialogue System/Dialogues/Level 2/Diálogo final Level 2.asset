@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 'Index [0]'
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
   nodeGUID: b5a12900-dfce-41f8-b4f2-0bc570624e10
-  position: {x: -679, y: -1093}
+  position: {x: -679.2, y: -1093.6}
   actor: {fileID: 0}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -40,8 +40,8 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 4f32620a-bb59-42c3-8d5e-5d4084b2671f
-  position: {x: 29, y: -470}
-  actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
+  position: {x: 28.8, y: -470.4}
+  actor: {fileID: 11400000, guid: bc41ee0d904b9a74e9665101285eb970, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
   onNodeEnter:
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 'Index [2]'
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
   nodeGUID: 98cdfd39-017f-498a-8a24-ba13137a0a69
-  position: {x: -679, y: -470}
+  position: {x: -679.2, y: -470.4}
   actor: {fileID: 0}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Name: 'Index [1]'
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
   nodeGUID: 192c441c-e40e-473b-b655-f96748f1befe
-  position: {x: -679, y: -803}
+  position: {x: -679.2, y: -803.2}
   actor: {fileID: 0}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 58ae9dfa-a8b2-48e6-bfcc-7985c5e7c721
-  position: {x: -326, y: -470}
+  position: {x: -325.6, y: -470.4}
   actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 8dfe7c77-4369-499f-89f2-36b6e908586e
-  position: {x: -326, y: -803}
+  position: {x: -325.6, y: -803.2}
   actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 37480801-56e5-46bb-bdd8-bea3fa663985
-  position: {x: -326, y: -1093}
+  position: {x: -325.6, y: -1093.6}
   actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
