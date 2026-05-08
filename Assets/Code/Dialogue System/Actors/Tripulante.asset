@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e8f60065bb187b4098f5d27f736f3cd, type: 3}
   m_Name: Tripulante
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.DialogueActor
-  actorName: Tripulante Experiente
+  actorName: Tripulante
   actorPortrait: {fileID: 0}
