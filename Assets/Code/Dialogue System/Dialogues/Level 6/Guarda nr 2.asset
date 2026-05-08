@@ -25,7 +25,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: GateOpen
   onNodeExitEvent: 
-  dialogueText: Que conhecimento vasto, muito bem
+  dialogueText: Que conhecimento vasto, muito bem, continua assim
   nextNode: {fileID: 0}
 --- !u!114 &-4821642596795922013
 MonoBehaviour:
@@ -94,7 +94,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: "Se \xE9s marinheiro,, tens de saber estas respostas!\r\n"
+  dialogueText: "Se \xE9s marinheiro, tens de saber estas respostas!\r\n"
   nextNode: {fileID: 3818672911990758968}
 --- !u!114 &-2902676587573443447
 MonoBehaviour:
@@ -331,5 +331,6 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: Correto!
+  dialogueText: "Correto! Foi esta rota que nos deu acesso ao oceano \xCDndico e
+    a tudo o que ele nos poderia dar!"
   nextNode: {fileID: 5452013813537268235}

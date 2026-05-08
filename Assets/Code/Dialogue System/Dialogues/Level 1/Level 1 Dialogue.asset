@@ -136,6 +136,7 @@ MonoBehaviour:
   - {fileID: 7889816584373889643}
   - {fileID: -1263160367890942543}
   - {fileID: 1953231214650766445}
+  - {fileID: 3111890239006532662}
   startNode: {fileID: -1019953661676630418}
   backgroundMusic: {fileID: 0}
   backgroundMusicVolume: 1
@@ -196,7 +197,7 @@ MonoBehaviour:
   onNodeEnterEvent: startNextPuzzle
   onNodeExitEvent: 
   dialogueText: Bom trabalho!
-  nextNode: {fileID: 2255238666496592648}
+  nextNode: {fileID: 3111890239006532662}
 --- !u!114 &2255238666496592648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,7 +211,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 8c723844-b2c6-40e1-8d5b-d91c2bd63bd7
-  position: {x: 804, y: 532.8}
+  position: {x: 1092.8, y: 532.8}
   actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -224,6 +225,34 @@ MonoBehaviour:
   onNodeExitEvent: 
   dialogueText: Hora de voltar ao barco!
   nextNode: {fileID: 0}
+--- !u!114 &3111890239006532662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: 2ba3bb15-71cf-4616-b948-6b970117c069
+  position: {x: 758.4, y: 533.6}
+  actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: "Este azulejo demonstra a conquista de ceuta feita pelo nosso antigo
+    Rei D. Jo\xE3o I"
+  nextNode: {fileID: 2255238666496592648}
 --- !u!114 &5647293520448082675
 MonoBehaviour:
   m_ObjectHideFlags: 0

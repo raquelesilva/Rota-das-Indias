@@ -15,7 +15,7 @@ public class gateopen : MonoBehaviour
     {
         if (check == true && gameObject.transform.position.y > test)
         {
-            gameObject.transform.position -= new Vector3(0, 0.01f, 0);
+            gameObject.transform.position -= new Vector3(0, Time.deltaTime * 1.5f, 0);
         }
 
     }

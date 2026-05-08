@@ -17,8 +17,8 @@ public class AzuleijoPuzzle : MonoBehaviour
         player.SetActive(false);
         puzzle.SetActive(true);
         if (hinting.Count > 0)
-        { 
-            StartCoroutine(Hinting(6f));
+        {
+            StartCoroutine(Hinting(20f));
         }
     }
 
@@ -43,7 +43,7 @@ public class AzuleijoPuzzle : MonoBehaviour
         hinting.RemoveAt(count);
         if (hinting.Count > 0)
         {
-            StartCoroutine(Hinting(6f));
+            StartCoroutine(Hinting(20f));
         }
     }
 }

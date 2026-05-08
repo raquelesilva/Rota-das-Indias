@@ -1,7 +1,9 @@
 using UnityEngine;
-
+using UnityEngine.Events;
 public class Piece : MonoBehaviour
 {
+    [SerializeField] private UnityEvent Feedback;
+    private bool feedback;
     public enum Minigame
     {
         puzzle,
@@ -47,6 +49,7 @@ public class Piece : MonoBehaviour
 
     public bool IsInCorrectPosition()
     {
+        feedback = true;
         if (isLockedInPlace) return true;
 
         float distance = Vector2.Distance(transform.position, correctPosition);
@@ -64,24 +67,29 @@ public class Piece : MonoBehaviour
 
     public void MoveStartPos()
     {
+        if (feedback == true)
+        {
+            Feedback?.Invoke();
+            feedback = false;
+        }
         float distance = Vector2.Distance(transform.position, startpos);
         if (distance > 0.3f)
         {
             if (pieceObject.transform.position.x > startpos.x + 0.3f)
             {
-                pieceObject.transform.position -= new Vector3(0.1f, 0, 0);
+                pieceObject.transform.position -= new Vector3(Time.deltaTime * 15, 0, 0);
             }
             else if (pieceObject.transform.position.x < startpos.x - 0.3f)
             {
-                pieceObject.transform.position += new Vector3(0.1f, 0, 0);
+                pieceObject.transform.position += new Vector3(Time.deltaTime * 15, 0, 0);
             }
             if (pieceObject.transform.position.y > startpos.y + 0.3f)
             {
-                pieceObject.transform.position -= new Vector3(0, 0.2f / distance, 0);
+                pieceObject.transform.position -= new Vector3(0, Time.deltaTime * 15, 0);
             }
             else if (pieceObject.transform.position.y < startpos.y - 0.3f)
             {
-                pieceObject.transform.position += new Vector3(0, 0.2f / distance, 0);
+                pieceObject.transform.position += new Vector3(0, Time.deltaTime * 15, 0);
             }
         }
     }

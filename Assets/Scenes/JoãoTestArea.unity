@@ -374,6 +374,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17529217a552004a9cc7090ab58d3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Piece
+  Feedback:
+    m_PersistentCalls:
+      m_Calls: []
   minihandler: 2
   correctPosition: {x: 0, y: 0, z: 0}
   rightplace: 0
@@ -474,6 +477,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  inputReader: {fileID: 0}
 --- !u!1 &249940234
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,7 +638,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4459864851310106424, guid: da18d24d7c2d6a94a866dccc4f098083, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6603460485679761389, guid: da18d24d7c2d6a94a866dccc4f098083, type: 3}
       propertyPath: currentPlayerState
@@ -779,6 +783,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17529217a552004a9cc7090ab58d3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Piece
+  Feedback:
+    m_PersistentCalls:
+      m_Calls: []
   minihandler: 2
   correctPosition: {x: 0, y: 0, z: 0}
   rightplace: 0
@@ -902,6 +909,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17529217a552004a9cc7090ab58d3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Piece
+  Feedback:
+    m_PersistentCalls:
+      m_Calls: []
   minihandler: 2
   correctPosition: {x: 0, y: 0, z: 0}
   rightplace: 0
@@ -1142,6 +1152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript1
   puzzle: {fileID: 800129694}
   player: {fileID: 1753211172}
+  hinting: []
 --- !u!114 &401487238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1381,6 +1392,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17529217a552004a9cc7090ab58d3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Piece
+  Feedback:
+    m_PersistentCalls:
+      m_Calls: []
   minihandler: 2
   correctPosition: {x: 0, y: 0, z: 0}
   rightplace: 0
@@ -1911,6 +1925,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17529217a552004a9cc7090ab58d3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Piece
+  Feedback:
+    m_PersistentCalls:
+      m_Calls: []
   minihandler: 2
   correctPosition: {x: 0, y: 0, z: 0}
   rightplace: 0
@@ -2568,6 +2585,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17529217a552004a9cc7090ab58d3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Piece
+  Feedback:
+    m_PersistentCalls:
+      m_Calls: []
   minihandler: 2
   correctPosition: {x: 0, y: 0, z: 0}
   rightplace: 0
@@ -2750,6 +2770,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript1
   puzzle: {fileID: 503122526}
   player: {fileID: 1753211172}
+  hinting: []
 --- !u!114 &1492429707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3621,6 +3642,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17529217a552004a9cc7090ab58d3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Piece
+  Feedback:
+    m_PersistentCalls:
+      m_Calls: []
   minihandler: 2
   correctPosition: {x: 0, y: 0, z: 0}
   rightplace: 0
@@ -3888,6 +3912,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript1
   puzzle: {fileID: 1203289732}
   player: {fileID: 1753211172}
+  hinting: []
 --- !u!1 &2049677751
 GameObject:
   m_ObjectHideFlags: 0
@@ -4025,6 +4050,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2049677751}
   m_CullTransparentMesh: 1
+--- !u!114 &2069964984 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8414386387733684364, guid: da18d24d7c2d6a94a866dccc4f098083, type: 3}
+  m_PrefabInstance: {fileID: 252995729}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da035e38063e03e48b2348d6718a40cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2116966189
 GameObject:
   m_ObjectHideFlags: 0
@@ -4170,6 +4206,78 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1056696127811651290, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: feedback
+      value: "Esta mercadoria n\xE3o era comercializada em Africa"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1056696127811651290, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1056696127811651290, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1056696127811651290, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2069964984}
+    - target: {fileID: 1056696127811651290, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1056696127811651290, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetWrongMessage
+      objectReference: {fileID: 0}
+    - target: {fileID: 1056696127811651290, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CoreSystems.Managers.NotificationManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1056696127811651290, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: "Esta mercadoria n\xE3o era comercializada na Africa"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1056696127811651290, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379073767718500124, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: feedback
+      value: "N\xE3o est\xE1 na posi\xE7\xE3o correta, tenta outra vez"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379073767718500124, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379073767718500124, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379073767718500124, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2069964984}
+    - target: {fileID: 1379073767718500124, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379073767718500124, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetWrongMessage
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379073767718500124, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CoreSystems.Managers.NotificationManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379073767718500124, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: "A mercadoria n\xE3o est\xE1 no lugar correto, tenta outra vez"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379073767718500124, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2169004931167594881, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4214,6 +4322,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Map_screen
       objectReference: {fileID: 0}
+    - target: {fileID: 2369796966891253430, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2601759791784747657, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2601759791784747657, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2601759791784747657, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2069964984}
+    - target: {fileID: 2601759791784747657, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2601759791784747657, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
       propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -4226,6 +4354,206 @@ PrefabInstance:
       propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 1492429707}
+    - target: {fileID: 2601759791784747657, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetWrongMessage
+      objectReference: {fileID: 0}
+    - target: {fileID: 2601759791784747657, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StopPuzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2601759791784747657, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CoreSystems.Managers.NotificationManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2601759791784747657, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AzuleijoPuzzle, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2601759791784747657, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869466727339566480, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: feedback
+      value: "Esta mercadoria n\xE3o era comercializada em Africa"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869466727339566480, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869466727339566480, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869466727339566480, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2069964984}
+    - target: {fileID: 2869466727339566480, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869466727339566480, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetWrongMessage
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869466727339566480, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CoreSystems.Managers.NotificationManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869466727339566480, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: "Esta mercadoria n\xE3o era comercializada na Africa"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2869466727339566480, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491750039327354380, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: feedback
+      value: "Esta mercadoria n\xE3o era comercializada em Africa"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491750039327354380, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491750039327354380, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491750039327354380, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2069964984}
+    - target: {fileID: 6491750039327354380, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491750039327354380, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetWrongMessage
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491750039327354380, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CoreSystems.Managers.NotificationManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491750039327354380, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: "Esta mercadoria n\xE3o era comercializada na Africa"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491750039327354380, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7274394365670495919, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: feedback
+      value: "N\xE3o est\xE1 na posi\xE7\xE3o correta, tenta outra vez"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7274394365670495919, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7274394365670495919, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7274394365670495919, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2069964984}
+    - target: {fileID: 7274394365670495919, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7274394365670495919, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetWrongMessage
+      objectReference: {fileID: 0}
+    - target: {fileID: 7274394365670495919, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CoreSystems.Managers.NotificationManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7274394365670495919, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: "A mercadoria n\xE3o est\xE1 no lugar correto, tenta outra vez"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7274394365670495919, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8046821894896221517, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: feedback
+      value: "N\xE3o est\xE1 na posi\xE7\xE3o correta, tenta outra vez"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8046821894896221517, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8046821894896221517, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8046821894896221517, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2069964984}
+    - target: {fileID: 8046821894896221517, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8046821894896221517, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetWrongMessage
+      objectReference: {fileID: 0}
+    - target: {fileID: 8046821894896221517, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CoreSystems.Managers.NotificationManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8046821894896221517, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: "A mercadoria n\xE3o est\xE1 no lugar correto, tenta outra vez"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8046821894896221517, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331786817158573895, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: feedback
+      value: "N\xE3o est\xE1 na posi\xE7\xE3o correta, tenta outra vez"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331786817158573895, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331786817158573895, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331786817158573895, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2069964984}
+    - target: {fileID: 8331786817158573895, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331786817158573895, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetWrongMessage
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331786817158573895, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CoreSystems.Managers.NotificationManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331786817158573895, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: "A mercadoria n\xE3o est\xE1 no lugar correto, tenta outra vez"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331786817158573895, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

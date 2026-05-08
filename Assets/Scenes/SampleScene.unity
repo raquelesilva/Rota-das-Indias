@@ -25,7 +25,7 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SubtractiveShadowColor: {r: 0.41960785, g: 0.47843137, b: 0.627451, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -485,6 +485,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17529217a552004a9cc7090ab58d3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Piece
+  Feedback:
+    m_PersistentCalls:
+      m_Calls: []
   minihandler: 2
   correctPosition: {x: 0, y: 0, z: 0}
   rightplace: 0
@@ -1811,6 +1814,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17529217a552004a9cc7090ab58d3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Piece
+  Feedback:
+    m_PersistentCalls:
+      m_Calls: []
   minihandler: 2
   correctPosition: {x: 0, y: 0, z: 0}
   rightplace: 0
@@ -3578,6 +3584,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17529217a552004a9cc7090ab58d3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Piece
+  Feedback:
+    m_PersistentCalls:
+      m_Calls: []
   minihandler: 2
   correctPosition: {x: 0, y: 0, z: 0}
   rightplace: 0
@@ -5522,6 +5531,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17529217a552004a9cc7090ab58d3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Piece
+  Feedback:
+    m_PersistentCalls:
+      m_Calls: []
   minihandler: 2
   correctPosition: {x: 0, y: 0, z: 0}
   rightplace: 0
@@ -8771,6 +8783,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17529217a552004a9cc7090ab58d3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Piece
+  Feedback:
+    m_PersistentCalls:
+      m_Calls: []
   minihandler: 2
   correctPosition: {x: 0, y: 0, z: 0}
   rightplace: 0
@@ -11641,6 +11656,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17529217a552004a9cc7090ab58d3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Piece
+  Feedback:
+    m_PersistentCalls:
+      m_Calls: []
   minihandler: 2
   correctPosition: {x: 0, y: 0, z: 0}
   rightplace: 0
@@ -13314,6 +13332,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17529217a552004a9cc7090ab58d3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Piece
+  Feedback:
+    m_PersistentCalls:
+      m_Calls: []
   minihandler: 2
   correctPosition: {x: 0, y: 0, z: 0}
   rightplace: 0
@@ -17554,8 +17575,8 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "Este instrumento de navega\xE7\xE3o mostra o caminho
-            que deves seguir "
+          m_StringArgument: 'Com a minha ajuda, os marinheiros orientam-se observando
+            os astros '
           m_BoolArgument: 0
         m_CallState: 2
   - m_PersistentCalls:
@@ -17583,8 +17604,8 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 'Com a minha ajuda, os marinheiros orientam-se observando
-            os astros '
+          m_StringArgument: "Este instrumento de navega\xE7\xE3o mostra o caminho
+            que deves seguir "
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1788179959729584355
@@ -17617,8 +17638,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1788179959729584354}
-        m_TargetAssemblyTypeName: NewMonoBehaviourScript1, Assembly-CSharp
-        m_MethodName: startpuzzle
+        m_TargetAssemblyTypeName: AzuleijoPuzzle, Assembly-CSharp
+        m_MethodName: StartPuzzle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

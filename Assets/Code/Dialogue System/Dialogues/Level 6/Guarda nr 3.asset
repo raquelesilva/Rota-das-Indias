@@ -52,7 +52,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: GateOpen
-  dialogueText: "Correto podes avan\xE7ar!"
+  dialogueText: "Correto! \xC9s perito nesta area bom trabalho!"
   nextNode: {fileID: 0}
 --- !u!114 &-5940313047099036187
 MonoBehaviour:
@@ -335,7 +335,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: As feitorias eram
+  dialogueText: As feitorias eram...
   nextNode: {fileID: -4821642596795922013}
 --- !u!114 &5452013813537268235
 MonoBehaviour:
@@ -433,7 +433,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: Errado! Tenta Outra vez
+  dialogueText: Errado! Tenta outra vez
   nextNode: {fileID: 0}
 --- !u!114 &7755366880003288128
 MonoBehaviour:
@@ -460,5 +460,5 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: Correto!
+  dialogueText: "Boa! \xC9 isso, eram fortalezas quem funcionavam como portos! "
   nextNode: {fileID: 5452013813537268235}

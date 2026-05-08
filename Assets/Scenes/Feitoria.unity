@@ -3498,6 +3498,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1056696127811651290, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1676943937}
+    - target: {fileID: 1056696127811651290, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetWrongMessage
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379073767718500124, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1676943937}
+    - target: {fileID: 1379073767718500124, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetWrongMessage
+      objectReference: {fileID: 0}
     - target: {fileID: 2169004931167594881, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 491.33914
@@ -3546,6 +3562,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2869466727339566480, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1676943937}
+    - target: {fileID: 2869466727339566480, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetWrongMessage
+      objectReference: {fileID: 0}
     - target: {fileID: 5473622562443888006, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
       propertyPath: m_LocalScale.x
       value: 500
@@ -3561,6 +3585,38 @@ PrefabInstance:
     - target: {fileID: 6056988623618982824, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
       propertyPath: m_LocalScale.y
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6491750039327354380, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1676943937}
+    - target: {fileID: 6491750039327354380, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetWrongMessage
+      objectReference: {fileID: 0}
+    - target: {fileID: 7274394365670495919, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1676943937}
+    - target: {fileID: 7274394365670495919, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetWrongMessage
+      objectReference: {fileID: 0}
+    - target: {fileID: 8046821894896221517, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1676943937}
+    - target: {fileID: 8046821894896221517, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetWrongMessage
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331786817158573895, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1676943937}
+    - target: {fileID: 8331786817158573895, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetWrongMessage
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4630,7 +4686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7237ce144eb10a3418a1e75fb7bef309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.DialogueTrigger
-  dialogue: {fileID: 11400000, guid: 569d0817a2628de4c8fceec95fcadeea, type: 2}
+  dialogue: {fileID: 11400000, guid: 1dd384269e76d914591c260383ec08b9, type: 2}
   startIndex: 0
   onDialogueStart:
     m_PersistentCalls:
@@ -4638,143 +4694,7 @@ MonoBehaviour:
   onDialogueEnd:
     m_PersistentCalls:
       m_Calls: []
-  customTriggers:
-  - triggerID: StartDrag 1
-    onTrigger:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: FancyCrab.CustomPackages.FirstPersonController.PlayerStateHandler,
-            Assembly-CSharp
-          m_MethodName: SetStateToPaused
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-  - triggerID: StartDrag 2
-    onTrigger:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: FancyCrab.CustomPackages.FirstPersonController.PlayerStateHandler,
-            Assembly-CSharp
-          m_MethodName: SetStateToPaused
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-  - triggerID: enablePedestal
-    onTrigger:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: FancyCrab.CoreSystems.InteractionSystem.InteractableObject,
-            Assembly-CSharp
-          m_MethodName: SetCanInteract
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: Outline, Assembly-CSharp
-          m_MethodName: set_enabled
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-  - triggerID: startNextPuzzle
-    onTrigger:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1591673471}
-          m_TargetAssemblyTypeName: FancyCrab.DialogueSystem.DialogueTrigger, Assembly-CSharp
-          m_MethodName: TriggerDialogueFromIndex
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 2
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-  - triggerID: endLevel 1
-    onTrigger:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1591673471}
-          m_TargetAssemblyTypeName: FancyCrab.DialogueSystem.DialogueTrigger, Assembly-CSharp
-          m_MethodName: SetDialogue
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 5d12a7f7fbbe8a146ac8f4d9374e3197, type: 2}
-            m_ObjectArgumentAssemblyTypeName: FancyCrab.DialogueSystem.DialogueContainer,
-              Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - triggerID: changeToIndex 1
-    onTrigger:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1591673471}
-          m_TargetAssemblyTypeName: FancyCrab.DialogueSystem.DialogueTrigger, Assembly-CSharp
-          m_MethodName: SetDialogueIndex
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+  customTriggers: []
 --- !u!114 &1591673472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4803,6 +4723,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  canUseOutline: 1
 --- !u!136 &1591673473
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4892,7 +4813,7 @@ Transform:
   m_GameObject: {fileID: 1591673470}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 489.04, y: 40.98, z: 366.66}
+  m_LocalPosition: {x: 485.69, y: 40.98, z: 362.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5311,6 +5232,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 487600, guid: 0137f721b82b567438eb74a52f479f35, type: 3}
   m_PrefabInstance: {fileID: 1676795133}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1676943937 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8414386387733684364, guid: da18d24d7c2d6a94a866dccc4f098083, type: 3}
+  m_PrefabInstance: {fileID: 1923608391}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da035e38063e03e48b2348d6718a40cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1688101250
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5529,13 +5461,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 724ae10ec2907e2448185e19b43bf739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.CoreSystems.InteractionSystem.InteractableObject
-  canInteract: 1
+  canInteract: 0
   onInteract:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1800890308}
-        m_TargetAssemblyTypeName: NewMonoBehaviourScript1, Assembly-CSharp
-        m_MethodName: startpuzzle
+        m_TargetAssemblyTypeName: AzuleijoPuzzle, Assembly-CSharp
+        m_MethodName: StartPuzzle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5558,6 +5490,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  canUseOutline: 0
 --- !u!65 &1800890313
 BoxCollider:
   m_ObjectHideFlags: 0

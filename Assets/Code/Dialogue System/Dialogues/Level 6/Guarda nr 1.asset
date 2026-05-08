@@ -330,5 +330,5 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: Correto!
+  dialogueText: Exatamente, foi o Infante D. Henrique
   nextNode: {fileID: 5452013813537268235}

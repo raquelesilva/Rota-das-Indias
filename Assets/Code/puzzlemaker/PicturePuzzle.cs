@@ -12,6 +12,7 @@ public class PicturePuzzle : MonoBehaviour
     [SerializeField] private GameObject completedPicture;
     [SerializeField] private UnityEvent checkForWin;
 
+
     private Piece currentPiece;
     private Camera mainCamera;
     private bool goingback = false;
@@ -26,22 +27,13 @@ public class PicturePuzzle : MonoBehaviour
         mainCamera = Camera.main;
     }
 
-    private void OnEnable()
-    {
-        inputReader.Interact += OnInteractCallback;
-        inputReader.CrouchPerformed += OnControllClick;
-    }
 
-    private void OnDisable()
-    {
-        inputReader.Interact -= OnInteractCallback;
-        inputReader.CrouchPerformed -= OnControllClick;
-    }
+
 
     private void OnInteractCallback()
     {
         if (!crouchClicked) return;
- 
+
         completedPicture.SetActive(true);
         checkForWin?.Invoke();
 
@@ -88,6 +80,7 @@ public class PicturePuzzle : MonoBehaviour
         {
             if (currentPiece.minihandler == Piece.Minigame.map)
             {
+
                 goingback = true;
                 float distance = Vector2.Distance(currentPiece.transform.position, currentPiece.startpos);
                 currentPiece.MoveStartPos();

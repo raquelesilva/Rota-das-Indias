@@ -40,7 +40,7 @@ MonoBehaviour:
   m_Name: 'Index [0]'
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
   nodeGUID: 39653070-4a63-40c1-bd0f-45990dc9c61f
-  position: {x: 1470, y: 184}
+  position: {x: 1470.4, y: 184}
   actor: {fileID: 0}
   nodeAudio: {fileID: 0}
   nodeIndex: -1

@@ -20091,6 +20091,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 648775142014968281, guid: da18d24d7c2d6a94a866dccc4f098083, type: 3}
+      propertyPath: m_lineSpacing
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 4459864850019384738, guid: da18d24d7c2d6a94a866dccc4f098083, type: 3}
       propertyPath: m_LocalPosition.x
       value: 537.15594
@@ -20134,6 +20138,10 @@ PrefabInstance:
     - target: {fileID: 4459864850019384750, guid: da18d24d7c2d6a94a866dccc4f098083, type: 3}
       propertyPath: m_Name
       value: FirstPersonController
+      objectReference: {fileID: 0}
+    - target: {fileID: 5389704380952048322, guid: da18d24d7c2d6a94a866dccc4f098083, type: 3}
+      propertyPath: m_fontStyle
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8496145630410245162, guid: da18d24d7c2d6a94a866dccc4f098083, type: 3}
       propertyPath: m_SortingOrder
