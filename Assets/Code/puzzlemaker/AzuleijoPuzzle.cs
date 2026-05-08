@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using System.Collections;
 using System.Collections.Generic;
+using FancyCrab.CustomPackages.FirstPersonController;
 
 public class AzuleijoPuzzle : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class AzuleijoPuzzle : MonoBehaviour
     public void StartPuzzle()
     {
         count = hinting.Count;
+        
         player.SetActive(false);
         puzzle.SetActive(true);
         if (hinting.Count > 0)
@@ -30,6 +32,7 @@ public class AzuleijoPuzzle : MonoBehaviour
     IEnumerator Stopping(float delay)
     {
         yield return new WaitForSeconds(delay);
+
         player.SetActive(true);
         puzzle.SetActive(false);
     }

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9076139930249724146
+--- !u!114 &-7522401605629269550
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
-  nodeGUID: da0054e4-d70e-4432-bdb0-7ba06dc7f1ec
-  position: {x: 1808, y: 184}
-  actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
+  nodeGUID: 37f0886e-ed1a-4375-91df-8f543bbbc7d2
+  position: {x: 844, y: 293}
+  actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
   onNodeEnter:
@@ -24,10 +24,39 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   onNodeEnterEvent: 
-  onNodeExitEvent: SetMatey
-  dialogueText: "Muito bem, agora rapido temos de voltar l\xE1 acima"
+  onNodeExitEvent: 
+  dialogueText: "R\xE1pido! Precisamos que algu\xE9m v\xE1 buscar os instrumentos
+    de navega\xE7\xE3o l\xE1 embaixo, sen\xE3o vamos ficar perdidos neste mar e nunca
+    chegaremos ao nosso destino."
+  nextNode: {fileID: -5790253000910966942}
+--- !u!114 &-5790253000910966942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: 12c8d149-4cb9-4a3f-b9d1-0f4a128da3fa
+  position: {x: 1195, y: 293}
+  actor: {fileID: 11400000, guid: bc41ee0d904b9a74e9665101285eb970, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: "Dirige-te ao conv\xE9s!"
   nextNode: {fileID: 0}
---- !u!114 &-4066440984156287190
+--- !u!114 &-5229801226904865628
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -39,8 +68,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3bad5b5386f17a42868ca511db94946, type: 3}
   m_Name: 'Index [0]'
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
-  nodeGUID: 39653070-4a63-40c1-bd0f-45990dc9c61f
-  position: {x: 1470, y: 184}
+  nodeGUID: 530b2d93-1c85-4687-a807-1e778003b5aa
+  position: {x: 516, y: 293}
   actor: {fileID: 0}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -53,7 +82,7 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   indexValue: 0
-  nextNode: {fileID: -9076139930249724146}
+  nextNode: {fileID: -7522401605629269550}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,14 +93,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf1e22609fc0d1e41839aa88ab1d1cb7, type: 3}
-  m_Name: After Astriolabio
+  m_Name: InitDialogue Matey
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.DialogueContainer
   dialogueID: 
   dialogueTitle: 
   description: 
   nodes:
-  - {fileID: -4066440984156287190}
-  - {fileID: -9076139930249724146}
+  - {fileID: -5229801226904865628}
+  - {fileID: -7522401605629269550}
+  - {fileID: -5790253000910966942}
   startNode: {fileID: 0}
   backgroundMusic: {fileID: 0}
   backgroundMusicVolume: 1

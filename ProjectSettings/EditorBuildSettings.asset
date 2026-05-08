@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Feitoria.unity
     guid: 072920c5bf844d04d801a1203787f62a
   - enabled: 1
+    path: Assets/Scenes/Boat 2.unity
+    guid: c1b6f51dc9b25dc438d910e0cf0ba6bb
+  - enabled: 1
     path: Assets/Scenes/Goa.unity
     guid: a6ba7caf74f9ff54280d378587f57334
   m_configObjects:

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 86fd23d2-b71a-4f17-82a4-55bcdc7a0007
-  position: {x: 978.4, y: 656}
+  position: {x: 978, y: 656}
   actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -26,7 +26,7 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   dialogueText: Ajuda-me aqui a explicar, temos outras pessoas a bordo que sabem.
-  nextNode: {fileID: 0}
+  nextNode: {fileID: 1130437968014047995}
 --- !u!114 &-7978213153558393981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40,7 +40,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 1ea85b76-4be4-4702-94ee-a7fb9fda3061
-  position: {x: 3306.4, y: 844}
+  position: {x: 3306, y: 844}
   actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -53,7 +53,7 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   dialogueText: "Sei que uma capitolio n\xE3o \xE9 bem fortificada."
-  nextNode: {fileID: 0}
+  nextNode: {fileID: 6243324122858473580}
 --- !u!114 &-6252454574358140877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 59ad2e05-4d75-47eb-93a0-a560beb0c2ac
-  position: {x: 311.2, y: 656}
+  position: {x: 311, y: 656}
   actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -81,7 +81,7 @@ MonoBehaviour:
   onNodeExitEvent: 
   dialogueText: "Olha, est\xE1 ali o Capit\xF3lio de S\xE3o Tom\xE9 e Pr\xEDncipe;
     tinha um primo que se aventurara para estas zonas; ser\xE1 que ele est\xE1 bem?"
-  nextNode: {fileID: 0}
+  nextNode: {fileID: 356075699003858490}
 --- !u!114 &-5163936746711290081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Name: 'Index [0]'
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
   nodeGUID: a02090d3-a845-4b9c-ae1f-e18ca54c15f2
-  position: {x: -21.6, y: 656}
+  position: {x: -22, y: 656}
   actor: {fileID: 0}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -108,7 +108,7 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   indexValue: 0
-  nextNode: {fileID: 0}
+  nextNode: {fileID: -6252454574358140877}
 --- !u!114 &-4685949136084045049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: d59b8cc1-2552-49fe-a699-de82e8a54d6c
-  position: {x: 2939.2, y: 578.39996}
+  position: {x: 2939, y: 578}
   actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -135,7 +135,7 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   dialogueText: "Se bem me lembro, uma feitoria \xE9 dirigida por um feitor."
-  nextNode: {fileID: 0}
+  nextNode: {fileID: -1995054991938075597}
 --- !u!114 &-3747708295602172110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 154e22ab-6c94-40f2-a773-2d2f2b850716
-  position: {x: 311.2, y: 1328}
+  position: {x: 638, y: 1315}
   actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: a4bf923f-1d10-4019-a276-2d550b297b18
-  position: {x: 4419.2, y: 730.39996}
+  position: {x: 4419, y: 730}
   actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 1cdc6c51-27e3-4764-8faa-ad8859c2213f
-  position: {x: 2180, y: 388.80002}
+  position: {x: 2180, y: 389}
   actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 21677cf6-e560-43ca-a319-efb127abfe79
-  position: {x: 3306.4, y: 578.39996}
+  position: {x: 3306, y: 578}
   actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -246,7 +246,7 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   dialogueText: "Sei que uma feitoria \xE9 bem fortificada."
-  nextNode: {fileID: 0}
+  nextNode: {fileID: 3539859577576607783}
 --- !u!114 &-430788501844688924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,7 +260,7 @@ MonoBehaviour:
   m_Name: Choice Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.ChoiceDialogueNode
   nodeGUID: 64e6f347-479c-4807-b4c4-057dd00c67e6
-  position: {x: 1663.2, y: 656}
+  position: {x: 1663, y: 656}
   actor: {fileID: 11400000, guid: 2f8ae4c0fb8408f48b3121137cf15a1a, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -274,11 +274,11 @@ MonoBehaviour:
   onNodeExitEvent: 
   choices:
   - choiceText: Sim
-    nextNode: {fileID: 0}
+    nextNode: {fileID: -2112974008282823350}
     requiredFlag: 
     hideIfFlagMissing: 0
   - choiceText: "N\xE3o"
-    nextNode: {fileID: 0}
+    nextNode: {fileID: 8893510414294922026}
     requiredFlag: 
     hideIfFlagMissing: 0
   - choiceText: 
@@ -324,6 +324,7 @@ MonoBehaviour:
   - {fileID: -2112974008282823350}
   - {fileID: 2962550112593205177}
   - {fileID: -3242679949077403273}
+  - {fileID: 6083092759051971387}
   startNode: {fileID: 0}
   backgroundMusic: {fileID: 0}
   backgroundMusicVolume: 1
@@ -342,7 +343,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: a79912f4-ca76-4205-96c2-cf8c3856773c
-  position: {x: 638.4, y: 656}
+  position: {x: 638, y: 656}
   actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -356,7 +357,7 @@ MonoBehaviour:
   onNodeExitEvent: 
   dialogueText: "Capit\xF3lio? Pensava que n\xF3s s\xF3 t\xEDnhamos feitorias ao
     p\xE9 das costas. Qual \xE9 a diferen\xE7a?"
-  nextNode: {fileID: 0}
+  nextNode: {fileID: -8973306912509822986}
 --- !u!114 &613337530763595474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,7 +371,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 29ca7275-5345-41a3-9725-28cd5e806c10
-  position: {x: 4070.4, y: 730.39996}
+  position: {x: 4069, y: 731}
   actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -384,7 +385,7 @@ MonoBehaviour:
   onNodeExitEvent: 
   dialogueText: "Ah, ent\xE3o \xE9 mais focado na explora\xE7\xE3o do territ\xF3rio
     e na cria\xE7\xE3o de novos povoamentos. N\xE3o sabia que era esse o caso, obrigado."
-  nextNode: {fileID: 0}
+  nextNode: {fileID: -3242679949077403273}
 --- !u!114 &1130437968014047995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,7 +399,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 5166a9db-a7e0-4502-aab3-9d94f76a6301
-  position: {x: 1318.4, y: 656}
+  position: {x: 1318, y: 656}
   actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -411,7 +412,7 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   dialogueText: "Est\xE1s preparado?"
-  nextNode: {fileID: 0}
+  nextNode: {fileID: -430788501844688924}
 --- !u!114 &2962550112593205177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -425,7 +426,7 @@ MonoBehaviour:
   m_Name: 'Index [1]'
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
   nodeGUID: e3ade5a6-1ce4-45dd-a0af-b6bfee08015e
-  position: {x: -21.6, y: 1328}
+  position: {x: -22, y: 1328}
   actor: {fileID: 0}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -438,7 +439,7 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   indexValue: 1
-  nextNode: {fileID: 0}
+  nextNode: {fileID: 6083092759051971387}
 --- !u!114 &3539859577576607783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -452,7 +453,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: f6e5cc7b-99fe-4c45-be14-6c6f1c9154e5
-  position: {x: 3659.2, y: 578.39996}
+  position: {x: 3659, y: 578}
   actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -466,7 +467,7 @@ MonoBehaviour:
   onNodeExitEvent: 
   dialogueText: "Claro que sei o que \xE9, \xE9 focado principalmente em ser um entreposto
     comercial."
-  nextNode: {fileID: 0}
+  nextNode: {fileID: 613337530763595474}
 --- !u!114 &5585753250367694261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -480,7 +481,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 5cc3b059-8915-4824-8447-5520ef79719f
-  position: {x: 2939.2, y: 844}
+  position: {x: 2939, y: 844}
   actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -493,7 +494,35 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   dialogueText: "Se bem me lembro, uma capit\xF3lio \xE9 dirigida por um capit\xE3o-donat\xE1rio."
-  nextNode: {fileID: 0}
+  nextNode: {fileID: -7978213153558393981}
+--- !u!114 &6083092759051971387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: 9eeb5924-b5b5-4af3-bc3e-f33c4f0dece2
+  position: {x: 311, y: 1315}
+  actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: "Ah, ent\xE3o \xE9 mais focado na explora\xE7\xE3o do territ\xF3rio
+    e na cria\xE7\xE3o de novos povoamentos. N\xE3o sabia que era esse o caso, obrigado."
+  nextNode: {fileID: -3747708295602172110}
 --- !u!114 &6232585431350331454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -521,11 +550,11 @@ MonoBehaviour:
   onNodeExitEvent: 
   choices:
   - choiceText: Feitoria
-    nextNode: {fileID: 0}
+    nextNode: {fileID: -4685949136084045049}
     requiredFlag: 
     hideIfFlagMissing: 0
   - choiceText: "Capit\xF3lio"
-    nextNode: {fileID: 0}
+    nextNode: {fileID: 5585753250367694261}
     requiredFlag: 
     hideIfFlagMissing: 0
   - choiceText: 
@@ -549,7 +578,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 342c0003-0657-43ea-96b2-2342542f5a85
-  position: {x: 3659.2, y: 844}
+  position: {x: 3659, y: 844}
   actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -563,7 +592,7 @@ MonoBehaviour:
   onNodeExitEvent: 
   dialogueText: "Claro que sei o que \xE9, \xE9 focado principalmente em ser um entreposto
     povoamento."
-  nextNode: {fileID: 0}
+  nextNode: {fileID: 613337530763595474}
 --- !u!114 &8893510414294922026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -590,4 +619,4 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   dialogueText: O que me queres perguntar?
-  nextNode: {fileID: 0}
+  nextNode: {fileID: 6232585431350331454}

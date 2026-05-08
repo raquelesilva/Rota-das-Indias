@@ -95,12 +95,12 @@ namespace FancyCrab.DialogueSystem
 
         public void SetDialogue(DialogueContainer container)
         {
+            SetDialogueIndex(0);
             dialogue = container;
         }
 
         public void SetDialogueAndTrigger(DialogueContainer container)
         {
-            SetDialogueIndex(0);
             SetDialogue(container);
             TriggerDialogue();
         }

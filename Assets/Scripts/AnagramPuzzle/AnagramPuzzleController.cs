@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Events;
 using System.Collections;
+using CoreSystems.Managers;
 public class AnagramPuzzleController : MonoBehaviour
 {
     [Header("Puzzle Settings")]
@@ -139,6 +140,7 @@ public class AnagramPuzzleController : MonoBehaviour
         {
             if (!slot.is_filled || slot.current_character != slot.expected_character)
             {
+                NotificationManager.instance.SetWrongMessage("Cuidado! Estes não são os instrumentos certos.");
                 is_puzzle_correct = false;
                 break;
             }
@@ -148,14 +150,10 @@ public class AnagramPuzzleController : MonoBehaviour
         {
             count++;
             ActivatePuzzle();
-            Debug.Log("puzzling");
-            Debug.Log(all_letters.Count);
-            Debug.Log(all_slots.Count);
-
         }
         else if (is_puzzle_correct)
         {
-            Debug.Log("PUZZLE COMPLETE!");
+            NotificationManager.instance.SetCorrectMessage("Muito bem! O teu conhecimento de navegação está impecável!");
             OnPuzzleComplete?.Invoke();
             puzzle_panel.SetActive(false);
         }

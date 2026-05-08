@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 namespace AstrolabeSystem
@@ -8,10 +10,14 @@ namespace AstrolabeSystem
         public static DragInputHandler Instance { get; private set; }
 
         [Header("Config")]
+        [SerializeField] private Camera _cam;
         [SerializeField] private LayerMask draggableLayer;
         [SerializeField] private LayerMask snapZoneLayer;
 
-        private Camera _cam;
+        [Header("Verification")]
+        [SerializeField] private List<SnapZone> snapZones;
+        [SerializeField] private UnityEvent onWin;
+
         private IDraggable _currentDraggable;
         private Vector3 _dragOffset;
         private bool _isDragging;
@@ -25,7 +31,6 @@ namespace AstrolabeSystem
             }
 
             Instance = this;
-            _cam = Camera.main;
         }
 
         private void Update()
@@ -94,7 +99,19 @@ namespace AstrolabeSystem
                 return false;
 
             snapZone.OnSnap(_currentDraggable);
+
+            CheckWin();
             return true;
+        }
+
+        private void CheckWin()
+        {
+            foreach (var item in snapZones)
+            {
+                if (!item.IsOccupied) return;
+            }
+
+            onWin?.Invoke();
         }
 
         private Vector3 ScreenToWorld(Vector2 screenPos, Vector3 worldReference)

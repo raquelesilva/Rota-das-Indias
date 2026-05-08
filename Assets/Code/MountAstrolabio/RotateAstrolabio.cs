@@ -6,18 +6,17 @@ namespace AstrolabeSystem
     public class RotateAstrolabio : MonoBehaviour
     {
         #region Variables
+        [SerializeField] private Camera _cam;
         [SerializeField] private float speed = 100f;
         [SerializeField] private bool inverted;
         [SerializeField] private float snapAngle = 45f;
 
-        private Camera _cam;
         private bool _isDragging;
         private float _currentAngle;
         #endregion
 
         private void Start()
         {
-            _cam = Camera.main;
             _currentAngle = transform.eulerAngles.y;
         }
 
