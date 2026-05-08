@@ -1,5 +1,6 @@
 using CoreSystems.Managers;
 using FancyCrab.CustomPackages.FirstPersonController;
+using NaughtyAttributes;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
@@ -48,10 +49,18 @@ public class DragTheWordManager : MonoBehaviour
         BlockAllDraggables(false);
         exerciseParent.SetActive(true);
         onExerciseStart?.Invoke();
+        validationButton.interactable = true;
+    }
+
+    [Button("End Game")]
+    private void EDITOR_WIN()
+    {
+        StartCoroutine(EndGame());
     }
 
     private IEnumerator EndGame()
     {
+        validationButton.interactable = false;
         NotificationManager.instance.SetCorrectMessage(onWinMessage);
         BlockAllDraggables(true);
         yield return new WaitForSeconds(3);

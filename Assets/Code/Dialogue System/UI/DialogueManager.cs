@@ -10,16 +10,10 @@ namespace FancyCrab.DialogueSystem
     /// </summary>
     public class DialogueManager : MonoBehaviour
     {
-        [Header("Settings")]
-        public bool autoAdvance = false;
-        public float autoAdvanceDelay = 3f;
-
         // Estado interno
         private DialogueContainer currentDialogue;
         private DialogueNode currentNode;
         private DialogueTrigger currentTrigger;
-        private bool isAdvancing = false;
-        private Coroutine autoAdvanceCoroutine;
 
         // Eventos públicos — a UI subscreve estes
         public static event Action<bool> OnDialogueState;
@@ -28,7 +22,6 @@ namespace FancyCrab.DialogueSystem
         public event Action<DialogueNode> OnNodeChanged;
         public event Action<DialogueNode, string, string> OnTextNodeDisplayed; // (node, actorName, text)
         public event Action<ChoiceDialogueNode> OnChoiceNodeDisplayed;
-        public event Action OnTypingSkipped;
 
         public static DialogueManager Instance { get; private set; }
 
@@ -50,7 +43,6 @@ namespace FancyCrab.DialogueSystem
 
         public void StartDialogue(DialogueContainer dialogue, Action onComplete = null, DialogueTrigger trigger = null, DialogueNode specificStartNode = null)
         {
-            // CORRECÇÃO: ignora se já há um diálogo activo para não apagar o estado actual
             if (IsDialogueActive)
             {
                 Debug.LogWarning("[FancyCrabStudios] Attempted to start a dialogue while one is already active. Ignoring.");
@@ -66,7 +58,6 @@ namespace FancyCrab.DialogueSystem
             currentDialogue = dialogue;
             currentTrigger = trigger;
 
-            // CORRECÇÃO: usa WrapOnComplete para garantir que o wrapper é removido após ser invocado
             if (onComplete != null)
             {
                 OnDialogueEnded += WrapOnComplete(onComplete);
@@ -92,13 +83,6 @@ namespace FancyCrab.DialogueSystem
         {
             if (currentNode is not TextDialogueNode textNode) return;
 
-            if (isAdvancing)
-            {
-                isAdvancing = false;
-                OnTypingSkipped?.Invoke();
-                return;
-            }
-
             if (textNode.nextNode != null)
             {
                 DisplayNode(textNode.nextNode);
@@ -114,12 +98,6 @@ namespace FancyCrab.DialogueSystem
         /// </summary>
         public void SelectChoice(DialogueNode nextNode)
         {
-            if (autoAdvanceCoroutine != null)
-            {
-                StopCoroutine(autoAdvanceCoroutine);
-                autoAdvanceCoroutine = null;
-            }
-
             if (nextNode != null)
             {
                 DisplayNode(nextNode);
@@ -167,24 +145,12 @@ namespace FancyCrab.DialogueSystem
 
         private void ProcessTextNode(TextDialogueNode textNode)
         {
-            isAdvancing = true;
-
             string actorName = textNode.actor != null ? textNode.actor.actorName : string.Empty;
             OnTextNodeDisplayed?.Invoke(textNode, actorName, textNode.dialogueText);
-
-            if (!autoAdvance || textNode.nextNode == null) return;
-
-            if (autoAdvanceCoroutine != null)
-            {
-                StopCoroutine(autoAdvanceCoroutine);
-            }
-
-            autoAdvanceCoroutine = StartCoroutine(AutoAdvanceRoutine(textNode.nextNode));
         }
 
         private void ProcessChoiceNode(ChoiceDialogueNode choiceNode)
         {
-            isAdvancing = false;
             OnChoiceNodeDisplayed?.Invoke(choiceNode);
         }
 
@@ -213,7 +179,6 @@ namespace FancyCrab.DialogueSystem
             currentDialogue = null;
             currentNode = null;
             currentTrigger = null;
-            isAdvancing = false;
 
             OnDialogueEnded?.Invoke(endedDialogue);
             OnDialogueState?.Invoke(false);
@@ -227,14 +192,6 @@ namespace FancyCrab.DialogueSystem
             }
         }
 
-        private IEnumerator AutoAdvanceRoutine(DialogueNode nextNode)
-        {
-            yield return new WaitForSeconds(autoAdvanceDelay);
-            autoAdvanceCoroutine = null;
-            DisplayNode(nextNode);
-        }
-
-        // Wrapper para remover o callback do evento após ser invocado uma vez
         private Action<DialogueContainer> WrapOnComplete(Action onComplete)
         {
             Action<DialogueContainer> wrapper = null;

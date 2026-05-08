@@ -230,19 +230,41 @@ namespace FancyCrab.CoreSystems.InteractionSystem
                 if (hasGrabbable)
                 {
                     currentGrabbable = grabbable;
-                    currentPickupObject = hit.collider.GetComponent<GrabbableObject>();
+                    if (hit.collider.TryGetComponent<GrabbableObject>(out var component) && component.CanGrab())
+                    {
+                        currentPickupObject = component;
+                    }
+                    else
+                    {
+                        hasGrabbable = false;
+                    }
                 }
 
                 if (hasInteractable)
                 {
                     currentInteractable = interactable;
-                    currentInteractableObject = hit.collider.GetComponent<InteractableObject>();
+                    if (hit.collider.TryGetComponent<InteractableObject>(out var component) && component.CanInteract())
+                    {
+                        currentInteractableObject = component;
+                    }
+                    else
+                    {
+                        hasInteractable = false;
+                    }
+
                 }
 
                 if (hasInspectable)
                 {
                     currentInspectable = inspectable;
-                    currentInspectableObject = hit.collider.GetComponent<InspectableObject>();
+                    if (hit.collider.TryGetComponent<InspectableObject>(out var component) && component.CanInspect())
+                    {
+                        currentInspectableObject = component;
+                    }
+                    else
+                    {
+                        hasInspectable = false;
+                    }
                 }
 
                 RaycastState newState = (hasGrabbable, hasInteractable, hasInspectable) switch

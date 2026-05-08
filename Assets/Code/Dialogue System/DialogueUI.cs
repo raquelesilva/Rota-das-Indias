@@ -45,7 +45,6 @@ namespace FancyCrab.DialogueSystem
             DialogueManager.Instance.OnDialogueEnded += HandleDialogueEnded;
             DialogueManager.Instance.OnTextNodeDisplayed += HandleTextNodeDisplayed;
             DialogueManager.Instance.OnChoiceNodeDisplayed += HandleChoiceNodeDisplayed;
-            DialogueManager.Instance.OnTypingSkipped += HandleTypingSkipped;
         }
 
         private void OnDisable()
@@ -57,7 +56,6 @@ namespace FancyCrab.DialogueSystem
             DialogueManager.Instance.OnDialogueEnded -= HandleDialogueEnded;
             DialogueManager.Instance.OnTextNodeDisplayed -= HandleTextNodeDisplayed;
             DialogueManager.Instance.OnChoiceNodeDisplayed -= HandleChoiceNodeDisplayed;
-            DialogueManager.Instance.OnTypingSkipped -= HandleTypingSkipped;
         }
 
         private void HandleDialogueStarted(DialogueContainer dialogue)
@@ -117,18 +115,6 @@ namespace FancyCrab.DialogueSystem
 
                 CreateChoiceButton(choice);
             }
-        }
-
-        private void HandleTypingSkipped()
-        {
-            if (typingCoroutine != null)
-            {
-                StopCoroutine(typingCoroutine);
-                typingCoroutine = null;
-            }
-
-            dialogueText.text = pendingFullText;
-            SetContinueIndicator(true);
         }
 
         private void UpdateActorDisplay(DialogueNode node)

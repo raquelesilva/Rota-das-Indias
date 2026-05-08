@@ -1,12 +1,11 @@
-﻿using UnityEngine;
+﻿using NaughtyAttributes;
+using UnityEngine;
 using UnityEngine.UI;
-using NaughtyAttributes;
-using System;
 namespace FancyCrab.CustomPackages.FirstPersonController
 {
     public class FirstPersonController : MonoBehaviour
     {
-       public static FirstPersonController instance;
+        public static FirstPersonController instance;
 
         [BoxGroup("Input"), SerializeField] private InputReader inputReader;
         #region Movement Variables
@@ -134,6 +133,7 @@ namespace FancyCrab.CustomPackages.FirstPersonController
         {
             sprintPressed = state;
         }
+
         private void JumpCallback()
         {
             if (!canMove) return;
@@ -143,6 +143,7 @@ namespace FancyCrab.CustomPackages.FirstPersonController
                 Jump();
             }
         }
+
         private void MovementCallback(Vector2 vector)
         {
             movement = vector;
@@ -184,10 +185,9 @@ namespace FancyCrab.CustomPackages.FirstPersonController
             this.transform.position = transform.position;
         }
 
-        
         private void PlayerStateCallback(PlayerStates newState)
         {
-            if(!newState.Equals(PlayerStates.Playing)) rb.angularVelocity = Vector3.zero;
+            if (!newState.Equals(PlayerStates.Playing)) rb.angularVelocity = Vector3.zero;
             canMove = newState == PlayerStates.Playing;
         }
 
@@ -211,7 +211,7 @@ namespace FancyCrab.CustomPackages.FirstPersonController
             }
             else
             {
-              //  sprintBar.gameObject.SetActive(false);
+                //  sprintBar.gameObject.SetActive(false);
             }
 
             #endregion
@@ -387,7 +387,5 @@ namespace FancyCrab.CustomPackages.FirstPersonController
                 isCrouched = true;
             }
         }
-
-        
     }
 }
