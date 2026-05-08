@@ -26,7 +26,7 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   indexValue: 1
-  nextNode: {fileID: 0}
+  nextNode: {fileID: 4903805378664954389}
 --- !u!114 &-8003479418078141068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53,7 +53,7 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   indexValue: 2
-  nextNode: {fileID: 0}
+  nextNode: {fileID: 2942310997172263193}
 --- !u!114 &-5653634475133626895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,7 +80,7 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   indexValue: 0
-  nextNode: {fileID: 0}
+  nextNode: {fileID: -3378436914620908882}
 --- !u!114 &-4239863648357195842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,7 +109,7 @@ MonoBehaviour:
   dialogueText: "\xC0 medida que continuamos a viagem, vemos a pequena fortaleza
     a desaparecer \xE0 dist\xE2ncia, este lugar onde guard\xE1vamos e troc\xE1vamos
     produtos."
-  nextNode: {fileID: 0}
+  nextNode: {fileID: -2812571473847795428}
 --- !u!114 &-3378436914620908882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,7 +250,7 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   indexValue: 3
-  nextNode: {fileID: 0}
+  nextNode: {fileID: -4239863648357195842}
 --- !u!114 &4903805378664954389
 MonoBehaviour:
   m_ObjectHideFlags: 0
