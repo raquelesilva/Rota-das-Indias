@@ -4,6 +4,8 @@ using UnityEngine.InputSystem;
 using UnityEngine.Events;
 using CoreSystems.Managers;
 using System;
+using FancyCrab.CustomPackages.FirstPersonController;
+using System.Linq;
 
 
 public class PicturePuzzle : MonoBehaviour
@@ -11,7 +13,6 @@ public class PicturePuzzle : MonoBehaviour
     [SerializeField] private List<Piece> pieces = new();
     [SerializeField] private GameObject completedPicture;
     [SerializeField] private UnityEvent checkForWin;
-
 
     private Piece currentPiece;
     private Camera mainCamera;
@@ -27,13 +28,22 @@ public class PicturePuzzle : MonoBehaviour
         mainCamera = Camera.main;
     }
 
+    private void OnEnable()
+    {
+        inputReader.Interact += OnInteractCallback;
+        inputReader.CrouchPerformed += OnControllClick;
+    }
 
-
+    private void OnDisable()
+    {
+        inputReader.Interact -= OnInteractCallback;
+        inputReader.CrouchPerformed -= OnControllClick;
+    }
 
     private void OnInteractCallback()
     {
         if (!crouchClicked) return;
-
+ 
         completedPicture.SetActive(true);
         checkForWin?.Invoke();
 
@@ -80,7 +90,6 @@ public class PicturePuzzle : MonoBehaviour
         {
             if (currentPiece.minihandler == Piece.Minigame.map)
             {
-
                 goingback = true;
                 float distance = Vector2.Distance(currentPiece.transform.position, currentPiece.startpos);
                 currentPiece.MoveStartPos();
@@ -156,22 +165,25 @@ public class PicturePuzzle : MonoBehaviour
 
     private void CheckForWin()
     {
-        bool allPiecesCorrect = true;
+        int piecesToComplete = pieces.Count(x => x.hascorrectpos);
+        int completedPieces = 0;
+
         foreach (var piece in pieces)
         {
-            if (!piece.IsInCorrectPosition() && piece.hascorrectpos == true)
+            if (piece.IsInCorrectPosition() && piece.hascorrectpos)
             {
-                allPiecesCorrect = false;
-                break;
+                completedPieces++;
             }
         }
 
-        if (allPiecesCorrect)
+        NotificationManager.instance.SetCorrectMessage($"{completedPieces} de {piecesToComplete} completas!");
+
+        if (completedPieces == piecesToComplete)
         {
             completedPicture.SetActive(true);
             checkForWin?.Invoke();
 
-            NotificationManager.instance.SetCorrectMessage("Azuleijo Montado!");
+            NotificationManager.instance.SetCorrectMessage("Parabéns! Completaste o puzzle!");
         }
     }
 

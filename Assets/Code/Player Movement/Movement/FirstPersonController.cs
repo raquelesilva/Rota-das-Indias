@@ -187,7 +187,7 @@ namespace FancyCrab.CustomPackages.FirstPersonController
 
         private void PlayerStateCallback(PlayerStates newState)
         {
-            if (!newState.Equals(PlayerStates.Playing)) rb.angularVelocity = Vector3.zero;
+            if (!newState.Equals(PlayerStates.Playing)) rb.linearVelocity *= 0.1f;
             canMove = newState == PlayerStates.Playing;
         }
 

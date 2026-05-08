@@ -25,7 +25,7 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.41960785, g: 0.47843137, b: 0.627451, a: 1}
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -485,9 +485,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17529217a552004a9cc7090ab58d3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Piece
-  Feedback:
-    m_PersistentCalls:
-      m_Calls: []
   minihandler: 2
   correctPosition: {x: 0, y: 0, z: 0}
   rightplace: 0
@@ -1014,6 +1011,122 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 74601814}
   m_CullTransparentMesh: 1
+--- !u!1001 &88554156
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1986819024}
+    m_Modifications:
+    - target: {fileID: 660713502009648509, guid: 0b1d338ad9f36174e92507fe86a51a94, type: 3}
+      propertyPath: m_Name
+      value: Tripulante 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1652477245318054002, guid: 0b1d338ad9f36174e92507fe86a51a94, type: 3}
+      propertyPath: customTriggers.Array.data[0].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2050453088}
+    - target: {fileID: 3140256053743356289, guid: 0b1d338ad9f36174e92507fe86a51a94, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140256053743356289, guid: 0b1d338ad9f36174e92507fe86a51a94, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140256053743356289, guid: 0b1d338ad9f36174e92507fe86a51a94, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 88554159}
+    - target: {fileID: 3140256053743356289, guid: 0b1d338ad9f36174e92507fe86a51a94, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140256053743356289, guid: 0b1d338ad9f36174e92507fe86a51a94, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TriggerDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140256053743356289, guid: 0b1d338ad9f36174e92507fe86a51a94, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FancyCrab.DialogueSystem.DialogueTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3140256053743356289, guid: 0b1d338ad9f36174e92507fe86a51a94, type: 3}
+      propertyPath: onInteract.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642740512268174687, guid: 0b1d338ad9f36174e92507fe86a51a94, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 525.0203
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642740512268174687, guid: 0b1d338ad9f36174e92507fe86a51a94, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.36959
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642740512268174687, guid: 0b1d338ad9f36174e92507fe86a51a94, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 287.28925
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642740512268174687, guid: 0b1d338ad9f36174e92507fe86a51a94, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642740512268174687, guid: 0b1d338ad9f36174e92507fe86a51a94, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642740512268174687, guid: 0b1d338ad9f36174e92507fe86a51a94, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642740512268174687, guid: 0b1d338ad9f36174e92507fe86a51a94, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642740512268174687, guid: 0b1d338ad9f36174e92507fe86a51a94, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642740512268174687, guid: 0b1d338ad9f36174e92507fe86a51a94, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3642740512268174687, guid: 0b1d338ad9f36174e92507fe86a51a94, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b1d338ad9f36174e92507fe86a51a94, type: 3}
+--- !u!114 &88554157 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3140256053743356289, guid: 0b1d338ad9f36174e92507fe86a51a94, type: 3}
+  m_PrefabInstance: {fileID: 88554156}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724ae10ec2907e2448185e19b43bf739, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.CoreSystems.InteractionSystem.InteractableObject
+--- !u!4 &88554158 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3642740512268174687, guid: 0b1d338ad9f36174e92507fe86a51a94, type: 3}
+  m_PrefabInstance: {fileID: 88554156}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &88554159 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1652477245318054002, guid: 0b1d338ad9f36174e92507fe86a51a94, type: 3}
+  m_PrefabInstance: {fileID: 88554156}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7237ce144eb10a3418a1e75fb7bef309, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.DialogueTrigger
 --- !u!1 &94384975
 GameObject:
   m_ObjectHideFlags: 0
@@ -1814,9 +1927,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17529217a552004a9cc7090ab58d3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Piece
-  Feedback:
-    m_PersistentCalls:
-      m_Calls: []
   minihandler: 2
   correctPosition: {x: 0, y: 0, z: 0}
   rightplace: 0
@@ -3584,9 +3694,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17529217a552004a9cc7090ab58d3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Piece
-  Feedback:
-    m_PersistentCalls:
-      m_Calls: []
   minihandler: 2
   correctPosition: {x: 0, y: 0, z: 0}
   rightplace: 0
@@ -4000,188 +4107,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DropSlot
   correctWordID: BaleiaID
   currentWord: {fileID: 0}
---- !u!1 &311654273
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 311654278}
-  - component: {fileID: 311654277}
-  - component: {fileID: 311654276}
-  - component: {fileID: 311654275}
-  - component: {fileID: 311654274}
-  - component: {fileID: 311654279}
-  m_Layer: 3
-  m_Name: Tripulante 3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &311654274
+--- !u!114 &311654274 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3176920179092376225, guid: 4ad93201ede7b8643be9dc5c24b4be63, type: 3}
+  m_PrefabInstance: {fileID: 8421384630233360140}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 311654273}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 724ae10ec2907e2448185e19b43bf739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.CoreSystems.InteractionSystem.InteractableObject
-  canInteract: 0
-  onInteract:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 311654279}
-        m_TargetAssemblyTypeName: FancyCrab.DialogueSystem.DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  canUseOutline: 1
---- !u!136 &311654275
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 311654273}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &311654276
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 311654273}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &311654277
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 311654273}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &311654278
+--- !u!4 &311654278 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2202163091466315120, guid: 4ad93201ede7b8643be9dc5c24b4be63, type: 3}
+  m_PrefabInstance: {fileID: 8421384630233360140}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 311654273}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.65727997, y: -0.53957003, z: -10.309051}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1986819024}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &311654279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 311654273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7237ce144eb10a3418a1e75fb7bef309, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.DialogueTrigger
-  dialogue: {fileID: 11400000, guid: 21f5c84fb88e28046ad758fe8bc326f9, type: 2}
-  startIndex: 0
-  onDialogueStart:
-    m_PersistentCalls:
-      m_Calls: []
-  onDialogueEnd:
-    m_PersistentCalls:
-      m_Calls: []
-  customTriggers:
-  - triggerID: StartDrag 3
-    onTrigger:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1345413279}
-          m_TargetAssemblyTypeName: DragTheWordManager, Assembly-CSharp
-          m_MethodName: StartGame
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
 --- !u!1 &312473340
 GameObject:
   m_ObjectHideFlags: 0
@@ -5167,319 +5108,6 @@ RectTransform:
   m_AnchoredPosition: {x: 215, y: 0.5429306}
   m_SizeDelta: {x: 227, y: 649}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &455234718
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 455234724}
-  - component: {fileID: 455234723}
-  - component: {fileID: 455234722}
-  - component: {fileID: 455234721}
-  - component: {fileID: 455234720}
-  - component: {fileID: 455234719}
-  - component: {fileID: 455234725}
-  m_Layer: 3
-  m_Name: Matey
-  m_TagString: NPC
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &455234719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455234718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7237ce144eb10a3418a1e75fb7bef309, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.DialogueTrigger
-  dialogue: {fileID: 11400000, guid: 5d12a7f7fbbe8a146ac8f4d9374e3197, type: 2}
-  startIndex: 0
-  onDialogueStart:
-    m_PersistentCalls:
-      m_Calls: []
-  onDialogueEnd:
-    m_PersistentCalls:
-      m_Calls: []
-  customTriggers:
-  - triggerID: changeToIndex 2
-    onTrigger:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 455234719}
-          m_TargetAssemblyTypeName: FancyCrab.DialogueSystem.DialogueTrigger, Assembly-CSharp
-          m_MethodName: SetDialogueIndex
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 2
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - triggerID: changeToIndex1
-    onTrigger:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 455234719}
-          m_TargetAssemblyTypeName: FancyCrab.DialogueSystem.DialogueTrigger, Assembly-CSharp
-          m_MethodName: SetDialogueIndex
-          m_Mode: 3
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1307434609}
-          m_TargetAssemblyTypeName: FancyCrab.CoreSystems.InteractionSystem.InteractableObject,
-            Assembly-CSharp
-          m_MethodName: SetCanInteract
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-  - triggerID: NextDialogue
-    onTrigger:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 455234719}
-          m_TargetAssemblyTypeName: FancyCrab.DialogueSystem.DialogueTrigger, Assembly-CSharp
-          m_MethodName: SetDialogue
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 9d32d4e766270af47ae8f162b7f6bbc5, type: 2}
-            m_ObjectArgumentAssemblyTypeName: FancyCrab.DialogueSystem.DialogueContainer,
-              Assembly-CSharp
-            m_IntArgument: 1
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 455234720}
-          m_TargetAssemblyTypeName: FancyCrab.CoreSystems.InteractionSystem.InteractableObject,
-            Assembly-CSharp
-          m_MethodName: SetCanInteract
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - triggerID: endLevel 2
-    onTrigger:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 455234719}
-          m_TargetAssemblyTypeName: FancyCrab.DialogueSystem.DialogueTrigger, Assembly-CSharp
-          m_MethodName: SetDialogueAndTrigger
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 1dd384269e76d914591c260383ec08b9, type: 2}
-            m_ObjectArgumentAssemblyTypeName: FancyCrab.DialogueSystem.DialogueContainer,
-              Assembly-CSharp
-            m_IntArgument: 3
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - triggerID: FollowEvent
-    onTrigger:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1986819025}
-          m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
-          m_MethodName: Play
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - triggerID: StartMap
-    onTrigger:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1761587803}
-          m_TargetAssemblyTypeName: AzuleijoPuzzle, Assembly-CSharp
-          m_MethodName: StartPuzzle
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 3
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!114 &455234720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455234718}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 724ae10ec2907e2448185e19b43bf739, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.CoreSystems.InteractionSystem.InteractableObject
-  canInteract: 1
-  onInteract:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 455234719}
-        m_TargetAssemblyTypeName: FancyCrab.DialogueSystem.DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  canUseOutline: 1
---- !u!136 &455234721
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455234718}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &455234722
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455234718}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &455234723
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455234718}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &455234724
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455234718}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.61272, y: -0.42957002, z: 7.14237}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1986819024}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &455234725
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 455234718}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &462608572
 GameObject:
   m_ObjectHideFlags: 0
@@ -5531,9 +5159,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17529217a552004a9cc7090ab58d3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Piece
-  Feedback:
-    m_PersistentCalls:
-      m_Calls: []
   minihandler: 2
   correctPosition: {x: 0, y: 0, z: 0}
   rightplace: 0
@@ -6715,188 +6340,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &599542335
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 599542340}
-  - component: {fileID: 599542339}
-  - component: {fileID: 599542338}
-  - component: {fileID: 599542337}
-  - component: {fileID: 599542336}
-  - component: {fileID: 599542341}
-  m_Layer: 3
-  m_Name: Tripulante 2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &599542336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 599542335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 724ae10ec2907e2448185e19b43bf739, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.CoreSystems.InteractionSystem.InteractableObject
-  canInteract: 0
-  onInteract:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 599542341}
-        m_TargetAssemblyTypeName: FancyCrab.DialogueSystem.DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  canUseOutline: 1
---- !u!136 &599542337
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 599542335}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &599542338
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 599542335}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &599542339
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 599542335}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &599542340
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 599542335}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.08328, y: -4.55657, z: -3.4990501}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1986819024}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &599542341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 599542335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7237ce144eb10a3418a1e75fb7bef309, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.DialogueTrigger
-  dialogue: {fileID: 11400000, guid: 0df8f0b0676c77643b3a2f435c23140e, type: 2}
-  startIndex: 0
-  onDialogueStart:
-    m_PersistentCalls:
-      m_Calls: []
-  onDialogueEnd:
-    m_PersistentCalls:
-      m_Calls: []
-  customTriggers:
-  - triggerID: StartDrag 2
-    onTrigger:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2050453088}
-          m_TargetAssemblyTypeName: DragTheWordManager, Assembly-CSharp
-          m_MethodName: StartGame
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
 --- !u!1 &612363332
 GameObject:
   m_ObjectHideFlags: 0
@@ -8783,9 +8226,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17529217a552004a9cc7090ab58d3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Piece
-  Feedback:
-    m_PersistentCalls:
-      m_Calls: []
   minihandler: 2
   correctPosition: {x: 0, y: 0, z: 0}
   rightplace: 0
@@ -8928,7 +8368,7 @@ MonoBehaviour:
   onExerciseEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 599542336}
+      - m_Target: {fileID: 88554157}
         m_TargetAssemblyTypeName: FancyCrab.CoreSystems.InteractionSystem.InteractableObject,
           Assembly-CSharp
         m_MethodName: SetCanInteract
@@ -8941,7 +8381,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1307434609}
+      - m_Target: {fileID: 1651383866}
         m_TargetAssemblyTypeName: FancyCrab.CoreSystems.InteractionSystem.InteractableObject,
           Assembly-CSharp
         m_MethodName: SetCanInteract
@@ -10843,6 +10283,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1235559696}
   m_CullTransparentMesh: 1
+--- !u!1 &1238155683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1238155684}
+  - component: {fileID: 1238155685}
+  m_Layer: 0
+  m_Name: CheckLevelEnd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1238155684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238155683}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.70710677, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -4, y: -3, z: 2.8}
+  m_LocalScale: {x: 266285.7, y: 266285.7, z: 266285.7}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1238155685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238155683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62e83fa58e69da84890b6af1e23c5bd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CheckEndLevel
 --- !u!1 &1242931825
 GameObject:
   m_ObjectHideFlags: 0
@@ -11393,218 +10877,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1278040041}
   m_CullTransparentMesh: 1
---- !u!1 &1307434607
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1307434613}
-  - component: {fileID: 1307434612}
-  - component: {fileID: 1307434611}
-  - component: {fileID: 1307434610}
-  - component: {fileID: 1307434609}
-  - component: {fileID: 1307434608}
-  m_Layer: 3
-  m_Name: Tripulante 1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1307434608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1307434607}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7237ce144eb10a3418a1e75fb7bef309, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.DialogueTrigger
-  dialogue: {fileID: 11400000, guid: eaa34c58ea5788d4095b3f992b017bcb, type: 2}
-  startIndex: 0
-  onDialogueStart:
-    m_PersistentCalls:
-      m_Calls: []
-  onDialogueEnd:
-    m_PersistentCalls:
-      m_Calls: []
-  customTriggers:
-  - triggerID: StartDrag 1
-    onTrigger:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1024471113}
-          m_TargetAssemblyTypeName: DragTheWordManager, Assembly-CSharp
-          m_MethodName: StartGame
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-  - triggerID: Start
-    onTrigger:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 455234719}
-          m_TargetAssemblyTypeName: FancyCrab.DialogueSystem.DialogueTrigger, Assembly-CSharp
-          m_MethodName: SetDialogue
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 11400000, guid: 9d32d4e766270af47ae8f162b7f6bbc5, type: 2}
-            m_ObjectArgumentAssemblyTypeName: FancyCrab.DialogueSystem.DialogueContainer,
-              Assembly-CSharp
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 455234720}
-          m_TargetAssemblyTypeName: FancyCrab.CoreSystems.InteractionSystem.InteractableObject,
-            Assembly-CSharp
-          m_MethodName: SetCanInteract
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!114 &1307434609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1307434607}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 724ae10ec2907e2448185e19b43bf739, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.CoreSystems.InteractionSystem.InteractableObject
-  canInteract: 0
-  onInteract:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1307434608}
-        m_TargetAssemblyTypeName: FancyCrab.DialogueSystem.DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  canUseOutline: 1
---- !u!136 &1307434610
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1307434607}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &1307434611
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1307434607}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1307434612
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1307434607}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1307434613
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1307434607}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.07272, y: 6.5204296, z: -9.0990505}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1986819024}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1319503256
 GameObject:
   m_ObjectHideFlags: 0
@@ -11656,9 +10928,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17529217a552004a9cc7090ab58d3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Piece
-  Feedback:
-    m_PersistentCalls:
-      m_Calls: []
   minihandler: 2
   correctPosition: {x: 0, y: 0, z: 0}
   rightplace: 0
@@ -11888,7 +11157,7 @@ MonoBehaviour:
   onExerciseEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 455234719}
+      - m_Target: {fileID: 1389423498}
         m_TargetAssemblyTypeName: FancyCrab.DialogueSystem.DialogueTrigger, Assembly-CSharp
         m_MethodName: TriggerDialogue
         m_Mode: 1
@@ -11913,7 +11182,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 455234720}
+      - m_Target: {fileID: 1389423499}
         m_TargetAssemblyTypeName: FancyCrab.CoreSystems.InteractionSystem.InteractableObject,
           Assembly-CSharp
         m_MethodName: SetCanInteract
@@ -12284,6 +11553,368 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1378023876}
   m_CullTransparentMesh: 1
+--- !u!1001 &1389423495
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1986819024}
+    m_Modifications:
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 11400000, guid: 5d12a7f7fbbe8a146ac8f4d9374e3197, type: 2}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[0].triggerID
+      value: changeToIndex 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[1].triggerID
+      value: changeToIndex1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[2].triggerID
+      value: NextDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[3].triggerID
+      value: endLevel 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[4].triggerID
+      value: FollowEvent
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[5].triggerID
+      value: StartMap
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[0].onTrigger.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[3].onTrigger.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[5].onTrigger.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[0].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[1].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[1].onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[2].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[3].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[3].onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[4].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[0].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1389423498}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[1].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1389423498}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[1].onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1651383866}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[2].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1389423498}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[2].onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1389423499}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[3].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1238155685}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[3].onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1238155685}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[4].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1986819025}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[5].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1761587803}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[3].onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[0].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetDialogueIndex
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[1].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetDialogueIndex
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[1].onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetCanInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[2].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[2].onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetCanInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[3].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CompleteLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[3].onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ChangeToNextScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[4].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[5].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartPuzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[0].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FancyCrab.DialogueSystem.DialogueTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[1].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FancyCrab.DialogueSystem.DialogueTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[1].onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: FancyCrab.CoreSystems.InteractionSystem.InteractableObject, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[2].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FancyCrab.DialogueSystem.DialogueTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[2].onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: FancyCrab.CoreSystems.InteractionSystem.InteractableObject, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[3].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CheckEndLevel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[3].onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: CheckEndLevel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[4].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.Playables.PlayableDirector, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[5].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AzuleijoPuzzle, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[0].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[1].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[2].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[3].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[4].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[5].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[0].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[1].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[2].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[2].onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[3].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[2].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 9d32d4e766270af47ae8f162b7f6bbc5, type: 2}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[3].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[2].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: FancyCrab.DialogueSystem.DialogueContainer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[3].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: customTriggers.Array.data[3].onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6342195321417749174, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 525.0203
+      objectReference: {fileID: 0}
+    - target: {fileID: 6342195321417749174, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.36959
+      objectReference: {fileID: 0}
+    - target: {fileID: 6342195321417749174, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 287.28925
+      objectReference: {fileID: 0}
+    - target: {fileID: 6342195321417749174, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6342195321417749174, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6342195321417749174, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6342195321417749174, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6342195321417749174, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6342195321417749174, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6342195321417749174, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6609932222223268216, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      propertyPath: m_Name
+      value: Matey
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6609932222223268216, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1389423500}
+  m_SourcePrefab: {fileID: 100100000, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+--- !u!4 &1389423496 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6342195321417749174, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+  m_PrefabInstance: {fileID: 1389423495}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1389423497 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6609932222223268216, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+  m_PrefabInstance: {fileID: 1389423495}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1389423498 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5911318926063815367, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+  m_PrefabInstance: {fileID: 1389423495}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389423497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7237ce144eb10a3418a1e75fb7bef309, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.DialogueTrigger
+--- !u!114 &1389423499 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6377402235498660488, guid: 8217c8d7e22fcdc42bbf22de1416e8b2, type: 3}
+  m_PrefabInstance: {fileID: 1389423495}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389423497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724ae10ec2907e2448185e19b43bf739, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.CoreSystems.InteractionSystem.InteractableObject
+--- !u!95 &1389423500
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389423497}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1392257620
 GameObject:
   m_ObjectHideFlags: 0
@@ -13332,9 +12963,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f17529217a552004a9cc7090ab58d3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Piece
-  Feedback:
-    m_PersistentCalls:
-      m_Calls: []
   minihandler: 2
   correctPosition: {x: 0, y: 0, z: 0}
   rightplace: 0
@@ -14583,6 +14211,147 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1645820745}
   m_CullTransparentMesh: 1
+--- !u!1001 &1651383865
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1986819024}
+    m_Modifications:
+    - target: {fileID: 2787425106897371442, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 525.0203
+      objectReference: {fileID: 0}
+    - target: {fileID: 2787425106897371442, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.36959
+      objectReference: {fileID: 0}
+    - target: {fileID: 2787425106897371442, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 287.28925
+      objectReference: {fileID: 0}
+    - target: {fileID: 2787425106897371442, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2787425106897371442, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2787425106897371442, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2787425106897371442, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2787425106897371442, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2787425106897371442, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2787425106897371442, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294592939310810945, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: customTriggers.Array.data[1].triggerID
+      value: Start
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294592939310810945, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: customTriggers.Array.data[0].onTrigger.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294592939310810945, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: customTriggers.Array.data[0].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294592939310810945, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: customTriggers.Array.data[1].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294592939310810945, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: customTriggers.Array.data[1].onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294592939310810945, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: customTriggers.Array.data[0].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1024471113}
+    - target: {fileID: 7294592939310810945, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: customTriggers.Array.data[1].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1389423498}
+    - target: {fileID: 7294592939310810945, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: customTriggers.Array.data[1].onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1389423499}
+    - target: {fileID: 7294592939310810945, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: customTriggers.Array.data[0].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294592939310810945, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: customTriggers.Array.data[1].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294592939310810945, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: customTriggers.Array.data[1].onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetCanInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294592939310810945, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: customTriggers.Array.data[0].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DragTheWordManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294592939310810945, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: customTriggers.Array.data[1].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FancyCrab.DialogueSystem.DialogueTrigger, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294592939310810945, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: customTriggers.Array.data[1].onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: FancyCrab.CoreSystems.InteractionSystem.InteractableObject, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294592939310810945, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: customTriggers.Array.data[1].onTrigger.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294592939310810945, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: customTriggers.Array.data[1].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 9d32d4e766270af47ae8f162b7f6bbc5, type: 2}
+    - target: {fileID: 7294592939310810945, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: customTriggers.Array.data[1].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: FancyCrab.DialogueSystem.DialogueContainer, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7312964057291242431, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+      propertyPath: m_Name
+      value: Tripulante 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+--- !u!114 &1651383866 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8455561578790035620, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+  m_PrefabInstance: {fileID: 1651383865}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 724ae10ec2907e2448185e19b43bf739, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.CoreSystems.InteractionSystem.InteractableObject
+--- !u!4 &1651383867 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2787425106897371442, guid: 2eabbcb0e3cf47a48965abdc2affca3f, type: 3}
+  m_PrefabInstance: {fileID: 1651383865}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1689897779
 GameObject:
   m_ObjectHideFlags: 0
@@ -15302,17 +15071,45 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2601759791784747657, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: inputReader
+      value: 
+      objectReference: {fileID: 11400000, guid: 458043d94161f1149b3be9040cbb9a3c, type: 2}
+    - target: {fileID: 2601759791784747657, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2601759791784747657, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2601759791784747657, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
       propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1761587803}
     - target: {fileID: 2601759791784747657, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
       propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1761587804}
     - target: {fileID: 2601759791784747657, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
       propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 1761587804}
+    - target: {fileID: 2601759791784747657, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StopPuzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 2601759791784747657, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetCanInteract
+      objectReference: {fileID: 0}
+    - target: {fileID: 2601759791784747657, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AzuleijoPuzzle, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2601759791784747657, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
+      propertyPath: checkForWin.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: FancyCrab.CoreSystems.InteractionSystem.InteractableObject, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16288,9 +16085,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 455234724}
-  - {fileID: 1307434613}
-  - {fileID: 599542340}
+  - {fileID: 1389423496}
+  - {fileID: 1651383867}
+  - {fileID: 88554158}
   - {fileID: 311654278}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16310,7 +16107,7 @@ PlayableDirector:
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: 4920226890896510025, guid: 401fdf4849e2f5d438511ddad9439df3, type: 2}
-    value: {fileID: 455234725}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &1986819026
@@ -16501,7 +16298,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 599542336}
+      - m_Target: {fileID: 88554157}
         m_TargetAssemblyTypeName: FancyCrab.CoreSystems.InteractionSystem.InteractableObject,
           Assembly-CSharp
         m_MethodName: SetCanInteract
@@ -17575,8 +17372,8 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 'Com a minha ajuda, os marinheiros orientam-se observando
-            os astros '
+          m_StringArgument: "Este instrumento de navega\xE7\xE3o mostra o caminho
+            que deves seguir "
           m_BoolArgument: 0
         m_CallState: 2
   - m_PersistentCalls:
@@ -17604,8 +17401,8 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: "Este instrumento de navega\xE7\xE3o mostra o caminho
-            que deves seguir "
+          m_StringArgument: 'Com a minha ajuda, os marinheiros orientam-se observando
+            os astros '
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1788179959729584355
@@ -17638,8 +17435,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1788179959729584354}
-        m_TargetAssemblyTypeName: AzuleijoPuzzle, Assembly-CSharp
-        m_MethodName: StartPuzzle
+        m_TargetAssemblyTypeName: NewMonoBehaviourScript1, Assembly-CSharp
+        m_MethodName: startpuzzle
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19363,6 +19160,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 427796, guid: 4b8bcfc52cd181349906c1279e1d513f, type: 3}
   m_PrefabInstance: {fileID: 8331246081843717475}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8421384630233360140
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1986819024}
+    m_Modifications:
+    - target: {fileID: 2202163091466315120, guid: 4ad93201ede7b8643be9dc5c24b4be63, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.65727997
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202163091466315120, guid: 4ad93201ede7b8643be9dc5c24b4be63, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.53957003
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202163091466315120, guid: 4ad93201ede7b8643be9dc5c24b4be63, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.309051
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202163091466315120, guid: 4ad93201ede7b8643be9dc5c24b4be63, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202163091466315120, guid: 4ad93201ede7b8643be9dc5c24b4be63, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202163091466315120, guid: 4ad93201ede7b8643be9dc5c24b4be63, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202163091466315120, guid: 4ad93201ede7b8643be9dc5c24b4be63, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202163091466315120, guid: 4ad93201ede7b8643be9dc5c24b4be63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202163091466315120, guid: 4ad93201ede7b8643be9dc5c24b4be63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2202163091466315120, guid: 4ad93201ede7b8643be9dc5c24b4be63, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5152119822961696898, guid: 4ad93201ede7b8643be9dc5c24b4be63, type: 3}
+      propertyPath: customTriggers.Array.data[0].onTrigger.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1345413279}
+    - target: {fileID: 5778431696092660683, guid: 4ad93201ede7b8643be9dc5c24b4be63, type: 3}
+      propertyPath: m_Name
+      value: Tripulante 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4ad93201ede7b8643be9dc5c24b4be63, type: 3}
 --- !u!1 &8454771185758114105
 GameObject:
   m_ObjectHideFlags: 0
@@ -19578,3 +19436,4 @@ SceneRoots:
   - {fileID: 1717625369}
   - {fileID: 1986819024}
   - {fileID: 674643827}
+  - {fileID: 1238155684}

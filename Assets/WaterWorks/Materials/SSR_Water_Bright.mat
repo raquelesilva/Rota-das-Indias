@@ -63,7 +63,7 @@ Material:
     - _CutoffSpeed: -0.4
     - _Displacement_Amount: 1
     - _Displacement_Scale: 1
-    - _Displacement_Speed: 0.1
+    - _Displacement_Speed: 0.05
     - _DstBlend: 10
     - _Edge_Offset: 20
     - _Foam_Cutoff: 0.6
@@ -71,14 +71,14 @@ Material:
     - _MaxCutoff: 0
     - _MaxDist: 250
     - _MaxWaveDist: 250
-    - _NormalStrength: 0.1
+    - _NormalStrength: 0.05
     - _Normal_Strength: 0.1
     - _Offset: 0.9
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _ScreenSpaceReflections: 1
-    - _Speed: 0.2
+    - _Speed: 0.05
     - _SrcBlend: 5
     - _Surface: 1
     - _Tiling: 0.11
