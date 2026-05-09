@@ -53,6 +53,7 @@ public class InputReader : ScriptableObject, IMovementActions, IMenusActions
 
     private void OnDisable()
     {
+        Debug.Log("potato");
         controls.Movement.Disable();
         controls.Menus.Disable();
     }
@@ -153,7 +154,7 @@ public class InputReader : ScriptableObject, IMovementActions, IMenusActions
         return action.GetBindingDisplayString(InputBinding.MaskByGroup(scheme));
     }
 
-   
+
 
     public string InteractKey => GetBindingDisplayString(controls?.Movement.Interact);
     public string GrabKey => GetBindingDisplayString(controls?.Movement.Grab);

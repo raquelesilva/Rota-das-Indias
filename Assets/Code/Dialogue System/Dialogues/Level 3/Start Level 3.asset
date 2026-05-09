@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 'Index [1]'
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
   nodeGUID: be52e7dc-9dc3-4c36-9e17-de0b5e8b60df
-  position: {x: 39, y: 447}
+  position: {x: 39.2, y: 446.4}
   actor: {fileID: 0}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -40,7 +40,7 @@ MonoBehaviour:
   m_Name: 'Index [2]'
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
   nodeGUID: d19179f9-ea98-496d-9e1a-50d85ff65c92
-  position: {x: 39, y: 794}
+  position: {x: 39.2, y: 793.6}
   actor: {fileID: 0}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_Name: 'Index [0]'
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
   nodeGUID: 0536f6dd-7f7b-4c3b-821e-eedfa63b2c1b
-  position: {x: 39, y: 100}
+  position: {x: 39.2, y: 100}
   actor: {fileID: 0}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -94,8 +94,8 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 3d214d4e-3362-439d-9f07-87bc791f588e
-  position: {x: 373, y: 1154}
-  actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
+  position: {x: 372.8, y: 1153.6}
+  actor: {fileID: 11400000, guid: bc41ee0d904b9a74e9665101285eb970, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
   onNodeEnter:
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 8caceec2-0121-4a5e-9b30-979f69041db9
-  position: {x: 373, y: 100}
+  position: {x: 372.8, y: 100}
   actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -150,8 +150,8 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 262e1eb9-2aa7-4d60-b277-cc9e4b9c0b3b
-  position: {x: 710, y: 1154}
-  actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
+  position: {x: 710.4, y: 1153.6}
+  actor: {fileID: 11400000, guid: bc41ee0d904b9a74e9665101285eb970, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
   onNodeEnter:
@@ -191,11 +191,67 @@ MonoBehaviour:
   - {fileID: 3053409844792174045}
   - {fileID: -4239863648357195842}
   - {fileID: -2812571473847795428}
+  - {fileID: 54260999783171382}
+  - {fileID: 376525459185226514}
   startNode: {fileID: 0}
   backgroundMusic: {fileID: 0}
   backgroundMusicVolume: 1
   onDialogueStartEvent: 
   onDialogueEndEvent: 
+--- !u!114 &54260999783171382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3bad5b5386f17a42868ca511db94946, type: 3}
+  m_Name: 'Index [4]'
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
+  nodeGUID: c086eaef-2674-454a-b21f-13f300223d87
+  position: {x: 39.2, y: 1428}
+  actor: {fileID: 0}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  indexValue: 4
+  nextNode: {fileID: 376525459185226514}
+--- !u!114 &376525459185226514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: ad14942e-58c3-4ee5-92ff-ad3a2da767d5
+  position: {x: 410.4, y: 1428}
+  actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: Bom trabalho a organizar isso, hora de voltar ao barco!
+  nextNode: {fileID: 0}
 --- !u!114 &2942310997172263193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,7 +265,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 7251cf6e-8531-4be7-9a3b-cebac8d3d023
-  position: {x: 373, y: 794}
+  position: {x: 372.8, y: 793.6}
   actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -219,10 +275,10 @@ MonoBehaviour:
   onNodeExit:
     m_PersistentCalls:
       m_Calls: []
-  onNodeEnterEvent: 
+  onNodeEnterEvent: ActivateMerch
   onNodeExitEvent: 
-  dialogueText: Muito bem, bom trabalho! Consegues ajudar-nos a levar as mercadorias
-    certas para o barco?
+  dialogueText: Muito bem, bom trabalho! Consegues ajudar-nos a escolher agora as
+    mercadorias certas para levar?
   nextNode: {fileID: 0}
 --- !u!114 &3053409844792174045
 MonoBehaviour:
@@ -237,7 +293,7 @@ MonoBehaviour:
   m_Name: 'Index [3]'
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
   nodeGUID: 3aa72277-c16f-4cfd-bd30-bd6553641d82
-  position: {x: 39, y: 1154}
+  position: {x: 39.2, y: 1153.6}
   actor: {fileID: 0}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -264,7 +320,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 496b3a55-d6da-46b5-9561-d49dac85cbe6
-  position: {x: 373, y: 447}
+  position: {x: 372.8, y: 446.4}
   actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1

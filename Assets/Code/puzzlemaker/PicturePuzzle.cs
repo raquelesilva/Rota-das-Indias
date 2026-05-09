@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Events;
 using CoreSystems.Managers;
+using System.Collections;
 using System;
 using FancyCrab.CustomPackages.FirstPersonController;
 using System.Linq;
@@ -13,6 +14,7 @@ public class PicturePuzzle : MonoBehaviour
     [SerializeField] private List<Piece> pieces = new();
     [SerializeField] private GameObject completedPicture;
     [SerializeField] private UnityEvent checkForWin;
+    [SerializeField] private UnityEvent extra;
 
     private Piece currentPiece;
     private Camera mainCamera;
@@ -32,6 +34,13 @@ public class PicturePuzzle : MonoBehaviour
     {
         inputReader.Interact += OnInteractCallback;
         inputReader.CrouchPerformed += OnControllClick;
+        StartCoroutine(Hinting(0.5f));
+
+    }
+    IEnumerator Hinting(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        extra?.Invoke();
     }
 
     private void OnDisable()
@@ -43,7 +52,7 @@ public class PicturePuzzle : MonoBehaviour
     private void OnInteractCallback()
     {
         if (!crouchClicked) return;
- 
+
         completedPicture.SetActive(true);
         checkForWin?.Invoke();
 
@@ -183,7 +192,7 @@ public class PicturePuzzle : MonoBehaviour
             completedPicture.SetActive(true);
             checkForWin?.Invoke();
 
-            NotificationManager.instance.SetCorrectMessage("Parabéns! Completaste o puzzle!");
+            NotificationManager.instance.SetCorrectMessage("Parabï¿½ns! Completaste o puzzle!");
         }
     }
 

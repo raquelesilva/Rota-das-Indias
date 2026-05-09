@@ -5,10 +5,13 @@ using UnityEngine.SceneManagement;
 
 namespace Unity.FantasyKingdom
 {
+
     public class MainMenu : MonoBehaviour
     {
+
         public void StartGame()
         {
+
             SceneManager.LoadScene(1);
         }
 

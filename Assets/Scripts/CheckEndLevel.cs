@@ -16,7 +16,7 @@ public class CheckEndLevel : MonoBehaviour
             }
             else
             {
-                NotificationManager.instance.SetInfoMessage("Precisas de acabar o nível para seguires em frente");
+                NotificationManager.instance.SetInfoMessage("Precisas de acabar o nï¿½vel para seguires em frente");
             }
         }
     }

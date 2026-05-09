@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 'Index [0]'
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
   nodeGUID: 2890936f-1eec-4373-8b01-cd64b805fcfa
-  position: {x: 1476, y: 182}
+  position: {x: 1476, y: 181.6}
   actor: {fileID: 0}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -40,7 +40,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: d6ec9463-86ed-40cf-bd67-11dc2995b223
-  position: {x: 1828, y: 182}
+  position: {x: 1828, y: 181.6}
   actor: {fileID: 11400000, guid: bc41ee0d904b9a74e9665101285eb970, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1

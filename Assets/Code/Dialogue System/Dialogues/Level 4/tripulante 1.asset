@@ -1,34 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-7969888188175793888
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
-  m_Name: Text Node
-  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
-  nodeGUID: e04f5c75-df21-4ec8-b971-b8b7be6da3fe
-  position: {x: 1987.2, y: -127.200005}
-  actor: {fileID: 11400000, guid: bc41ee0d904b9a74e9665101285eb970, type: 2}
-  nodeAudio: {fileID: 0}
-  nodeIndex: -1
-  onNodeEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  onNodeExit:
-    m_PersistentCalls:
-      m_Calls: []
-  onNodeEnterEvent: 
-  onNodeExitEvent: 
-  dialogueText: "E com isto, o imposs\xEDvel tornou-se poss\xEDvel. Um caminho mar\xEDtimo
-    para a \xCDndia est\xE1 mais perto de se tornar realidade."
-  nextNode: {fileID: 7773564824432843914}
---- !u!114 &-7542961015903271960
+--- !u!114 &-5163936746711290081
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3bad5b5386f17a42868ca511db94946, type: 3}
   m_Name: 'Index [0]'
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
-  nodeGUID: 19ae4907-a20c-478d-9dad-494aafd0f2ac
-  position: {x: 1322.4, y: -127.200005}
+  nodeGUID: a02090d3-a845-4b9c-ae1f-e18ca54c15f2
+  position: {x: -21.6, y: 656}
   actor: {fileID: 0}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -54,7 +26,34 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   indexValue: 0
-  nextNode: {fileID: 958644943230716873}
+  nextNode: {fileID: 6687785460236928118}
+--- !u!114 &-4685949136084045049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: d59b8cc1-2552-49fe-a699-de82e8a54d6c
+  position: {x: 1022.4, y: 577.6}
+  actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: "Se bem me lembro, uma feitoria \xE9 dirigida por um feitor."
+  nextNode: {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,23 +64,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf1e22609fc0d1e41839aa88ab1d1cb7, type: 3}
-  m_Name: Final Dialogue
+  m_Name: tripulante 1
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.DialogueContainer
   dialogueID: 
   dialogueTitle: 
   description: 
   nodes:
-  - {fileID: -7542961015903271960}
-  - {fileID: 958644943230716873}
-  - {fileID: -7969888188175793888}
-  - {fileID: 7773564824432843914}
-  - {fileID: 2747604114492153503}
+  - {fileID: -5163936746711290081}
+  - {fileID: 6232585431350331454}
+  - {fileID: -4685949136084045049}
+  - {fileID: 5585753250367694261}
+  - {fileID: 6687785460236928118}
   startNode: {fileID: 0}
   backgroundMusic: {fileID: 0}
   backgroundMusicVolume: 1
   onDialogueStartEvent: 
   onDialogueEndEvent: 
---- !u!114 &958644943230716873
+--- !u!114 &5585753250367694261
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,9 +92,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
-  nodeGUID: fb6d8bd5-e0ac-49f5-8105-9ac5dc159c68
-  position: {x: 1651.2, y: -127.200005}
-  actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
+  nodeGUID: 5cc3b059-8915-4824-8447-5520ef79719f
+  position: {x: 1022.4, y: 844}
+  actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
   onNodeEnter:
@@ -106,38 +105,51 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: "Obrigado! Assim podemos encontrar no nosso caminho para fora desta
-    tempestade, at\xE9 parece que um gigante nos est\xE1 a soprar nas velas."
-  nextNode: {fileID: -7969888188175793888}
---- !u!114 &2747604114492153503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
-  m_Name: Text Node
-  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
-  nodeGUID: f91b1882-2cf2-4127-ae03-049e50dc76c1
-  position: {x: 2663.2, y: -127.200005}
-  actor: {fileID: 11400000, guid: bc41ee0d904b9a74e9665101285eb970, type: 2}
-  nodeAudio: {fileID: 0}
-  nodeIndex: -1
-  onNodeEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  onNodeExit:
-    m_PersistentCalls:
-      m_Calls: []
-  onNodeEnterEvent: 
-  onNodeExitEvent: NExtscne
-  dialogueText: "Lig\xE1mos o Oceano Atl\xE2ntico ao Oceano \xCDndico e, com isso,
-    remodelamos o fluxo da hist\xF3ria para sempre."
+  dialogueText: "Se bem me lembro, uma capit\xF3lio \xE9 dirigida por um capit\xE3o-donat\xE1rio."
   nextNode: {fileID: 0}
---- !u!114 &7773564824432843914
+--- !u!114 &6232585431350331454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75b9f1e79f335614581ae76f8aa80f47, type: 3}
+  m_Name: Choice Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.ChoiceDialogueNode
+  nodeGUID: ac2bd164-fe37-4111-a0cc-d0502bb79ecc
+  position: {x: 678.4, y: 656}
+  actor: {fileID: 11400000, guid: 2f8ae4c0fb8408f48b3121137cf15a1a, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  choices:
+  - choiceText: Feitoria
+    nextNode: {fileID: -4685949136084045049}
+    requiredFlag: 
+    hideIfFlagMissing: 0
+  - choiceText: "Capit\xF3lio"
+    nextNode: {fileID: 5585753250367694261}
+    requiredFlag: 
+    hideIfFlagMissing: 0
+  - choiceText: 
+    nextNode: {fileID: 0}
+    requiredFlag: 
+    hideIfFlagMissing: 0
+  - choiceText: 
+    nextNode: {fileID: 0}
+    requiredFlag: 
+    hideIfFlagMissing: 0
+--- !u!114 &6687785460236928118
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -149,9 +161,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
-  nodeGUID: d4943ef2-9e1b-40db-b21d-7f97a0280c89
-  position: {x: 2322.4, y: -127.200005}
-  actor: {fileID: 11400000, guid: bc41ee0d904b9a74e9665101285eb970, type: 2}
+  nodeGUID: dbe86ffb-5745-4def-aa74-34b2c0a2d180
+  position: {x: 296, y: 656}
+  actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
   onNodeEnter:
@@ -162,6 +174,5 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: "Outrora, pensava-se que tal passagem era imposs\xEDvel, mas n\xF3s,
-    os portugueses, encontr\xE1mos uma maneira."
-  nextNode: {fileID: 2747604114492153503}
+  dialogueText: O que me queres perguntar?
+  nextNode: {fileID: 6232585431350331454}

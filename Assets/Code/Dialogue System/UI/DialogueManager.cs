@@ -5,8 +5,8 @@ using UnityEngine;
 namespace FancyCrab.DialogueSystem
 {
     /// <summary>
-    /// Gere o estado e fluxo do diálogo. Não tem referências de UI nem de input.
-    /// Comunica com a UI através de eventos.
+    /// Gere o estado e fluxo do diï¿½logo. Nï¿½o tem referï¿½ncias de UI nem de input.
+    /// Comunica com a UI atravï¿½s de eventos.
     /// </summary>
     public class DialogueManager : MonoBehaviour
     {
@@ -15,7 +15,7 @@ namespace FancyCrab.DialogueSystem
         private DialogueNode currentNode;
         private DialogueTrigger currentTrigger;
 
-        // Eventos públicos — a UI subscreve estes
+        // Eventos pï¿½blicos ï¿½ a UI subscreve estes
         public static event Action<bool> OnDialogueState;
         public event Action<DialogueContainer> OnDialogueStarted;
         public event Action<DialogueContainer> OnDialogueEnded;
@@ -94,7 +94,7 @@ namespace FancyCrab.DialogueSystem
         }
 
         /// <summary>
-        /// Chamado pela UI quando o jogador escolhe uma opção.
+        /// Chamado pela UI quando o jogador escolhe uma opï¿½ï¿½o.
         /// </summary>
         public void SelectChoice(DialogueNode nextNode)
         {
