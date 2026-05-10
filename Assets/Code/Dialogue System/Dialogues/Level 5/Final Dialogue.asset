@@ -107,7 +107,7 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   dialogueText: "Obrigado! Assim podemos encontrar no nosso caminho para fora desta
-    tempestade, at\xE9 parece que um gigante nos est\xE1 a soprar nas velas."
+    tempestade. Quase parece que um gigante nos est\xE1 a soprar nas velas!"
   nextNode: {fileID: -7969888188175793888}
 --- !u!114 &2747604114492153503
 MonoBehaviour:
@@ -135,7 +135,7 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: NExtscne
   dialogueText: "Lig\xE1mos o Oceano Atl\xE2ntico ao Oceano \xCDndico e, com isso,
-    remodelamos o fluxo da hist\xF3ria para sempre."
+    remodelamos o fluxo da Hist\xF3ria para sempre!"
   nextNode: {fileID: 0}
 --- !u!114 &7773564824432843914
 MonoBehaviour:
@@ -162,6 +162,6 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: "Outrora, pensava-se que tal passagem era imposs\xEDvel, mas n\xF3s,
+  dialogueText: "Outrora, pensava-se que tal passagem era imposs\xEDvel. Mas n\xF3s,
     os portugueses, encontr\xE1mos uma maneira."
   nextNode: {fileID: 2747604114492153503}

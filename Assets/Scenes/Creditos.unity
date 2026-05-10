@@ -451,10 +451,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Especial agradecimento \xE0 professora Diana por ter feito toda a comunica\xE7\xE3o
-    para estes testes, ao Professor Eduardo por ser meu orientador e ter paci\xEAncia
-    Santa e por \xFAltimo \xE0s professoras Cl\xE1udia e Sara por terem disponibilizado
-    os seus estudantes para estes testes"
+  m_text: "Especial agradecimento \xE0 professora Diana Quit\xE9ria Sousa por ter
+    ajudado em todas as partes relacionadas com o desenvolvimento desta tese, ao
+    Professor Eduardo Morais por ser meu orientador e ter paci\xEAncia Santa e por
+    \xFAltimo \xE0s professoras Claudia pinto ribeiro e Sara Dias Trindade por terem
+    disponibilizado os seus estudantes para estes testes"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e10823f6115b79544a2413021c41faa9, type: 2}
   m_sharedMaterial: {fileID: -6504080767375933258, guid: e10823f6115b79544a2413021c41faa9, type: 2}
@@ -488,7 +489,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1144,10 +1145,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Jo\xE3o Batista:  Aluno de tese; Lead Designer and writter;  game Dev                                                            
-    Raquel Silva:Lead Game Dev                                          Lucas Ferreira:
-    Boat Maker,;Game dev                                                            
-    Miguel Gon\xE7alves: Anagram maker"
+  m_text: "Jo\xE3o Batista:  Estudante candidato a Mestre; Lead Designer and Writter; 
+    Game Dev                                                             Raquel Silva:
+    Lead Game Dev                                          Lucas Ferreira: Boat Maker,Game
+    dev                                                             Miguel Gon\xE7alves:
+    Anagram Maker"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e10823f6115b79544a2413021c41faa9, type: 2}
   m_sharedMaterial: {fileID: -6504080767375933258, guid: e10823f6115b79544a2413021c41faa9, type: 2}
@@ -1181,7 +1183,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1421,7 +1423,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Creditos
+  m_text: "Cr\xE9ditos"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e10823f6115b79544a2413021c41faa9, type: 2}
   m_sharedMaterial: {fileID: -6504080767375933258, guid: e10823f6115b79544a2413021c41faa9, type: 2}

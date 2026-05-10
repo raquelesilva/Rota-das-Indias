@@ -110,7 +110,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: Start
   onNodeExitEvent: 
-  dialogueText: "\xD3 meu santo camar\xE3o das mar\xE9s\u2026 diz-me que viste o
+  dialogueText: "\xD3 meu Santo Camar\xE3o das Mar\xE9s\u2026 diz-me que viste o
     mesmo que eu! Eu juro que aquilo ali \xE0 frente se mexeu\u2026"
   nextNode: {fileID: 1540449851104852104}
 --- !u!114 &1540449851104852104

@@ -192,7 +192,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: "Errado, \xE9s mesmo Marinheiro?"
+  dialogueText: "\xE9s mesmo Marinheiro?"
   nextNode: {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -304,7 +304,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: Errado! Tenta Outra vez
+  dialogueText: Tenta outra vez!
   nextNode: {fileID: 0}
 --- !u!114 &7755366880003288128
 MonoBehaviour:
@@ -331,6 +331,6 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: "Correto! Foi esta rota que nos deu acesso ao oceano \xCDndico e
+  dialogueText: "Correto! Foi esta rota que nos deu acesso ao Oceano \xCDndico e
     a tudo o que ele nos poderia dar!"
   nextNode: {fileID: 5452013813537268235}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 'Index [0]'
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
   nodeGUID: c40ba2b0-765e-4498-809a-50208a2f09ff
-  position: {x: 1473, y: 161}
+  position: {x: 1472.8, y: 160.8}
   actor: {fileID: 0}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -27,6 +27,33 @@ MonoBehaviour:
   onNodeExitEvent: 
   indexValue: 0
   nextNode: {fileID: 764545386476542010}
+--- !u!114 &-1148785249988124338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: 3435fd14-7d47-4e59-b3c0-0c4fab67d2dc
+  position: {x: 2186.4, y: 160.8}
+  actor: {fileID: 0}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: StartAstrolabio
+  dialogueText: "R\xE1pido, ajuda-me a reconstru\xED-lo!"
+  nextNode: {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45,6 +72,7 @@ MonoBehaviour:
   nodes:
   - {fileID: -4024362286040025618}
   - {fileID: 764545386476542010}
+  - {fileID: -1148785249988124338}
   startNode: {fileID: 0}
   backgroundMusic: {fileID: 0}
   backgroundMusicVolume: 1
@@ -63,7 +91,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 16c36cc7-5dbe-49c5-9f61-a89418801d26
-  position: {x: 1814, y: 161}
+  position: {x: 1814.4, y: 160.8}
   actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -74,6 +102,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   onNodeEnterEvent: 
-  onNodeExitEvent: StartAstrolabio
-  dialogueText: "Ai n\xE3o deixei cair o astrolabio, rapido ajuda me a reconstrui-lo."
-  nextNode: {fileID: 0}
+  onNodeExitEvent: 
+  dialogueText: "Ai...n\xE3o! Deixei cair o astrol\xE1bio!\r\n"
+  nextNode: {fileID: -1148785249988124338}

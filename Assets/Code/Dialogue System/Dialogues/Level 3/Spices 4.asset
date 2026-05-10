@@ -94,7 +94,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: check
-  dialogueText: "Exato, esse azeite \xE9 um bem essencial para qualquer portugu\xEAs "
+  dialogueText: "Boa! Esse azeite \xE9 um bem essencial para qualquer portugu\xEAs!"
   nextNode: {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:

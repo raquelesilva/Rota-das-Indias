@@ -25,7 +25,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: "Sei que uma capitolio n\xE3o \xE9 bem fortificada."
+  dialogueText: "Sei que um capit\xF3lio n\xE3o \xE9 bem fortificado."
   nextNode: {fileID: 0}
 --- !u!114 &-6322859491105760679
 MonoBehaviour:
@@ -52,8 +52,35 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: "Ah acabamos por passar por uma h\xE1 uns dias!"
+  dialogueText: "Ah! Acabamos por passar por uma h\xE1 uns dias!"
   nextNode: {fileID: -1995054991938075597}
+--- !u!114 &-4368459435023767489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: 744feb8f-f683-437b-9e96-b0e1c3ab66da
+  position: {x: 2393.6, y: 323.2}
+  actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: Do que precisas de mim?
+  nextNode: {fileID: 6232585431350331454}
 --- !u!114 &-3237520532954148122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,6 +157,7 @@ MonoBehaviour:
   - {fileID: -7978213153558393981}
   - {fileID: -3237520532954148122}
   - {fileID: -6322859491105760679}
+  - {fileID: -4368459435023767489}
   startNode: {fileID: 0}
   backgroundMusic: {fileID: 0}
   backgroundMusicVolume: 1
@@ -148,7 +176,7 @@ MonoBehaviour:
   m_Name: Choice Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.ChoiceDialogueNode
   nodeGUID: ac2bd164-fe37-4111-a0cc-d0502bb79ecc
-  position: {x: 2540, y: 656}
+  position: {x: 2577.6, y: 660.8}
   actor: {fileID: 11400000, guid: 2f8ae4c0fb8408f48b3121137cf15a1a, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -202,5 +230,5 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: Obrigado por antes! O que precisas de mim?
-  nextNode: {fileID: 6232585431350331454}
+  dialogueText: Obrigado por nos acalmares!
+  nextNode: {fileID: -4368459435023767489}

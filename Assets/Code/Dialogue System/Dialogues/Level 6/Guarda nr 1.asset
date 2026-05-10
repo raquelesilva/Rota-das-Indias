@@ -25,7 +25,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: GateOpen
   onNodeExitEvent: 
-  dialogueText: Muito bem! podes continuar!
+  dialogueText: Muito bem! Podes continuar!
   nextNode: {fileID: 0}
 --- !u!114 &-4821642596795922013
 MonoBehaviour:
@@ -330,5 +330,5 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: Exatamente, foi o Infante D. Henrique
+  dialogueText: Exatamente, foi o Infante D. Henrique!
   nextNode: {fileID: 5452013813537268235}

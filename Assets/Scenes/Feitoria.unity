@@ -8474,7 +8474,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1056696127811651290, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
       propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: "Esta mercadoria n\xE3o era adiquirida na africa"
+      value: "Esta mercadoria n\xE3o era adiquirida na \xC1frica"
       objectReference: {fileID: 0}
     - target: {fileID: 1056696127811651290, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
       propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
@@ -8654,7 +8654,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2869466727339566480, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
       propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: "Esta mercadoria n\xE3o era adiquirida na africa"
+      value: "Esta mercadoria n\xE3o era adiquirida na \xC1frica"
       objectReference: {fileID: 0}
     - target: {fileID: 2869466727339566480, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
       propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
@@ -8754,7 +8754,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6491750039327354380, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
       propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: "Esta mercadoria n\xE3o era adiquirida na africa"
+      value: "Esta mercadoria n\xE3o era adiquirida na \xC1frica"
       objectReference: {fileID: 0}
     - target: {fileID: 6491750039327354380, guid: 2c9b0d9492e3e6b4cb6a6eb5de58f8bd, type: 3}
       propertyPath: Feedback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument

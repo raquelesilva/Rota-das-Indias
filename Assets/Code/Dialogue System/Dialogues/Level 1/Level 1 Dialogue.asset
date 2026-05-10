@@ -167,7 +167,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: endlevel
-  dialogueText: "A entrada do Mediterr\xE2neo erguia-se agora sob as bandeiras portuguesas,
+  dialogueText: "A entrada do Mediterr\xE2neo erguia-se agora sob as bandeiras portuguesas
     e o olhar do reino voltava-se para o vasto oceano em dire\xE7\xE3o \xE0 promessa
     do desconhecido."
   nextNode: {fileID: 0}
@@ -250,8 +250,8 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: "Este azulejo demonstra a conquista de ceuta feita pelo nosso antigo
-    Rei D. Jo\xE3o I"
+  dialogueText: "Este azulejo demonstra a conquista de Ceuta feita pelo nosso antigo
+    Rei D. Jo\xE3o I."
   nextNode: {fileID: 2255238666496592648}
 --- !u!114 &5647293520448082675
 MonoBehaviour:

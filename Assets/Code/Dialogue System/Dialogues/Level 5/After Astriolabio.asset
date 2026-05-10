@@ -25,7 +25,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: SetMatey
-  dialogueText: "Muito bem, agora rapido temos de voltar l\xE1 acima"
+  dialogueText: "Muito bem!Agora, r\xE1pido temos de voltar l\xE1 para acima!"
   nextNode: {fileID: 0}
 --- !u!114 &-4066440984156287190
 MonoBehaviour:
@@ -40,7 +40,7 @@ MonoBehaviour:
   m_Name: 'Index [0]'
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.IndexDialogueNode
   nodeGUID: 39653070-4a63-40c1-bd0f-45990dc9c61f
-  position: {x: 1470, y: 184}
+  position: {x: 1470.4, y: 184}
   actor: {fileID: 0}
   nodeAudio: {fileID: 0}
   nodeIndex: -1

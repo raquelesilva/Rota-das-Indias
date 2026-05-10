@@ -25,7 +25,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: "Errado! Est\xE1s quase l\xE1!"
+  dialogueText: "Est\xE1vas quase l\xE1!"
   nextNode: {fileID: 0}
 --- !u!114 &-6558442360968629873
 MonoBehaviour:
@@ -52,7 +52,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: GateOpen
-  dialogueText: "Correto! \xC9s perito nesta area bom trabalho!"
+  dialogueText: "Correto! \xC9s um perito nesta \xE1rea.Bom trabalho!"
   nextNode: {fileID: 0}
 --- !u!114 &-5940313047099036187
 MonoBehaviour:
@@ -79,7 +79,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: "Para a  navega\xE7\xE3o astron\xF3mica, os instrumentos utilizados
+  dialogueText: "Para a navega\xE7\xE3o astron\xF3mica, os instrumentos utilizados
     eram\u2026\r\n"
   nextNode: {fileID: 5834679406612744865}
 --- !u!114 &-4821642596795922013
@@ -112,7 +112,7 @@ MonoBehaviour:
     nextNode: {fileID: 6550230512689110444}
     requiredFlag: 
     hideIfFlagMissing: 0
-  - choiceText: Um alimento que os marinheiros consumiam durante as viagens.
+  - choiceText: Um alimento que os marinheiros consumiam.
     nextNode: {fileID: 6550230512689110444}
     requiredFlag: 
     hideIfFlagMissing: 0
@@ -177,7 +177,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: "Correto! J\xE1 percebi como passas-te os outros pontos!"
+  dialogueText: "Correto! J\xE1 percebi como passaste nos outros desafios!"
   nextNode: {fileID: -5940313047099036187}
 --- !u!114 &-2902676587573443447
 MonoBehaviour:
@@ -273,7 +273,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: Errado, nem sabes as nossas principais fortalezas
+  dialogueText: Nem sabes as nossas principais fortalezas, tenta te lembrar!
   nextNode: {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -433,7 +433,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: Errado! Tenta outra vez
+  dialogueText: Tenta outra vez!
   nextNode: {fileID: 0}
 --- !u!114 &7755366880003288128
 MonoBehaviour:
@@ -460,5 +460,5 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: "Boa! \xC9 isso, eram fortalezas quem funcionavam como portos! "
+  dialogueText: "Boa! \xC9 isso mesmo! Eram fortalezas quem funcionavam como portos! "
   nextNode: {fileID: 5452013813537268235}

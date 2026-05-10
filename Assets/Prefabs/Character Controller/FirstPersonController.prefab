@@ -800,7 +800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e449139e6e5ccef458431bb8fc64f2a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.CoreSystems.InteractionSystem.InteractableLabel
-  msgInteract: Clica {0} para interagir
+  msgInteract: Clica E para interagir
   msgGrab: Clica {0} to agarrar
   msgThrow: Clica {0} para atirar
   msgDrop: Clica {0} para largar

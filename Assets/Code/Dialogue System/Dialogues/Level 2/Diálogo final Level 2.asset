@@ -27,6 +27,62 @@ MonoBehaviour:
   onNodeExitEvent: 
   indexValue: 0
   nextNode: {fileID: 8026439522738783509}
+--- !u!114 &-8422372418651504599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: 39af58d6-661f-4c7f-a4fd-389a7e0dd596
+  position: {x: 67.2, y: -469.6}
+  actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: "Estes tripulantes novos ficam sempre cheios de medo destes mares
+    long\xEDnquos ... ha ha ha!"
+  nextNode: {fileID: -1439561960143858591}
+--- !u!114 &-6692824049226763473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: ea673c05-689a-4beb-a181-fbefa419e0a9
+  position: {x: 793.6, y: -470.4}
+  actor: {fileID: 11400000, guid: bc41ee0d904b9a74e9665101285eb970, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: 'Descobrimos que ainda existem terras inexploradas, abrimos os nossos
+    horizontes ao conhecer novos mundos, as suas culturas e costumes. '
+  nextNode: {fileID: 7694821646112333500}
 --- !u!114 &-1439561960143858591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40,7 +96,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 4f32620a-bb59-42c3-8d5e-5d4084b2671f
-  position: {x: 28.8, y: -470.4}
+  position: {x: 464.8, y: -470.4}
   actor: {fileID: 11400000, guid: bc41ee0d904b9a74e9665101285eb970, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -51,11 +107,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   onNodeEnterEvent: 
-  onNodeExitEvent: endLevel 2
-  dialogueText: "Com esta travessia fomos capazes de atravessar este cabo vicioso,
-    mostrando-nos que ainda existem vastas terras inexploradas por n\xF3s a sul e
-    mostrando a promessa de um caminho mar\xEDtimo para a \xCDndia!"
-  nextNode: {fileID: 0}
+  onNodeExitEvent: 
+  dialogueText: Com esta travessia, fomos capazes de atravessar este cabo vicioso.
+  nextNode: {fileID: -6692824049226763473}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79,6 +133,9 @@ MonoBehaviour:
   - {fileID: 36741493536045070}
   - {fileID: 5295528630985535138}
   - {fileID: -1439561960143858591}
+  - {fileID: -8422372418651504599}
+  - {fileID: 7694821646112333500}
+  - {fileID: -6692824049226763473}
   startNode: {fileID: 0}
   backgroundMusic: {fileID: 0}
   backgroundMusicVolume: 1
@@ -163,9 +220,8 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: "Bom trabalho a acalmar os tripulantes, estes tripulantes novos ficam
-    sempre cheios de medo destes mares long\xEDnquos ha ha ha!"
-  nextNode: {fileID: -1439561960143858591}
+  dialogueText: 'Bom trabalho a acalmar os tripulantes! '
+  nextNode: {fileID: -8422372418651504599}
 --- !u!114 &5772477696678160632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,6 +248,34 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: changeToIndex 2
   dialogueText: "Volta c\xE1!"
+  nextNode: {fileID: 0}
+--- !u!114 &7694821646112333500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: 367fa39b-d348-4ee4-b523-ae3fa4c59f9f
+  position: {x: 1118.4, y: -469.6}
+  actor: {fileID: 11400000, guid: bc41ee0d904b9a74e9665101285eb970, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: endLevel 2
+  dialogueText: "Podemos fazer novas transa\xE7\xF5es comerciais e descobrir o primeiro
+    caminho mar\xEDtimo para a \xCDndia"
   nextNode: {fileID: 0}
 --- !u!114 &8026439522738783509
 MonoBehaviour:

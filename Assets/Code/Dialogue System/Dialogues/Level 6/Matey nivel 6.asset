@@ -52,8 +52,8 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: "Se bem me lembro, temos uma mensagem para entregar na catedral.
-    Podes ir l\xE1 tu, se fores atento, consegues v\xEA-la ao longe."
+  dialogueText: "Se bem me lembro, temos uma mensagem para entregar na Catedral.
+    Podes ir l\xE1 tu? Se fores atento, consegues, v\xEA-la ao longe."
   nextNode: {fileID: 6071282341498124976}
 --- !u!114 &-3047841352468563082
 MonoBehaviour:
@@ -81,7 +81,7 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   dialogueText: "E assim se fez uma das muitas viagens \xE0 \xCDndia. Esta n\xE3o
-    ser\xE1 a \xFAltima, pois muitas outras vir\xE3o depois."
+    ser\xE1 a \xFAltima, pois muitas outras vir\xE3o!"
   nextNode: {fileID: 8800009517699662503}
 --- !u!114 &-2617204748928812898
 MonoBehaviour:
@@ -218,7 +218,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: Endgame
-  dialogueText: "No in\xEDcio partimos, em sinal de derrota e inferioridade; hoje
-    governaremos e faremos com que aqueles que se riram de n\xF3s fiquem debaixo
-    das nossas botas\u201D"
+  dialogueText: "No in\xEDcio, partimos com sentimento de derrota e inferioridade.
+    Hoje, governamos e fazemos com que aqueles que se riram de n\xF3 que fiquem debaixo
+    das nossas botas!"
   nextNode: {fileID: 0}

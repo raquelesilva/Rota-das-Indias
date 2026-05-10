@@ -42,7 +42,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 12c8d149-4cb9-4a3f-b9d1-0f4a128da3fa
-  position: {x: 1195.2, y: 292.80002}
+  position: {x: 1192, y: 292.80002}
   actor: {fileID: 11400000, guid: bc41ee0d904b9a74e9665101285eb970, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -53,7 +53,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   onNodeEnterEvent: 
-  onNodeExitEvent: 
+  onNodeExitEvent: Chest
   dialogueText: "Dirige-te ao conv\xE9s!"
   nextNode: {fileID: 0}
 --- !u!114 &-5229801226904865628

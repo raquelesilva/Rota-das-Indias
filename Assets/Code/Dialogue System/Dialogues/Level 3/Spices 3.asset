@@ -94,7 +94,8 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: check
-  dialogueText: "Boa! Esse marfim \xE9 fresco acabou de ser ca\xE7ado ainda por cima "
+  dialogueText: "Muito Bem! Esse marfim \xE9 fresco e acabou de ser ca\xE7ado, ainda
+    por cima!"
   nextNode: {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: f1fa7431-d60c-4d5c-b47f-9de456855c5d
-  position: {x: 772.8, y: 164}
+  position: {x: 1122.4, y: 164}
   actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -25,9 +25,8 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: StartDrag 2
-  dialogueText: "Estes mares s\xE3o malucos, mas se \xE9 como dizes porque \xE9 que
-    temos tantos problemas a navegares estes mares, os perigos n\xE3o s\xE3o dos
-    monstros?!"
+  dialogueText: "Mas se \xE9 como dizes, porque \xE9 que temos tantos problemas a
+    navegar?\r\nOs perigos n\xE3o s\xE3o s\xF3 dos monstros?! "
   nextNode: {fileID: 0}
 --- !u!114 &-3671227649522066265
 MonoBehaviour:
@@ -135,8 +134,8 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: "O nosso \xFAltimo colega est\xE1 na sala do mapa; tens de abrir
-    uma porta l\xE1 em sima."
+  dialogueText: "O nosso \xFAltimo colega est\xE1 na sala do mapa. tens de abrir
+    uma porta l\xE1 em cima."
   nextNode: {fileID: 4415261240573720364}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -162,11 +161,39 @@ MonoBehaviour:
   - {fileID: 4415261240573720364}
   - {fileID: 3528317019539164210}
   - {fileID: -3671227649522066265}
+  - {fileID: 616079593768814292}
   startNode: {fileID: 0}
   backgroundMusic: {fileID: 0}
   backgroundMusicVolume: 1
   onDialogueStartEvent: 
   onDialogueEndEvent: 
+--- !u!114 &616079593768814292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: d381f293-41f3-465a-a165-f95b74aa9d78
+  position: {x: 772.8, y: 164}
+  actor: {fileID: 11400000, guid: 0c5baae4cac59d64d9d3b160b1a7927c, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: "Estes mares s\xE3o malucos!\r\n"
+  nextNode: {fileID: -8818920912560665476}
 --- !u!114 &1758526182027981039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,7 +220,7 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   indexValue: 0
-  nextNode: {fileID: -8818920912560665476}
+  nextNode: {fileID: 616079593768814292}
 --- !u!114 &3528317019539164210
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -53,7 +53,7 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   indexValue: 2
-  nextNode: {fileID: 2942310997172263193}
+  nextNode: {fileID: 8755770515264423372}
 --- !u!114 &-5653634475133626895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,6 +81,33 @@ MonoBehaviour:
   onNodeExitEvent: 
   indexValue: 0
   nextNode: {fileID: -3378436914620908882}
+--- !u!114 &-5615179549606217630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: 0e9d17ce-3b27-42c7-8acb-20d6c44205a2
+  position: {x: 762.4, y: 446.4}
+  actor: {fileID: 0}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: ActivateMap
+  dialogueText: "Aproxima-te e v\xEA se descobres mais alguma coisa!"
+  nextNode: {fileID: 0}
 --- !u!114 &-4239863648357195842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,9 +133,9 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: "\xC0 medida que continuamos a viagem, vemos a pequena fortaleza
-    a desaparecer \xE0 dist\xE2ncia, este lugar onde guard\xE1vamos e troc\xE1vamos
-    produtos."
+  dialogueText: "\xC0 medida que nos afastamos, vemos a pequena Feitoria de S\xE3o
+    Jorge da Mina a desaparecer.Este \xE9 um dos locais onde guardamos e trocamos
+    mercadorias."
   nextNode: {fileID: -2812571473847795428}
 --- !u!114 &-3378436914620908882
 MonoBehaviour:
@@ -135,7 +162,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: FollowEvent
-  dialogueText: Segue me vamos organizar mantimentos quer precisamos para a viagem.
+  dialogueText: Segue-me! Vamos organizar os mantimentos que precisamos para a viagem.
   nextNode: {fileID: 0}
 --- !u!114 &-2812571473847795428
 MonoBehaviour:
@@ -162,8 +189,8 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: "Entre armaz\xE9ns cheios de especiarias, ouro, marfim e escravos,
-    percebemos a import\xE2ncia deste ponto de com\xE9rcio, um s\xEDtio essencial
+  dialogueText: "Temos os armaz\xE9ns cheios de especiarias, ouro, marfim e escravos!
+    Percebemos a import\xE2ncia deste ponto de com\xE9rcio como um local importante
     para a expans\xE3o de Portugal pelo mundo."
   nextNode: {fileID: 0}
 --- !u!114 &11400000
@@ -193,6 +220,9 @@ MonoBehaviour:
   - {fileID: -2812571473847795428}
   - {fileID: 54260999783171382}
   - {fileID: 376525459185226514}
+  - {fileID: -5615179549606217630}
+  - {fileID: 8755770515264423372}
+  - {fileID: 7932172719923803591}
   startNode: {fileID: 0}
   backgroundMusic: {fileID: 0}
   backgroundMusicVolume: 1
@@ -250,8 +280,8 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: Bom trabalho a organizar isso, hora de voltar ao barco!
-  nextNode: {fileID: 0}
+  dialogueText: 'Fizeste um excelente trabalho a organizar as mercadorias! '
+  nextNode: {fileID: 7932172719923803591}
 --- !u!114 &2942310997172263193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,7 +295,7 @@ MonoBehaviour:
   m_Name: Text Node
   m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
   nodeGUID: 7251cf6e-8531-4be7-9a3b-cebac8d3d023
-  position: {x: 372.8, y: 793.6}
+  position: {x: 752.8, y: 793.6}
   actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
   nodeAudio: {fileID: 0}
   nodeIndex: -1
@@ -277,8 +307,8 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: ActivateMerch
   onNodeExitEvent: 
-  dialogueText: Muito bem, bom trabalho! Consegues ajudar-nos a escolher agora as
-    mercadorias certas para levar?
+  dialogueText: Consegues ajudar-nos a escolher agora as mercadorias certas para
+    levar?
   nextNode: {fileID: 0}
 --- !u!114 &3053409844792174045
 MonoBehaviour:
@@ -331,7 +361,61 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   onNodeEnterEvent: 
-  onNodeExitEvent: ActivateMap
-  dialogueText: Ajuda a organizarmos os nossos mercadores a adquirir as mercadorias
-    de que precisamos para a viagem.
+  onNodeExitEvent: 
+  dialogueText: 'Ajuda os nossos mercadores a adquirir as mercadorias que precisamos
+    para a viagem. Repara que existe um mapa em cima da mesa. '
+  nextNode: {fileID: -5615179549606217630}
+--- !u!114 &7932172719923803591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: c1d979b2-c571-4b00-ace1-38d6eeae952d
+  position: {x: 775.2, y: 1428}
+  actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: "Est\xE1 na hora de voltar para o barco!"
   nextNode: {fileID: 0}
+--- !u!114 &8755770515264423372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a5bc13a3e6ff004ea1e009a8fa42c03, type: 3}
+  m_Name: Text Node
+  m_EditorClassIdentifier: Assembly-CSharp::FancyCrab.DialogueSystem.TextDialogueNode
+  nodeGUID: 30e43bf3-3f11-40ef-b0d2-14ed1d32cb57
+  position: {x: 372.8, y: 794.39996}
+  actor: {fileID: 11400000, guid: 8b96605a5f0dd694d84debf494d23c65, type: 2}
+  nodeAudio: {fileID: 0}
+  nodeIndex: -1
+  onNodeEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeExit:
+    m_PersistentCalls:
+      m_Calls: []
+  onNodeEnterEvent: 
+  onNodeExitEvent: 
+  dialogueText: Muito bem, bom trabalho!
+  nextNode: {fileID: 2942310997172263193}
