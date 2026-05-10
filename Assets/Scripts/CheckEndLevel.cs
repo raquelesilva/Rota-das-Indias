@@ -23,6 +23,7 @@ public class CheckEndLevel : MonoBehaviour
 
     public void CompleteLevel()
     {
+        Debug.Log("potato");
         levelCompleted = true;
     }
 
