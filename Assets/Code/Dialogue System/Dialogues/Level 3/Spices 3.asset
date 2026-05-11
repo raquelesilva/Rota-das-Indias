@@ -148,7 +148,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: Tens a certeza? Tenta outra vez
+  dialogueText: Tens a certeza? Tenta outra vez!
   nextNode: {fileID: 0}
 --- !u!114 &8672523547742600823
 MonoBehaviour:

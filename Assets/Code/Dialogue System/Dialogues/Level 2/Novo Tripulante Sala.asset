@@ -25,7 +25,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: StartDrag 3
-  dialogueText: "Pass\xE1mos mesmo o cabo Bojador?! Estamos a fazer Hist\xF3ria como
+  dialogueText: "Passamos mesmo o Cabo bojador?! Estamos a fazer Hist\xF3ria como
     Gil Eanes o fez!"
   nextNode: {fileID: 0}
 --- !u!114 &11400000

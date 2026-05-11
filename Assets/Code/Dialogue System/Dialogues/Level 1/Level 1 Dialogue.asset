@@ -79,8 +79,8 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: "O que antes era uma guerra por territ\xF3rio transformou-se no in\xEDcio
-    de um tempo de explora\xE7\xE3o e descoberta."
+  dialogueText: "O que antes era uma guerra por territ\xF3rio, transformou-se no
+    in\xEDcio de um tempo de explora\xE7\xE3o e descoberta."
   nextNode: {fileID: 1953231214650766445}
 --- !u!114 &-1019953661676630418
 MonoBehaviour:
@@ -167,9 +167,9 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: endlevel
-  dialogueText: "A entrada do Mediterr\xE2neo erguia-se agora sob as bandeiras portuguesas
-    e o olhar do reino voltava-se para o vasto oceano em dire\xE7\xE3o \xE0 promessa
-    do desconhecido."
+  dialogueText: "A entrada no Mediterr\xE2neo permitiu erguer as bandeiras portuguesas.
+    O olhar do reino portugu\xEAs est\xE1 voltado para o vasto oceano, em dire\xE7\xE3o
+    \xE0 promessa do desconhecido"
   nextNode: {fileID: 0}
 --- !u!114 &2035893659548821609
 MonoBehaviour:
@@ -307,7 +307,7 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   dialogueText: Com a conquista de Ceuta, Portugal deu o seu primeiro passo para
-    uma nova era.
+    uma nova Era.
   nextNode: {fileID: -1263160367890942543}
 --- !u!114 &7908719584692961138
 MonoBehaviour:

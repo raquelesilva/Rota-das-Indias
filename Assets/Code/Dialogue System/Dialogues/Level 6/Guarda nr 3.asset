@@ -25,7 +25,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: "Est\xE1vas quase l\xE1!"
+  dialogueText: "Tens a certeza? Tenta outra vez, estavas quase l\xE1!!"
   nextNode: {fileID: 0}
 --- !u!114 &-6558442360968629873
 MonoBehaviour:
@@ -52,7 +52,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: GateOpen
-  dialogueText: "Correto! \xC9s um perito nesta \xE1rea.Bom trabalho!"
+  dialogueText: "Correto! \xC9s especialista nesta \xE1rea. Bom trabalho!"
   nextNode: {fileID: 0}
 --- !u!114 &-5940313047099036187
 MonoBehaviour:
@@ -273,7 +273,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: Nem sabes as nossas principais fortalezas, tenta te lembrar!
+  dialogueText: Tens a certeza? Tenta outra vez!
   nextNode: {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -433,7 +433,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: Tenta outra vez!
+  dialogueText: "Tu n\xE3o passaste por uma a caminho? Tenta outra vez!"
   nextNode: {fileID: 0}
 --- !u!114 &7755366880003288128
 MonoBehaviour:
@@ -460,5 +460,5 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: "Boa! \xC9 isso mesmo! Eram fortalezas quem funcionavam como portos! "
+  dialogueText: "Boa! \xC9 isso mesmo! Eram fortalezas que funcionavam como portos!"
   nextNode: {fileID: 5452013813537268235}

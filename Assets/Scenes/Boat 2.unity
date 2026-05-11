@@ -9964,6 +9964,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4611240588211437921, guid: 4e67f747504aad145997945c0710e2db, type: 3}
+      propertyPath: m_text
+      value: Submeter
+      objectReference: {fileID: 0}
     - target: {fileID: 4869645500087864321, guid: 4e67f747504aad145997945c0710e2db, type: 3}
       propertyPath: target_words.Array.size
       value: 3

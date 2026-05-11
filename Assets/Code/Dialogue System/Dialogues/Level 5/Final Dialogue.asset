@@ -134,8 +134,8 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: NExtscne
-  dialogueText: "Lig\xE1mos o Oceano Atl\xE2ntico ao Oceano \xCDndico e, com isso,
-    remodelamos o fluxo da Hist\xF3ria para sempre!"
+  dialogueText: "Ligamos o Oceano Atl\xE2ntico ao Oceano \xCDndico e, com isso, remodelamos
+    o fluxo da Hist\xF3ria para sempre!"
   nextNode: {fileID: 0}
 --- !u!114 &7773564824432843914
 MonoBehaviour:

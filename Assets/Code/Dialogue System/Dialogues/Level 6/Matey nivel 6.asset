@@ -218,7 +218,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: Endgame
-  dialogueText: "No in\xEDcio, partimos com sentimento de derrota e inferioridade.
-    Hoje, governamos e fazemos com que aqueles que se riram de n\xF3 que fiquem debaixo
+  dialogueText: "No in\xEDcio, partimos com um sentimento de derrota e de inferioridade.
+    Hoje, governamos e fazemos com que aqueles que se riram de n\xF3s fiquem debaixo
     das nossas botas!"
   nextNode: {fileID: 0}

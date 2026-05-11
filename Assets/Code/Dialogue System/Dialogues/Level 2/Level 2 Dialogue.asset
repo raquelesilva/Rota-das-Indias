@@ -191,7 +191,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: changeToIndex1
-  dialogueText: "Vai falar com eles para acalmar a tripula\xE7\xE3o! um deles deve
+  dialogueText: "Vai falar com eles para acalmar a tripula\xE7\xE3o! Um deles deve
     estar ao p\xE9 do leme."
   nextNode: {fileID: 0}
 --- !u!114 &-1472429115431190355

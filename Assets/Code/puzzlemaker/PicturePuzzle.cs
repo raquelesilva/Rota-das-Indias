@@ -192,7 +192,7 @@ public class PicturePuzzle : MonoBehaviour
             completedPicture.SetActive(true);
             checkForWin?.Invoke();
 
-            NotificationManager.instance.SetCorrectMessage("Parab�ns! Completaste o puzzle!");
+            NotificationManager.instance.SetCorrectMessage("Parabéns! Completaste o puzzle!");
         }
     }
 

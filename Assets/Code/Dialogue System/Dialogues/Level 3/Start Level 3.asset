@@ -134,7 +134,7 @@ MonoBehaviour:
   onNodeEnterEvent: 
   onNodeExitEvent: 
   dialogueText: "\xC0 medida que nos afastamos, vemos a pequena Feitoria de S\xE3o
-    Jorge da Mina a desaparecer.Este \xE9 um dos locais onde guardamos e trocamos
+    Jorge da Mina a desaparecer. Este \xE9 um dos locais onde guardamos e trocamos
     mercadorias."
   nextNode: {fileID: -2812571473847795428}
 --- !u!114 &-3378436914620908882
@@ -390,7 +390,8 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: "Est\xE1 na hora de voltar para o barco!"
+  dialogueText: "Est\xE1 na hora de voltar para o barco! Cuidado com a prancha, as
+    vezes \xE9 preciso um passo bem espa\xE7ado para a passar"
   nextNode: {fileID: 0}
 --- !u!114 &8755770515264423372
 MonoBehaviour:

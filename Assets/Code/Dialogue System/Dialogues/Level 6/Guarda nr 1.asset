@@ -190,7 +190,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: "Errado, \xE9s mesmo Portugu\xEAs?"
+  dialogueText: Tens a certeza? Tenta outra vez!
   nextNode: {fileID: 0}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -303,7 +303,7 @@ MonoBehaviour:
       m_Calls: []
   onNodeEnterEvent: 
   onNodeExitEvent: 
-  dialogueText: Errado! Tenta Outra vez
+  dialogueText: Tens a certeza? Tenta outra vez!
   nextNode: {fileID: 0}
 --- !u!114 &7755366880003288128
 MonoBehaviour:
